@@ -26,21 +26,31 @@ class PDFReader:
         pdf_path: str,
         password: Optional[str] = None
     ) -> None:
+        """
+        Validates PDF access.
 
+        Many Indian bank statement PDFs are technically "encrypted"
+        with a blank-string owner password for permissions metadata,
+        even though they require no password to open. pypdf marks
+        these as is_encrypted=True. We handle this by always trying
+        an empty-string decrypt first before raising an error.
+        """
         reader = PdfReader(pdf_path)
 
         if reader.is_encrypted:
-            if not password:
-                raise ValueError(
-                    "PDF is encrypted. Password required."
-                )
-
-            result = reader.decrypt(password)
+            # Always try blank password first — covers permission-only
+            # encrypted PDFs that open without a real password.
+            result = reader.decrypt(password or "")
 
             if result == 0:
-                raise ValueError(
-                    "Invalid PDF password."
-                )
+                # Blank didn't work. If the caller supplied a real
+                # password it's genuinely wrong; otherwise prompt them.
+                if password:
+                    raise ValueError("Invalid PDF password.")
+                else:
+                    raise ValueError(
+                        "PDF is encrypted. Password required."
+                    )
 
     @staticmethod
     def read_pdf(
@@ -52,9 +62,12 @@ class PDFReader:
 
         pages: List[PDFPage] = []
 
+        # pdfplumber also needs the password (or "" for blank-encrypted).
+        open_password = password or ""
+
         with pdfplumber.open(
             pdf_path,
-            password=password
+            password=open_password
         ) as pdf:
 
             for page_index, page in enumerate(pdf.pages, start=1):

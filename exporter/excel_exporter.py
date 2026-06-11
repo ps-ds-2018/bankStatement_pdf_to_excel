@@ -3,7 +3,8 @@ from typing import List
 
 import pandas as pd
 from openpyxl import load_workbook
-from openpyxl.styles import PatternFill
+from openpyxl.styles import Font, PatternFill, Alignment
+from openpyxl.utils import get_column_letter
 
 from extractor.models import (
     Metadata,
@@ -14,15 +15,14 @@ from extractor.models import (
 
 class ExcelExporter:
 
-    INFO_FILL = PatternFill(
-        fill_type="solid",
-        fgColor="FFF2CC"
-    )
+    # Severity row fills
+    ERROR_FILL   = PatternFill(fill_type="solid", fgColor="F4CCCC")  # red
+    WARNING_FILL = PatternFill(fill_type="solid", fgColor="FCE5CD")  # orange
+    INFO_FILL    = PatternFill(fill_type="solid", fgColor="FFF2CC")  # yellow
 
-    ERROR_FILL = PatternFill(
-        fill_type="solid",
-        fgColor="F4CCCC"
-    )
+    # Header row style
+    HEADER_FILL  = PatternFill(fill_type="solid", fgColor="D9E1F2")  # blue-grey
+    HEADER_FONT  = Font(bold=True)
 
     @staticmethod
     def export(
@@ -35,154 +35,183 @@ class ExcelExporter:
         output_file = Path(output_path)
 
         # -----------------------
-        # Metadata Sheet
+        # Metadata sheet
         # -----------------------
 
         metadata_rows = [
             ["Account Holder Name", metadata.account_holder_name],
-            ["Account Number", metadata.account_number],
-            ["Statement Period", metadata.statement_period],
-            ["IFSC", metadata.ifsc],
-            ["Branch", metadata.branch],
-            ["Opening Balance", metadata.opening_balance],
-            ["Closing Balance", metadata.closing_balance],
+            ["Account Number",      metadata.account_number],
+            ["Statement Period",    metadata.statement_period],
+            ["IFSC",                metadata.ifsc],
+            ["Branch",              metadata.branch],
+            ["Opening Balance",     metadata.opening_balance],
+            ["Closing Balance",     metadata.closing_balance],
         ]
 
         metadata_df = pd.DataFrame(
             metadata_rows,
-            columns=["Field", "Value"]
+            columns=["Field", "Value"],
         )
 
         # -----------------------
-        # Transactions Sheet
+        # Transactions sheet
         # -----------------------
 
-        all_headers = []
-
+        # Preserve column order as encountered across all transactions
+        all_headers: List[str] = []
         for txn in transactions:
-
             for header in txn.data.keys():
-
                 if header not in all_headers:
                     all_headers.append(header)
 
+        transaction_rows = [
+            {h: txn.data.get(h, "") for h in all_headers}
+            for txn in transactions
+        ]
 
-        transaction_rows = []
-
-        for txn in transactions:
-
-            row = {}
-
-            for header in all_headers:
-                row[header] = txn.data.get(header,"")
-
-            transaction_rows.append(row)
-
-        transaction_df = pd.DataFrame(transaction_rows, columns=all_headers)
-
+        transaction_df = pd.DataFrame(
+            transaction_rows,
+            columns=all_headers,
+        )
 
         # -----------------------
-        # Warnings Sheet
+        # Warnings sheet
         # -----------------------
 
-        warning_rows = []
-
-        for w in warnings:
-            warning_rows.append(
-                {
-                    "Page": w.page,
-                    "Transaction": w.transaction,
-                    "Issue": w.issue,
-                    "Severity": w.severity,
-                }
-            )
+        warning_rows = [
+            {
+                "Page":        w.page,
+                "Transaction": w.transaction,
+                "Issue":       w.issue,
+                "Severity":    w.severity,
+            }
+            for w in warnings
+        ]
 
         warnings_df = pd.DataFrame(warning_rows)
 
-        with pd.ExcelWriter(
-            output_file,
-            engine="openpyxl"
-        ) as writer:
+        # -----------------------
+        # Write sheets
+        # -----------------------
+
+        with pd.ExcelWriter(output_file, engine="openpyxl") as writer:
 
             metadata_df.to_excel(
-                writer,
-                sheet_name="Metadata",
-                index=False
+                writer, sheet_name="Metadata", index=False
             )
-
             transaction_df.to_excel(
-                writer,
-                sheet_name="Transactions",
-                index=False
+                writer, sheet_name="Transactions", index=False
+            )
+            warnings_df.to_excel(
+                writer, sheet_name="Warnings", index=False
             )
 
-            warnings_df.to_excel(
-                writer,
-                sheet_name="Warnings",
-                index=False
-            )
+        # -----------------------
+        # Post-process formatting
+        # -----------------------
 
         wb = load_workbook(output_file)
+        ExcelExporter._format_metadata(wb["Metadata"])
+        ExcelExporter._format_transactions(wb["Transactions"])
+        ExcelExporter._format_warnings(wb["Warnings"])
+        wb.save(output_file)
 
-        # -----------------------
-        # Transactions formatting
-        # -----------------------
+    # --------------------------------------------------
+    # Sheet formatters
+    # --------------------------------------------------
 
-        tx_sheet = wb["Transactions"]
+    @staticmethod
+    def _apply_header_style(sheet) -> None:
+        """Bold + coloured header row on any sheet."""
+        for cell in sheet[1]:
+            cell.font = ExcelExporter.HEADER_FONT
+            cell.fill = ExcelExporter.HEADER_FILL
 
-        tx_sheet.freeze_panes = "A2"
+    @staticmethod
+    def _autofit_columns(sheet, min_width=10, max_width=60) -> None:
+        """Set each column width to fit its longest value."""
+        for col in sheet.columns:
+            width = max(
+                len(str(cell.value or "")) for cell in col
+            )
+            sheet.column_dimensions[
+                get_column_letter(col[0].column)
+            ].width = min(max(width + 3, min_width), max_width)
 
-        for column in tx_sheet.columns:
+    @staticmethod
+    def _format_metadata(sheet) -> None:
+        ExcelExporter._apply_header_style(sheet)
+        ExcelExporter._autofit_columns(sheet)
 
-            max_len = 0
+    @staticmethod
+    def _format_transactions(sheet) -> None:
+        ExcelExporter._apply_header_style(sheet)
+        sheet.freeze_panes = "A2"
 
-            for cell in column:
-                value = str(cell.value or "")
+        # Wrap text in narration-like columns; right-align numeric ones
+        NUMERIC_KEYWORDS = {
+            "BALANCE", "DEBIT", "CREDIT",
+            "WITHDRAWAL", "DEPOSIT", "AMOUNT",
+        }
+        NARRATION_KEYWORDS = {
+            "NARRATION", "PARTICULARS", "DESCRIPTION", "DETAILS",
+        }
 
-                if len(value) > max_len:
-                    max_len = len(value)
+        header_cells = list(sheet[1])
+        for cell in header_cells:
+            col_name = str(cell.value or "").upper()
+            col_letter = get_column_letter(cell.column)
 
-            tx_sheet.column_dimensions[
-                column[0].column_letter
-            ].width = min(max_len + 3, 60)
+            if any(k in col_name for k in NARRATION_KEYWORDS):
+                # Wrap + wider column for narration
+                for row_cell in sheet[col_letter]:
+                    row_cell.alignment = Alignment(wrap_text=True)
+                sheet.column_dimensions[col_letter].width = 45
 
-        # -----------------------
-        # Warnings formatting
-        # -----------------------
+            elif any(k in col_name for k in NUMERIC_KEYWORDS):
+                # Right-align amounts
+                for row_cell in sheet[col_letter]:
+                    row_cell.alignment = Alignment(horizontal="right")
+                sheet.column_dimensions[col_letter].width = 16
 
-        warn_sheet = wb["Warnings"]
-
-        severity_col = None
-
-        for cell in warn_sheet[1]:
-            if cell.value == "Severity":
-                severity_col = cell.column
-
-        if severity_col:
-
-            for row in range(
-                2,
-                warn_sheet.max_row + 1
-            ):
-
-                severity = warn_sheet.cell(
-                    row=row,
-                    column=severity_col
-                ).value
-
-                fill = (
-                    ExcelExporter.ERROR_FILL
-                    if str(severity).upper() == "ERROR"
-                    else ExcelExporter.INFO_FILL
+            else:
+                # Default autofit for date, mode, ref columns
+                max_len = max(
+                    len(str(c.value or ""))
+                    for c in sheet[col_letter]
+                )
+                sheet.column_dimensions[col_letter].width = min(
+                    max(max_len + 3, 10), 40
                 )
 
-                for col in range(
-                    1,
-                    warn_sheet.max_column + 1
-                ):
-                    warn_sheet.cell(
-                        row=row,
-                        column=col
-                    ).fill = fill
+        # Row height — taller rows for wrapped narration
+        for row in sheet.iter_rows(min_row=2):
+            sheet.row_dimensions[row[0].row].height = 30
 
-        wb.save(output_file)
+    @staticmethod
+    def _format_warnings(sheet) -> None:
+        ExcelExporter._apply_header_style(sheet)
+        ExcelExporter._autofit_columns(sheet)
+
+        # Find severity column index
+        severity_col = next(
+            (cell.column for cell in sheet[1] if cell.value == "Severity"),
+            None,
+        )
+
+        if not severity_col:
+            return
+
+        FILL_MAP = {
+            "ERROR":   ExcelExporter.ERROR_FILL,
+            "WARNING": ExcelExporter.WARNING_FILL,
+            "INFO":    ExcelExporter.INFO_FILL,
+        }
+
+        for row in range(2, sheet.max_row + 1):
+            severity = str(
+                sheet.cell(row=row, column=severity_col).value or ""
+            ).upper()
+            fill = FILL_MAP.get(severity, ExcelExporter.INFO_FILL)
+            for col in range(1, sheet.max_column + 1):
+                sheet.cell(row=row, column=col).fill = fill
