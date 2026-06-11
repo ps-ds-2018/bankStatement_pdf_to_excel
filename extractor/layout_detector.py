@@ -16,6 +16,7 @@ HEADER_KEYWORDS = {
     "TRANSACTION DATE",
     "VALUE DT",
     "VALUE DATE",
+    "VALUEDT",           # HDFC compact: "ValueDt"
     "NARRATION",
     "DESCRIPTION",
     "PARTICULARS",
@@ -32,23 +33,34 @@ HEADER_KEYWORDS = {
     "REF.NO.",
     "WITHDRAWAL",
     "WITHDRAWALS",
+    "WITHDRAWAL AMT",
+    "WITHDRAWAL AMT.",
+    "WITHDRAWALAMT",     # HDFC compact: "WithdrawalAmt."
+    "WITHDRAWALAMT.",
     "DEBIT",
     "DEBITS",
     "DEPOSIT",
     "DEPOSITS",
+    "DEPOSIT AMT",
+    "DEPOSIT AMT.",
+    "DEPOSITAMT",        # HDFC compact: "DepositAmt."
+    "DEPOSITAMT.",
     "CREDIT",
     "CREDITS",
     "BALANCE",
     "CLOSING BALANCE",
+    "CLOSINGBALANCE",    # HDFC compact: "ClosingBalance"
     "AMOUNT",
 }
 
 NUMERIC_COLUMN_KEYWORDS = {
-    "WITHDRAWAL", "WITHDRAWALS",
+    "WITHDRAWAL", "WITHDRAWALS", "WITHDRAWAL AMT", "WITHDRAWAL AMT.",
+    "WITHDRAWALAMT", "WITHDRAWALAMT.",
     "DEBIT", "DEBITS",
-    "DEPOSIT", "DEPOSITS",
+    "DEPOSIT", "DEPOSITS", "DEPOSIT AMT", "DEPOSIT AMT.",
+    "DEPOSITAMT", "DEPOSITAMT.",
     "CREDIT", "CREDITS",
-    "BALANCE", "CLOSING BALANCE",
+    "BALANCE", "CLOSING BALANCE", "CLOSINGBALANCE",
     "AMOUNT",
 }
 
@@ -62,6 +74,10 @@ NARRATION_COLUMN_KEYWORDS = {
 ALWAYS_SEPARATE_KEYWORDS = [
     "DEPOSITS",
     "WITHDRAWALS",
+    "DEPOSIT AMT",
+    "WITHDRAWAL AMT",
+    "DEPOSITAMT",
+    "WITHDRAWALAMT",
     "DEPOSIT",
     "WITHDRAWAL",
     "DEBIT",
@@ -69,7 +85,11 @@ ALWAYS_SEPARATE_KEYWORDS = [
     "CREDIT",
     "CREDITS",
     "BALANCE",
+    "CLOSINGBALANCE",
     "AMOUNT",
+    "VALUE DT",
+    "VALUE DATE",
+    "VALUEDT",
     "DATE",
     "MODE",
     "PARTICULARS",
@@ -127,7 +147,7 @@ def normalize_text(value: str) -> str:
 # GROUP WORDS INTO VISUAL ROWS
 # -----------------------------------------
 
-def group_words_by_row(words, tolerance=5):
+def group_words_by_row(words, tolerance=6):
     rows = []
 
     for word in sorted(words, key=lambda w: (w.top + w.bottom) / 2):
@@ -328,11 +348,23 @@ def build_boundaries(
             else (header_cells[idx - 1]["x1"] + cell["x0"]) / 2
         )
 
-        right = (
-            page_width
-            if idx == len(header_cells) - 1
-            else (cell["x1"] + header_cells[idx + 1]["x0"]) / 2
-        )
+        is_last = idx == len(header_cells) - 1
+        if is_last:
+            right = page_width
+        else:
+            next_cell = header_cells[idx + 1]
+            midpoint = (cell["x1"] + next_cell["x0"]) / 2
+            next_normalized = normalize_text(next_cell["text"])
+
+            # If the next column is a narration/description column, using the
+            # midpoint as our right edge will swallow narration words whose
+            # x-center falls between our header's x1 and the midpoint.
+            # Clamp to the next column's x0 instead so data words that start
+            # inside the narration column are never mis-assigned to us.
+            if next_normalized in NARRATION_COLUMN_KEYWORDS:
+                right = next_cell["x0"]
+            else:
+                right = midpoint
 
         normalized = normalize_text(cell["text"])
 

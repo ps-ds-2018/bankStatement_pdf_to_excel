@@ -4,12 +4,13 @@ PAGE 1  (width=638.0  height=842.0)
 ============================================================
 
 --- DETECTED HEADERS ---
-  'Date'                          x0=   0.0  x1= 100.0  numeric=False  narration=False
+  'Date'                          x0=   0.0  x1= 144.2  numeric=False  narration=False
   'Narration'                     x0= 100.0  x1= 231.0  numeric=False  narration=True
   'Chq./Ref.No.'                  x0= 231.0  x1= 344.8  numeric=False  narration=False
-  'ValueDt WithdrawalAmt.'        x0= 344.8  x1= 478.4  numeric=False  narration=False
-  'DepositAmt.'                   x0= 478.4  x1= 550.1  numeric=False  narration=False
-  'ClosingBalance'                x0= 550.1  x1= 638.0  numeric=False  narration=False
+  'ValueDt'                       x0= 344.8  x1= 398.6  numeric=False  narration=False
+  'WithdrawalAmt.'                x0= 398.6  x1= 478.4  numeric=True  narration=False
+  'DepositAmt.'                   x0= 478.4  x1= 550.1  numeric=True  narration=False
+  'ClosingBalance'                x0= 550.1  x1= 638.0  numeric=True  narration=False
 
   header_y (table starts below): 233.6
 
@@ -136,58 +137,133 @@ PAGE 1  (width=638.0  height=842.0)
 
 --- PARSED ROWS (column-assigned) ---
   date_column = 'Date'
-  row 00  top= 251.3  starts_txn=True   {'Date': '01/04/24 UPI-RAHUL', 'Narration': '-9582389499@PAYTM-KKBK000019', 'Chq./Ref.No.': '0000409213523904', 'ValueDt WithdrawalAmt.': '01/04/24 16,000.00', 'ClosingBalance': '86,760.66'}
-  row 01  top= 268.5  starts_txn=False  {'Narration': '7-409213523904-NA'}
-  row 02  top= 285.7  starts_txn=True   {'Date': '01/04/24', 'Narration': 'UPI-LOKESH-PAYTM-81167836@PAYTM-YESB0PTM', 'Chq./Ref.No.': '0000445886079872', 'ValueDt WithdrawalAmt.': '01/04/24 220.00', 'ClosingBalance': '86,540.66'}
-  row 03  top= 302.9  starts_txn=False  {'Narration': 'UPI-445886079872-OID202404011824510'}
-  row 04  top= 320.1  starts_txn=True   {'Date': '03/04/24', 'Narration': 'IBBILLPAYDR-HDFCSI-485498XXXXXX5632', 'Chq./Ref.No.': 'IB03064708174921', 'ValueDt WithdrawalAmt.': '03/04/24 7,116.00', 'ClosingBalance': '79,424.66'}
-  row 05  top= 337.3  starts_txn=True   {'Date': '03/04/24', 'Narration': 'UPI-SURAJKUMAR', 'Chq./Ref.No.': '0000409415229823', 'ValueDt WithdrawalAmt.': '03/04/24 1,500.00', 'ClosingBalance': '77,924.66'}
-  row 06  top= 354.5  starts_txn=False  {'Narration': 'SHARMA-PAYTM-73956651@PA'}
+  row 00  top= 251.3  starts_txn=True   {'Date': '01/04/24 UPI-RAHUL', 'Narration': '-9582389499@PAYTM-KKBK000019', 'Chq./Ref.No.': '0000409213523904', 'ValueDt': '01/04/24', 'WithdrawalAmt.': '16,000.00', 'ClosingBalance': '86,760.66'}
+  row 01  top= 268.5  starts_txn=False  {'Date': '7-409213523904-NA'}
+  row 02  top= 285.7  starts_txn=True   {'Date': '01/04/24', 'Narration': 'UPI-LOKESH-PAYTM-81167836@PAYTM-YESB0PTM', 'Chq./Ref.No.': '0000445886079872', 'ValueDt': '01/04/24', 'WithdrawalAmt.': '220.00', 'ClosingBalance': '86,540.66'}
+  row 03  top= 302.9  starts_txn=False  {'Date': 'UPI-445886079872-OID202404011824510'}
+  row 04  top= 320.1  starts_txn=True   {'Date': '03/04/24', 'Narration': 'IBBILLPAYDR-HDFCSI-485498XXXXXX5632', 'Chq./Ref.No.': 'IB03064708174921', 'ValueDt': '03/04/24', 'WithdrawalAmt.': '7,116.00', 'ClosingBalance': '79,424.66'}
+  row 05  top= 337.3  starts_txn=True   {'Date': '03/04/24 UPI-SURAJKUMAR', 'Chq./Ref.No.': '0000409415229823', 'ValueDt': '03/04/24', 'WithdrawalAmt.': '1,500.00', 'ClosingBalance': '77,924.66'}
+  row 06  top= 354.5  starts_txn=False  {'Date': 'SHARMA-PAYTM-73956651@PA'}
   row 07  top= 371.7  starts_txn=False  {'Narration': 'YTM-YESB0PTMUPI-409415229823-OID20240403'}
   row 08  top= 388.9  starts_txn=False  {'Date': '1114030'}
-  row 09  top= 406.1  starts_txn=True   {'Date': '04/04/24 UPI-SUMAN', 'Narration': 'NARULA-9350025009@PAYTM-SBIN0', 'Chq./Ref.No.': '0000446104326663', 'ValueDt WithdrawalAmt.': '04/04/24 3,800.00', 'ClosingBalance': '74,124.66'}
-  row 10  top= 423.3  starts_txn=False  {'Narration': '011550-446104326663-NA'}
-  row 11  top= 440.5  starts_txn=True   {'Date': '04/04/24', 'Narration': 'POS416021XXXXXX8325HARBANSMOTORSP', 'Chq./Ref.No.': '0000409539026617', 'ValueDt WithdrawalAmt.': '04/04/24 1,500.00', 'ClosingBalance': '72,624.66'}
-  row 12  top= 457.7  starts_txn=True   {'Date': '04/04/24', 'Narration': 'UPI-PARASDRESSMATERIAL-Q195496778@YBL-', 'Chq./Ref.No.': '0000446121489510', 'ValueDt WithdrawalAmt.': '04/04/24 1,720.00', 'ClosingBalance': '70,904.66'}
-  row 13  top= 474.9  starts_txn=False  {'Narration': 'YESB0YBLUPI-446121489510-NA'}
-  row 14  top= 492.1  starts_txn=True   {'Date': '05/04/24 UPI-SAKSHAM', 'Chq./Ref.No.': '0000409654401111', 'ValueDt WithdrawalAmt.': '05/04/24', 'DepositAmt.': '9,000.00', 'ClosingBalance': '79,904.66'}
-  row 15  top= 509.3  starts_txn=False  {'Narration': 'SHARMA-SSAKSHAMSSHARMA-1@OKH'}
+  row 09  top= 406.1  starts_txn=True   {'Date': '04/04/24 UPI-SUMAN', 'Narration': 'NARULA-9350025009@PAYTM-SBIN0', 'Chq./Ref.No.': '0000446104326663', 'ValueDt': '04/04/24', 'WithdrawalAmt.': '3,800.00', 'ClosingBalance': '74,124.66'}
+  row 10  top= 423.3  starts_txn=False  {'Date': '011550-446104326663-NA'}
+  row 11  top= 440.5  starts_txn=True   {'Date': '04/04/24', 'Narration': 'POS416021XXXXXX8325HARBANSMOTORSP', 'Chq./Ref.No.': '0000409539026617', 'ValueDt': '04/04/24', 'WithdrawalAmt.': '1,500.00', 'ClosingBalance': '72,624.66'}
+  row 12  top= 457.7  starts_txn=True   {'Date': '04/04/24', 'Narration': 'UPI-PARASDRESSMATERIAL-Q195496778@YBL-', 'Chq./Ref.No.': '0000446121489510', 'ValueDt': '04/04/24', 'WithdrawalAmt.': '1,720.00', 'ClosingBalance': '70,904.66'}
+  row 13  top= 474.9  starts_txn=False  {'Date': 'YESB0YBLUPI-446121489510-NA'}
+  row 14  top= 492.1  starts_txn=True   {'Date': '05/04/24 UPI-SAKSHAM', 'Chq./Ref.No.': '0000409654401111', 'ValueDt': '05/04/24', 'DepositAmt.': '9,000.00', 'ClosingBalance': '79,904.66'}
+  row 15  top= 509.3  starts_txn=False  {'Date': 'SHARMA-SSAKSHAMSSHARMA-1@OKH'}
   row 16  top= 526.5  starts_txn=False  {'Narration': 'DFCBANK-HDFC0004074-409654401111-UPI'}
-  row 17  top= 543.7  starts_txn=True   {'Date': '05/04/24', 'Narration': 'ATW-416021XXXXXX8325-S1ANDH74-DELHI', 'Chq./Ref.No.': '0000000000001632', 'ValueDt WithdrawalAmt.': '05/04/24 20,000.00', 'ClosingBalance': '59,904.66'}
-  row 18  top= 560.9  starts_txn=True   {'Date': '05/04/24', 'Narration': 'ATW-416021XXXXXX8325-S1ANDH74-DELHI', 'Chq./Ref.No.': '0000000000001633', 'ValueDt WithdrawalAmt.': '05/04/24 20,000.00', 'ClosingBalance': '39,904.66'}
-  row 19  top= 578.1  starts_txn=True   {'Date': '06/04/24', 'Narration': 'IMPS-409711186919-NARINDERBATTA-UTIB-XXX', 'Chq./Ref.No.': '0000409711186919', 'ValueDt WithdrawalAmt.': '06/04/24', 'DepositAmt.': '10.00', 'ClosingBalance': '39,914.66'}
-  row 20  top= 595.3  starts_txn=False  {'Narration': 'XXXXXXXX9551-OTHERS'}
-  row 21  top= 612.5  starts_txn=True   {'Date': '06/04/24', 'Narration': 'KQUHQ7UPBJ72BOGRDY/PAYUNYKAAERETAILPVTL', 'Chq./Ref.No.': '0000240979874667', 'ValueDt WithdrawalAmt.': '06/04/24 4,856.00', 'ClosingBalance': '35,058.66'}
-  row 22  top= 629.7  starts_txn=True   {'Date': '07/04/24', 'Narration': 'NVRBBEZ9O88CGN/RAZPHYPERPUREZOMATO', 'Chq./Ref.No.': '0000240980196539', 'ValueDt WithdrawalAmt.': '07/04/24 1,389.41', 'ClosingBalance': '33,669.25'}
-  row 23  top= 646.9  starts_txn=True   {'Date': '07/04/24 00602090001756', 'Narration': '2110735-9630286-DFG-PRU', 'Chq./Ref.No.': '000000000000000', 'ValueDt WithdrawalAmt.': '07/04/24 5,000.00', 'ClosingBalance': '28,669.25'}
+  row 17  top= 543.7  starts_txn=True   {'Date': '05/04/24', 'Narration': 'ATW-416021XXXXXX8325-S1ANDH74-DELHI', 'Chq./Ref.No.': '0000000000001632', 'ValueDt': '05/04/24', 'WithdrawalAmt.': '20,000.00', 'ClosingBalance': '59,904.66'}
+  row 18  top= 560.9  starts_txn=True   {'Date': '05/04/24', 'Narration': 'ATW-416021XXXXXX8325-S1ANDH74-DELHI', 'Chq./Ref.No.': '0000000000001633', 'ValueDt': '05/04/24', 'WithdrawalAmt.': '20,000.00', 'ClosingBalance': '39,904.66'}
+  row 19  top= 578.1  starts_txn=True   {'Date': '06/04/24', 'Narration': 'IMPS-409711186919-NARINDERBATTA-UTIB-XXX', 'Chq./Ref.No.': '0000409711186919', 'ValueDt': '06/04/24', 'DepositAmt.': '10.00', 'ClosingBalance': '39,914.66'}
+  row 20  top= 595.3  starts_txn=False  {'Date': 'XXXXXXXX9551-OTHERS'}
+  row 21  top= 612.5  starts_txn=True   {'Date': '06/04/24', 'Narration': 'KQUHQ7UPBJ72BOGRDY/PAYUNYKAAERETAILPVTL', 'Chq./Ref.No.': '0000240979874667', 'ValueDt': '06/04/24', 'WithdrawalAmt.': '4,856.00', 'ClosingBalance': '35,058.66'}
+  row 22  top= 629.7  starts_txn=True   {'Date': '07/04/24', 'Narration': 'NVRBBEZ9O88CGN/RAZPHYPERPUREZOMATO', 'Chq./Ref.No.': '0000240980196539', 'ValueDt': '07/04/24', 'WithdrawalAmt.': '1,389.41', 'ClosingBalance': '33,669.25'}
+  row 23  top= 646.9  starts_txn=True   {'Date': '07/04/24 00602090001756', 'Narration': '2110735-9630286-DFG-PRU', 'Chq./Ref.No.': '000000000000000', 'ValueDt': '07/04/24', 'WithdrawalAmt.': '5,000.00', 'ClosingBalance': '28,669.25'}
   row 24  top= 664.1  starts_txn=False  {'Date': 'ICICI-SIP'}
-  row 25  top= 681.3  starts_txn=True   {'Date': '07/04/24', 'Narration': '4040733209828849685/PAYTMURBANCLAPTECHNO', 'Chq./Ref.No.': '0000240980338326', 'ValueDt WithdrawalAmt.': '07/04/24 1,741.00', 'ClosingBalance': '26,928.25'}
-  row 26  top= 698.5  starts_txn=True   {'Date': '07/04/24', 'Narration': 'UPI-DEEPNAINKAUR-8826612612@PAYTM-CNRB', 'Chq./Ref.No.': '0000446413281455', 'ValueDt WithdrawalAmt.': '07/04/24 3,050.00', 'ClosingBalance': '23,878.25'}
-  row 27  top= 715.7  starts_txn=False  {'Narration': '0000033-446413281455-NA'}
-  row 28  top= 732.9  starts_txn=True   {'Date': '08/04/24', 'Narration': 'CHQDEP-MICRCLG-NOIDAWBO:PENTAMED', 'Chq./Ref.No.': '0000000000302727', 'ValueDt WithdrawalAmt.': '09/04/24', 'DepositAmt.': '44,400.00', 'ClosingBalance': '68,278.25'}
-  row 29  top= 750.1  starts_txn=False  {'Narration': 'HOSPITAL:PUNJABNATIONALBANK'}
+  row 25  top= 681.3  starts_txn=True   {'Date': '07/04/24', 'Narration': '4040733209828849685/PAYTMURBANCLAPTECHNO', 'Chq./Ref.No.': '0000240980338326', 'ValueDt': '07/04/24', 'WithdrawalAmt.': '1,741.00', 'ClosingBalance': '26,928.25'}
+  row 26  top= 698.5  starts_txn=True   {'Date': '07/04/24', 'Narration': 'UPI-DEEPNAINKAUR-8826612612@PAYTM-CNRB', 'Chq./Ref.No.': '0000446413281455', 'ValueDt': '07/04/24', 'WithdrawalAmt.': '3,050.00', 'ClosingBalance': '23,878.25'}
+  row 27  top= 715.7  starts_txn=False  {'Date': '0000033-446413281455-NA'}
+  row 28  top= 732.9  starts_txn=True   {'Date': '08/04/24', 'Narration': 'CHQDEP-MICRCLG-NOIDAWBO:PENTAMED', 'Chq./Ref.No.': '0000000000302727', 'ValueDt': '09/04/24', 'DepositAmt.': '44,400.00', 'ClosingBalance': '68,278.25'}
+  row 29  top= 750.1  starts_txn=False  {'Date': 'HOSPITAL:PUNJABNATIONALBANK'}
   row 30  top= 784.8  starts_txn=False  {'Date': 'HDFCBANKLIMITED'}
   row 31  top= 794.9  starts_txn=False  {'Narration': '*Closingbalanceincludesfundsearmarkedforholdandunclearedfunds'}
   row 32  top= 804.2  starts_txn=False  {'Chq./Ref.No.': 'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'}
   row 33  top= 811.5  starts_txn=False  {'Date': 'thisstatement.'}
-  row 34  top= 818.8  starts_txn=False  {'Narration': 'StateaccountbranchGSTN:07AAACH2702H1Z2'}
+  row 34  top= 818.8  starts_txn=False  {'Date': 'StateaccountbranchGSTN:07AAACH2702H1Z2'}
   row 35  top= 826.0  starts_txn=False  {'Chq./Ref.No.': 'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'}
   row 36  top= 833.3  starts_txn=False  {'Narration': 'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'}
 
 ============================================================
 PAGE 2  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 3  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 4  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 5  (width=638.0  height=842.0)
@@ -282,322 +358,1922 @@ PAGE 5  (width=638.0  height=842.0)
 ============================================================
 PAGE 6  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 7  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 8  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 9  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 10  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 11  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 12  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 13  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 14  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 15  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 16  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 17  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 18  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 19  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 20  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 21  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 22  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 23  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 24  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 25  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 26  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 27  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 28  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 29  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 30  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 31  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 32  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 33  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 34  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 35  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 36  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 37  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 38  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 39  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 40  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 41  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 42  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 43  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 44  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 45  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 46  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 47  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 48  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 49  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 50  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 51  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 52  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 53  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 54  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 55  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 56  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 57  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 58  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 59  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 60  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 61  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 62  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 63  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 64  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 65  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 66  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 67  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 68  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 69  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]
 
 ============================================================
 PAGE 70  (width=638.0  height=842.0)
@@ -654,4 +2330,29 @@ PAGE 70  (width=638.0  height=842.0)
 ============================================================
 PAGE 71  (width=638.0  height=842.0)
 ============================================================
-  [!] No layout detected for this page — skipping
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 794.9
+
+--- RAW WORDS below header_y ---
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 01  top= 811.5  words=1  'thisstatement.'@x28
+  row 02  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 03  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 04  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 804.2  [FILTERED]
+  row 01  top= 811.5  [FILTERED]
+  row 02  top= 818.8  [FILTERED]
+  row 03  top= 826.0  [FILTERED]
+  row 04  top= 833.3  [FILTERED]

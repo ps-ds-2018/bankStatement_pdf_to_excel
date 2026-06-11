@@ -18,6 +18,16 @@ DATE_PATTERN = re.compile(
     r"^\d{2}[-/]\d{2}[-/](?:\d{2}|\d{4})$"
 )
 
+# Matches a date anywhere inside a string (for wide columns that contain
+# serial number + date + narration merged, e.g. "1 02-04-2024 UPI/...").
+_DATE_SEARCH = re.compile(
+    r"\b(\d{2}[-/]\d{2}[-/](?:\d{2}|\d{4}))\b"
+)
+
+# Leading serial number: 1-3 digit integer followed by whitespace.
+# Some banks print a row counter before the date in the same column.
+_SERIAL_PREFIX = re.compile(r"^\d{1,3}\s+")
+
 #Matches the start of a UPI/NEFT/IMPS/RTGS narration line.
 #These lines always begin the narration block for the next transaction
 #and should never be treated as continuations of the current one
@@ -44,7 +54,7 @@ class ParsedRow:
 # ROW GROUPING
 # --------------------------------------------------
 
-def group_rows(words, tolerance=5):
+def group_rows(words, tolerance=6):
     rows = []
 
     for word in sorted(words, key=lambda w: (w.top + w.bottom) / 2):
@@ -126,13 +136,24 @@ def row_starts_transaction(
     date_column: str,
 ) -> bool:
     value = parsed_row.values.get(date_column, "").strip()
+
+    # Fast path: clean date in the date column.
     if DATE_PATTERN.match(value):
         return True
 
+    # Some banks (e.g. Bank of India) prefix the date with a serial number
+    # and may append narration in the same wide column, e.g.
+    # "1 02-04-2024 UPI/445944675964/CR/ARUN".
+    # Strip leading serial and search for a date token anywhere in the value.
+    if _DATE_SEARCH.search(_SERIAL_PREFIX.sub("", value)):
+        return True
+
+    # Fallback: check individual words in the row for a standalone date.
+    # This handles cases where column assignment mis-placed the date word.
     if parsed_row.row_words:
-        leftmost = min(parsed_row.row_words, key=lambda w: w.x0)
-        if DATE_PATTERN.match(leftmost.text.strip()):
-            return True
+        for word in parsed_row.row_words:
+            if DATE_PATTERN.match(word.text.strip()):
+                return True
 
     return False
 
@@ -164,8 +185,10 @@ def is_effectively_empty(row: ParsedRow) -> bool:
 # --------------------------------------------------
 
 def _looks_like_amount(value: str) -> bool:
-    """Matches Indian-format currency: 1,000.00 / 1,10,279.64"""
-    return bool(re.match(r"^[\d,]+(?:\.\d{1,2})?$", value.strip()))
+    """Matches Indian-format currency: 1,000.00 / 1,10,279.64
+    Also handles rupee-prefixed values like '₹ 7,910.65'."""
+    cleaned = value.strip().lstrip("₹").strip()
+    return bool(re.match(r"^[\d,]+(?:\.\d{1,2})?$", cleaned))
 
 
 def _is_numeric_column(header: str, layout: LayoutDetectionResult) -> bool:
@@ -174,9 +197,12 @@ def _is_numeric_column(header: str, layout: LayoutDetectionResult) -> bool:
         return True
     upper = header.upper()
     NUMERIC_KEYS = {
-        "WITHDRAWAL", "WITHDRAWALS", "DEBIT", "DEBITS",
-        "DEPOSIT", "DEPOSITS", "CREDIT", "CREDITS",
-        "BALANCE", "CLOSING BALANCE", "AMOUNT",
+        "WITHDRAWAL", "WITHDRAWALS", "WITHDRAWAL AMT", "WITHDRAWALAMT",
+        "DEBIT", "DEBITS",
+        "DEPOSIT", "DEPOSITS", "DEPOSIT AMT", "DEPOSITAMT",
+        "CREDIT", "CREDITS",
+        "BALANCE", "CLOSING BALANCE", "CLOSINGBALANCE",
+        "AMOUNT",
     }
     return any(k in upper for k in NUMERIC_KEYS)
 
@@ -337,22 +363,35 @@ def build_transaction_from_block(
     Lead-in narration was already merged into anchor_row.values by
     group_into_transaction_blocks(); only post-anchor remain here.
     """
-    
+
     txn = Transaction(
         data=block[0].values.copy(),
         source_page=page_number,
     )
 
-    for row in block[1:]:  
+    # Normalise the date column: strip any leading serial number and extract
+    # just the date token, so "1 02-04-2024 UPI/..." becomes "02-04-2024".
+    raw_date = txn.data.get(date_column, "").strip()
+    if raw_date and not DATE_PATTERN.match(raw_date):
+        m = _DATE_SEARCH.search(_SERIAL_PREFIX.sub("", raw_date))
+        if m:
+            txn.data[date_column] = m.group(1)
+
+    # Strip rupee symbol from all numeric column values in the anchor row.
+    for key in list(txn.data.keys()):
+        if _is_numeric_column(key, layout):
+            txn.data[key] = txn.data[key].strip().lstrip("₹").strip()
+
+    for row in block[1:]:
         for key, value in row.values.items():
-            value = value.strip()
+            value = value.strip().lstrip("₹").strip()
             if not value:
                 continue
 
             if _is_numeric_column(key, layout):
                 if _looks_like_amount(value):
                     txn.data[key] = value
-                
+
             else:
                 existing = txn.data.get(key, "").strip()
                 txn.data[key] = (existing + " " + value).strip() if existing else value

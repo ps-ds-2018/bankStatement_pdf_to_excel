@@ -1,4 +1,5 @@
 import sys
+from dataclasses import replace as dc_replace
 from datetime import datetime
 from pathlib import Path
 
@@ -23,6 +24,12 @@ def extract_statement(
     all_transactions = []
     all_warnings = []
 
+    # Last layout that had a full set of column headers (confidence > 0.3).
+    # Continuation pages in multi-page statements often omit the header row
+    # entirely, so we propagate the most recent good layout to those pages
+    # rather than skipping them.
+    last_good_layout = None
+
     for page in pages:
 
         layout = LayoutDetector.detect(
@@ -30,16 +37,37 @@ def extract_statement(
             page_width=page.width,
         )
 
-        if not layout:
+        # A layout with no headers (partial detection) is treated the same
+        # as no layout — fall back to propagation.
+        layout_has_headers = layout and layout.headers
+
+        if not layout_has_headers:
+            if last_good_layout is None:
+                # Nothing to propagate yet — genuinely cannot parse this page.
+                all_warnings.append(
+                    WarningItem(
+                        page=page.page_number,
+                        transaction="",
+                        issue="Header not detected and no prior layout to propagate",
+                        severity="ERROR",
+                    )
+                )
+                continue
+
+            # Reuse the previous page's layout, but update the page number
+            # in the result so source attribution stays correct.
+            layout = dc_replace(last_good_layout, page_number=page.page_number)
             all_warnings.append(
                 WarningItem(
                     page=page.page_number,
                     transaction="",
-                    issue="Header not detected",
-                    severity="ERROR",
+                    issue="Header not detected — using propagated layout from previous page",
+                    severity="INFO",
                 )
             )
-            continue
+        else:
+            # Only promote to last_good_layout when headers are fully resolved.
+            last_good_layout = layout
 
         if layout.warning:
             all_warnings.append(
