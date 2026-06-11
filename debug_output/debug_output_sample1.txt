@@ -1,0 +1,657 @@
+
+============================================================
+PAGE 1  (width=638.0  height=842.0)
+============================================================
+
+--- DETECTED HEADERS ---
+  'Date'                          x0=   0.0  x1= 100.0  numeric=False  narration=False
+  'Narration'                     x0= 100.0  x1= 231.0  numeric=False  narration=True
+  'Chq./Ref.No.'                  x0= 231.0  x1= 344.8  numeric=False  narration=False
+  'ValueDt WithdrawalAmt.'        x0= 344.8  x1= 478.4  numeric=False  narration=False
+  'DepositAmt.'                   x0= 478.4  x1= 550.1  numeric=False  narration=False
+  'ClosingBalance'                x0= 550.1  x1= 638.0  numeric=False  narration=False
+
+  header_y (table starts below): 233.6
+
+--- RAW WORDS below header_y ---
+  top= 251.3  bot= 259.3  x0=  33.7  x1=  62.1  text='01/04/24'
+  top= 251.3  bot= 259.3  x0=  68.0  x1= 111.1  text='UPI-RAHUL'
+  top= 251.3  bot= 259.3  x0= 117.1  x1= 244.5  text='-9582389499@PAYTM-KKBK000019'
+  top= 251.3  bot= 259.3  x0= 292.6  x1= 356.6  text='0000409213523904'
+  top= 251.3  bot= 259.3  x0= 362.5  x1= 390.9  text='01/04/24'
+  top= 251.3  bot= 259.3  x0= 438.2  x1= 470.2  text='16,000.00'
+  top= 251.3  bot= 259.3  x0= 594.7  x1= 626.7  text='86,760.66'
+  top= 268.5  bot= 276.5  x0=  68.0  x1= 136.9  text='7-409213523904-NA'
+  top= 285.7  bot= 293.7  x0=  33.7  x1=  62.1  text='01/04/24'
+  top= 285.7  bot= 293.7  x0=  68.0  x1= 259.4  text='UPI-LOKESH-PAYTM-81167836@PAYTM-YESB0PTM'
+  top= 285.7  bot= 293.7  x0= 292.6  x1= 356.6  text='0000445886079872'
+  top= 285.7  bot= 293.7  x0= 362.5  x1= 390.9  text='01/04/24'
+  top= 285.7  bot= 293.7  x0= 448.2  x1= 470.2  text='220.00'
+  top= 285.7  bot= 293.7  x0= 594.7  x1= 626.7  text='86,540.66'
+  top= 302.9  bot= 310.9  x0=  68.0  x1= 208.5  text='UPI-445886079872-OID202404011824510'
+  top= 320.1  bot= 328.1  x0=  33.7  x1=  62.1  text='03/04/24'
+  top= 320.1  bot= 328.1  x0=  68.0  x1= 233.4  text='IBBILLPAYDR-HDFCSI-485498XXXXXX5632'
+  top= 320.1  bot= 328.1  x0= 292.6  x1= 356.6  text='IB03064708174921'
+  top= 320.1  bot= 328.1  x0= 362.5  x1= 390.9  text='03/04/24'
+  top= 320.1  bot= 328.1  x0= 442.2  x1= 470.2  text='7,116.00'
+  top= 320.1  bot= 328.1  x0= 594.7  x1= 626.7  text='79,424.66'
+  top= 337.3  bot= 345.3  x0=  33.7  x1=  62.1  text='03/04/24'
+  top= 337.3  bot= 345.3  x0=  68.0  x1= 139.8  text='UPI-SURAJKUMAR'
+  top= 337.3  bot= 345.3  x0= 292.6  x1= 356.6  text='0000409415229823'
+  top= 337.3  bot= 345.3  x0= 362.5  x1= 390.9  text='03/04/24'
+  top= 337.3  bot= 345.3  x0= 442.2  x1= 470.2  text='1,500.00'
+  top= 337.3  bot= 345.3  x0= 594.7  x1= 626.7  text='77,924.66'
+  top= 354.5  bot= 362.5  x0=  68.0  x1= 185.2  text='SHARMA-PAYTM-73956651@PA'
+  top= 371.7  bot= 379.7  x0=  68.0  x1= 241.8  text='YTM-YESB0PTMUPI-409415229823-OID20240403'
+  top= 388.9  bot= 396.9  x0=  68.0  x1=  96.0  text='1114030'
+  top= 406.1  bot= 414.1  x0=  33.7  x1=  62.1  text='04/04/24'
+  top= 406.1  bot= 414.1  x0=  68.0  x1= 112.5  text='UPI-SUMAN'
+  top= 406.1  bot= 414.1  x0= 116.5  x1= 252.7  text='NARULA-9350025009@PAYTM-SBIN0'
+  top= 406.1  bot= 414.1  x0= 292.6  x1= 356.6  text='0000446104326663'
+  top= 406.1  bot= 414.1  x0= 362.5  x1= 390.9  text='04/04/24'
+  top= 406.1  bot= 414.1  x0= 442.2  x1= 470.2  text='3,800.00'
+  top= 406.1  bot= 414.1  x0= 594.7  x1= 626.7  text='74,124.66'
+  top= 423.3  bot= 431.3  x0=  68.0  x1= 156.9  text='011550-446104326663-NA'
+  top= 440.5  bot= 448.5  x0=  33.7  x1=  62.1  text='04/04/24'
+  top= 440.5  bot= 448.5  x0=  68.0  x1= 241.4  text='POS416021XXXXXX8325HARBANSMOTORSP'
+  top= 440.5  bot= 448.5  x0= 292.6  x1= 356.6  text='0000409539026617'
+  top= 440.5  bot= 448.5  x0= 362.5  x1= 390.9  text='04/04/24'
+  top= 440.5  bot= 448.5  x0= 442.2  x1= 470.2  text='1,500.00'
+  top= 440.5  bot= 448.5  x0= 594.7  x1= 626.7  text='72,624.66'
+  top= 457.7  bot= 465.7  x0=  33.7  x1=  62.1  text='04/04/24'
+  top= 457.7  bot= 465.7  x0=  68.0  x1= 250.1  text='UPI-PARASDRESSMATERIAL-Q195496778@YBL-'
+  top= 457.7  bot= 465.7  x0= 292.6  x1= 356.6  text='0000446121489510'
+  top= 457.7  bot= 465.7  x0= 362.5  x1= 390.9  text='04/04/24'
+  top= 457.7  bot= 465.7  x0= 442.2  x1= 470.2  text='1,720.00'
+  top= 457.7  bot= 465.7  x0= 594.7  x1= 626.7  text='70,904.66'
+  top= 474.9  bot= 482.9  x0=  68.0  x1= 186.2  text='YESB0YBLUPI-446121489510-NA'
+  top= 492.1  bot= 500.1  x0=  33.7  x1=  62.1  text='05/04/24'
+  top= 492.1  bot= 500.1  x0=  68.0  x1= 122.7  text='UPI-SAKSHAM'
+  top= 492.1  bot= 500.1  x0= 292.6  x1= 356.6  text='0000409654401111'
+  top= 492.1  bot= 500.1  x0= 362.5  x1= 390.9  text='05/04/24'
+  top= 492.1  bot= 500.1  x0= 520.2  x1= 548.2  text='9,000.00'
+  top= 492.1  bot= 500.1  x0= 594.7  x1= 626.7  text='79,904.66'
+  top= 509.3  bot= 517.3  x0=  68.0  x1= 218.5  text='SHARMA-SSAKSHAMSSHARMA-1@OKH'
+  top= 526.5  bot= 534.5  x0=  68.0  x1= 224.5  text='DFCBANK-HDFC0004074-409654401111-UPI'
+  top= 543.7  bot= 551.7  x0=  33.7  x1=  62.1  text='05/04/24'
+  top= 543.7  bot= 551.7  x0=  68.0  x1= 232.4  text='ATW-416021XXXXXX8325-S1ANDH74-DELHI'
+  top= 543.7  bot= 551.7  x0= 292.6  x1= 356.6  text='0000000000001632'
+  top= 543.7  bot= 551.7  x0= 362.5  x1= 390.9  text='05/04/24'
+  top= 543.7  bot= 551.7  x0= 438.2  x1= 470.2  text='20,000.00'
+  top= 543.7  bot= 551.7  x0= 594.7  x1= 626.7  text='59,904.66'
+  top= 560.9  bot= 568.9  x0=  33.7  x1=  62.1  text='05/04/24'
+  top= 560.9  bot= 568.9  x0=  68.0  x1= 232.4  text='ATW-416021XXXXXX8325-S1ANDH74-DELHI'
+  top= 560.9  bot= 568.9  x0= 292.6  x1= 356.6  text='0000000000001633'
+  top= 560.9  bot= 568.9  x0= 362.5  x1= 390.9  text='05/04/24'
+  top= 560.9  bot= 568.9  x0= 438.2  x1= 470.2  text='20,000.00'
+  top= 560.9  bot= 568.9  x0= 594.7  x1= 626.7  text='39,904.66'
+  top= 578.1  bot= 586.1  x0=  33.7  x1=  62.1  text='06/04/24'
+  top= 578.1  bot= 586.1  x0=  68.0  x1= 249.3  text='IMPS-409711186919-NARINDERBATTA-UTIB-XXX'
+  top= 578.1  bot= 586.1  x0= 292.6  x1= 356.6  text='0000409711186919'
+  top= 578.1  bot= 586.1  x0= 362.5  x1= 390.9  text='06/04/24'
+  top= 578.1  bot= 586.1  x0= 530.2  x1= 548.2  text='10.00'
+  top= 578.1  bot= 586.1  x0= 594.7  x1= 626.7  text='39,914.66'
+  top= 595.3  bot= 603.3  x0=  68.0  x1= 164.0  text='XXXXXXXX9551-OTHERS'
+  top= 612.5  bot= 620.5  x0=  33.7  x1=  62.1  text='06/04/24'
+  top= 612.5  bot= 620.5  x0=  68.0  x1= 267.6  text='KQUHQ7UPBJ72BOGRDY/PAYUNYKAAERETAILPVTL'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 251.3  words=7  '01/04/24'@x34  |  'UPI-RAHUL'@x68  |  '-9582389499@PAYTM-KKBK000019'@x117  |  '0000409213523904'@x293  |  '01/04/24'@x362  |  '16,000.00'@x438  |  '86,760.66'@x595
+  row 01  top= 268.5  words=1  '7-409213523904-NA'@x68
+  row 02  top= 285.7  words=6  '01/04/24'@x34  |  'UPI-LOKESH-PAYTM-81167836@PAYTM-YESB0PTM'@x68  |  '0000445886079872'@x293  |  '01/04/24'@x362  |  '220.00'@x448  |  '86,540.66'@x595
+  row 03  top= 302.9  words=1  'UPI-445886079872-OID202404011824510'@x68
+  row 04  top= 320.1  words=6  '03/04/24'@x34  |  'IBBILLPAYDR-HDFCSI-485498XXXXXX5632'@x68  |  'IB03064708174921'@x293  |  '03/04/24'@x362  |  '7,116.00'@x442  |  '79,424.66'@x595
+  row 05  top= 337.3  words=6  '03/04/24'@x34  |  'UPI-SURAJKUMAR'@x68  |  '0000409415229823'@x293  |  '03/04/24'@x362  |  '1,500.00'@x442  |  '77,924.66'@x595
+  row 06  top= 354.5  words=1  'SHARMA-PAYTM-73956651@PA'@x68
+  row 07  top= 371.7  words=1  'YTM-YESB0PTMUPI-409415229823-OID20240403'@x68
+  row 08  top= 388.9  words=1  '1114030'@x68
+  row 09  top= 406.1  words=7  '04/04/24'@x34  |  'UPI-SUMAN'@x68  |  'NARULA-9350025009@PAYTM-SBIN0'@x116  |  '0000446104326663'@x293  |  '04/04/24'@x362  |  '3,800.00'@x442  |  '74,124.66'@x595
+  row 10  top= 423.3  words=1  '011550-446104326663-NA'@x68
+  row 11  top= 440.5  words=6  '04/04/24'@x34  |  'POS416021XXXXXX8325HARBANSMOTORSP'@x68  |  '0000409539026617'@x293  |  '04/04/24'@x362  |  '1,500.00'@x442  |  '72,624.66'@x595
+  row 12  top= 457.7  words=6  '04/04/24'@x34  |  'UPI-PARASDRESSMATERIAL-Q195496778@YBL-'@x68  |  '0000446121489510'@x293  |  '04/04/24'@x362  |  '1,720.00'@x442  |  '70,904.66'@x595
+  row 13  top= 474.9  words=1  'YESB0YBLUPI-446121489510-NA'@x68
+  row 14  top= 492.1  words=6  '05/04/24'@x34  |  'UPI-SAKSHAM'@x68  |  '0000409654401111'@x293  |  '05/04/24'@x362  |  '9,000.00'@x520  |  '79,904.66'@x595
+  row 15  top= 509.3  words=1  'SHARMA-SSAKSHAMSSHARMA-1@OKH'@x68
+  row 16  top= 526.5  words=1  'DFCBANK-HDFC0004074-409654401111-UPI'@x68
+  row 17  top= 543.7  words=6  '05/04/24'@x34  |  'ATW-416021XXXXXX8325-S1ANDH74-DELHI'@x68  |  '0000000000001632'@x293  |  '05/04/24'@x362  |  '20,000.00'@x438  |  '59,904.66'@x595
+  row 18  top= 560.9  words=6  '05/04/24'@x34  |  'ATW-416021XXXXXX8325-S1ANDH74-DELHI'@x68  |  '0000000000001633'@x293  |  '05/04/24'@x362  |  '20,000.00'@x438  |  '39,904.66'@x595
+  row 19  top= 578.1  words=6  '06/04/24'@x34  |  'IMPS-409711186919-NARINDERBATTA-UTIB-XXX'@x68  |  '0000409711186919'@x293  |  '06/04/24'@x362  |  '10.00'@x530  |  '39,914.66'@x595
+  row 20  top= 595.3  words=1  'XXXXXXXX9551-OTHERS'@x68
+  row 21  top= 612.5  words=6  '06/04/24'@x34  |  'KQUHQ7UPBJ72BOGRDY/PAYUNYKAAERETAILPVTL'@x68  |  '0000240979874667'@x293  |  '06/04/24'@x362  |  '4,856.00'@x442  |  '35,058.66'@x595
+  row 22  top= 629.7  words=6  '07/04/24'@x34  |  'NVRBBEZ9O88CGN/RAZPHYPERPUREZOMATO'@x68  |  '0000240980196539'@x293  |  '07/04/24'@x362  |  '1,389.41'@x442  |  '33,669.25'@x595
+  row 23  top= 646.9  words=7  '07/04/24'@x34  |  '00602090001756'@x68  |  '2110735-9630286-DFG-PRU'@x130  |  '000000000000000'@x295  |  '07/04/24'@x362  |  '5,000.00'@x442  |  '28,669.25'@x595
+  row 24  top= 664.1  words=1  'ICICI-SIP'@x68
+  row 25  top= 681.3  words=6  '07/04/24'@x34  |  '4040733209828849685/PAYTMURBANCLAPTECHNO'@x68  |  '0000240980338326'@x293  |  '07/04/24'@x362  |  '1,741.00'@x442  |  '26,928.25'@x595
+  row 26  top= 698.5  words=6  '07/04/24'@x34  |  'UPI-DEEPNAINKAUR-8826612612@PAYTM-CNRB'@x68  |  '0000446413281455'@x293  |  '07/04/24'@x362  |  '3,050.00'@x442  |  '23,878.25'@x595
+  row 27  top= 715.7  words=1  '0000033-446413281455-NA'@x68
+  row 28  top= 732.9  words=6  '08/04/24'@x34  |  'CHQDEP-MICRCLG-NOIDAWBO:PENTAMED'@x68  |  '0000000000302727'@x293  |  '09/04/24'@x362  |  '44,400.00'@x516  |  '68,278.25'@x595
+  row 29  top= 750.1  words=1  'HOSPITAL:PUNJABNATIONALBANK'@x70
+  row 30  top= 784.8  words=1  'HDFCBANKLIMITED'@x28
+  row 31  top= 794.9  words=1  '*Closingbalanceincludesfundsearmarkedforholdandunclearedfunds'@x28
+  row 32  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 33  top= 811.5  words=1  'thisstatement.'@x28
+  row 34  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 35  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 36  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = 'Date'
+  row 00  top= 251.3  starts_txn=True   {'Date': '01/04/24 UPI-RAHUL', 'Narration': '-9582389499@PAYTM-KKBK000019', 'Chq./Ref.No.': '0000409213523904', 'ValueDt WithdrawalAmt.': '01/04/24 16,000.00', 'ClosingBalance': '86,760.66'}
+  row 01  top= 268.5  starts_txn=False  {'Narration': '7-409213523904-NA'}
+  row 02  top= 285.7  starts_txn=True   {'Date': '01/04/24', 'Narration': 'UPI-LOKESH-PAYTM-81167836@PAYTM-YESB0PTM', 'Chq./Ref.No.': '0000445886079872', 'ValueDt WithdrawalAmt.': '01/04/24 220.00', 'ClosingBalance': '86,540.66'}
+  row 03  top= 302.9  starts_txn=False  {'Narration': 'UPI-445886079872-OID202404011824510'}
+  row 04  top= 320.1  starts_txn=True   {'Date': '03/04/24', 'Narration': 'IBBILLPAYDR-HDFCSI-485498XXXXXX5632', 'Chq./Ref.No.': 'IB03064708174921', 'ValueDt WithdrawalAmt.': '03/04/24 7,116.00', 'ClosingBalance': '79,424.66'}
+  row 05  top= 337.3  starts_txn=True   {'Date': '03/04/24', 'Narration': 'UPI-SURAJKUMAR', 'Chq./Ref.No.': '0000409415229823', 'ValueDt WithdrawalAmt.': '03/04/24 1,500.00', 'ClosingBalance': '77,924.66'}
+  row 06  top= 354.5  starts_txn=False  {'Narration': 'SHARMA-PAYTM-73956651@PA'}
+  row 07  top= 371.7  starts_txn=False  {'Narration': 'YTM-YESB0PTMUPI-409415229823-OID20240403'}
+  row 08  top= 388.9  starts_txn=False  {'Date': '1114030'}
+  row 09  top= 406.1  starts_txn=True   {'Date': '04/04/24 UPI-SUMAN', 'Narration': 'NARULA-9350025009@PAYTM-SBIN0', 'Chq./Ref.No.': '0000446104326663', 'ValueDt WithdrawalAmt.': '04/04/24 3,800.00', 'ClosingBalance': '74,124.66'}
+  row 10  top= 423.3  starts_txn=False  {'Narration': '011550-446104326663-NA'}
+  row 11  top= 440.5  starts_txn=True   {'Date': '04/04/24', 'Narration': 'POS416021XXXXXX8325HARBANSMOTORSP', 'Chq./Ref.No.': '0000409539026617', 'ValueDt WithdrawalAmt.': '04/04/24 1,500.00', 'ClosingBalance': '72,624.66'}
+  row 12  top= 457.7  starts_txn=True   {'Date': '04/04/24', 'Narration': 'UPI-PARASDRESSMATERIAL-Q195496778@YBL-', 'Chq./Ref.No.': '0000446121489510', 'ValueDt WithdrawalAmt.': '04/04/24 1,720.00', 'ClosingBalance': '70,904.66'}
+  row 13  top= 474.9  starts_txn=False  {'Narration': 'YESB0YBLUPI-446121489510-NA'}
+  row 14  top= 492.1  starts_txn=True   {'Date': '05/04/24 UPI-SAKSHAM', 'Chq./Ref.No.': '0000409654401111', 'ValueDt WithdrawalAmt.': '05/04/24', 'DepositAmt.': '9,000.00', 'ClosingBalance': '79,904.66'}
+  row 15  top= 509.3  starts_txn=False  {'Narration': 'SHARMA-SSAKSHAMSSHARMA-1@OKH'}
+  row 16  top= 526.5  starts_txn=False  {'Narration': 'DFCBANK-HDFC0004074-409654401111-UPI'}
+  row 17  top= 543.7  starts_txn=True   {'Date': '05/04/24', 'Narration': 'ATW-416021XXXXXX8325-S1ANDH74-DELHI', 'Chq./Ref.No.': '0000000000001632', 'ValueDt WithdrawalAmt.': '05/04/24 20,000.00', 'ClosingBalance': '59,904.66'}
+  row 18  top= 560.9  starts_txn=True   {'Date': '05/04/24', 'Narration': 'ATW-416021XXXXXX8325-S1ANDH74-DELHI', 'Chq./Ref.No.': '0000000000001633', 'ValueDt WithdrawalAmt.': '05/04/24 20,000.00', 'ClosingBalance': '39,904.66'}
+  row 19  top= 578.1  starts_txn=True   {'Date': '06/04/24', 'Narration': 'IMPS-409711186919-NARINDERBATTA-UTIB-XXX', 'Chq./Ref.No.': '0000409711186919', 'ValueDt WithdrawalAmt.': '06/04/24', 'DepositAmt.': '10.00', 'ClosingBalance': '39,914.66'}
+  row 20  top= 595.3  starts_txn=False  {'Narration': 'XXXXXXXX9551-OTHERS'}
+  row 21  top= 612.5  starts_txn=True   {'Date': '06/04/24', 'Narration': 'KQUHQ7UPBJ72BOGRDY/PAYUNYKAAERETAILPVTL', 'Chq./Ref.No.': '0000240979874667', 'ValueDt WithdrawalAmt.': '06/04/24 4,856.00', 'ClosingBalance': '35,058.66'}
+  row 22  top= 629.7  starts_txn=True   {'Date': '07/04/24', 'Narration': 'NVRBBEZ9O88CGN/RAZPHYPERPUREZOMATO', 'Chq./Ref.No.': '0000240980196539', 'ValueDt WithdrawalAmt.': '07/04/24 1,389.41', 'ClosingBalance': '33,669.25'}
+  row 23  top= 646.9  starts_txn=True   {'Date': '07/04/24 00602090001756', 'Narration': '2110735-9630286-DFG-PRU', 'Chq./Ref.No.': '000000000000000', 'ValueDt WithdrawalAmt.': '07/04/24 5,000.00', 'ClosingBalance': '28,669.25'}
+  row 24  top= 664.1  starts_txn=False  {'Date': 'ICICI-SIP'}
+  row 25  top= 681.3  starts_txn=True   {'Date': '07/04/24', 'Narration': '4040733209828849685/PAYTMURBANCLAPTECHNO', 'Chq./Ref.No.': '0000240980338326', 'ValueDt WithdrawalAmt.': '07/04/24 1,741.00', 'ClosingBalance': '26,928.25'}
+  row 26  top= 698.5  starts_txn=True   {'Date': '07/04/24', 'Narration': 'UPI-DEEPNAINKAUR-8826612612@PAYTM-CNRB', 'Chq./Ref.No.': '0000446413281455', 'ValueDt WithdrawalAmt.': '07/04/24 3,050.00', 'ClosingBalance': '23,878.25'}
+  row 27  top= 715.7  starts_txn=False  {'Narration': '0000033-446413281455-NA'}
+  row 28  top= 732.9  starts_txn=True   {'Date': '08/04/24', 'Narration': 'CHQDEP-MICRCLG-NOIDAWBO:PENTAMED', 'Chq./Ref.No.': '0000000000302727', 'ValueDt WithdrawalAmt.': '09/04/24', 'DepositAmt.': '44,400.00', 'ClosingBalance': '68,278.25'}
+  row 29  top= 750.1  starts_txn=False  {'Narration': 'HOSPITAL:PUNJABNATIONALBANK'}
+  row 30  top= 784.8  starts_txn=False  {'Date': 'HDFCBANKLIMITED'}
+  row 31  top= 794.9  starts_txn=False  {'Narration': '*Closingbalanceincludesfundsearmarkedforholdandunclearedfunds'}
+  row 32  top= 804.2  starts_txn=False  {'Chq./Ref.No.': 'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'}
+  row 33  top= 811.5  starts_txn=False  {'Date': 'thisstatement.'}
+  row 34  top= 818.8  starts_txn=False  {'Narration': 'StateaccountbranchGSTN:07AAACH2702H1Z2'}
+  row 35  top= 826.0  starts_txn=False  {'Chq./Ref.No.': 'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'}
+  row 36  top= 833.3  starts_txn=False  {'Narration': 'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'}
+
+============================================================
+PAGE 2  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 3  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 4  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 5  (width=638.0  height=842.0)
+============================================================
+
+--- DETECTED HEADERS ---
+
+  header_y (table starts below): 627.2
+
+--- RAW WORDS below header_y ---
+  top= 644.4  bot= 652.4  x0=  33.7  x1=  62.1  text='26/04/24'
+  top= 644.4  bot= 652.4  x0=  68.0  x1= 204.3  text='CRVPOS416021******8325AMAZON'
+  top= 644.4  bot= 652.4  x0= 294.6  x1= 354.6  text='000000000000000'
+  top= 644.4  bot= 652.4  x0= 362.5  x1= 390.9  text='26/04/24'
+  top= 644.4  bot= 652.4  x0= 534.2  x1= 548.2  text='2.00'
+  top= 644.4  bot= 652.4  x0= 608.7  x1= 626.7  text='99.51'
+  top= 661.6  bot= 669.6  x0=  33.7  x1=  62.1  text='27/04/24'
+  top= 661.6  bot= 669.6  x0=  68.0  x1= 241.1  text='UPI-SHREEJEEMILKFOOD-GPAY-11243172112'
+  top= 661.6  bot= 669.6  x0= 292.6  x1= 356.6  text='0000411839992055'
+  top= 661.6  bot= 669.6  x0= 362.5  x1= 390.9  text='27/04/24'
+  top= 661.6  bot= 669.6  x0= 448.2  x1= 470.2  text='248.00'
+  top= 661.6  bot= 669.6  x0= 602.0  x1= 626.7  text='-148.49'
+  top= 678.8  bot= 686.8  x0=  68.0  x1= 232.7  text='@OKBIZAXIS-UTIB0000000-411839992055-NA'
+  top= 696.0  bot= 704.0  x0=  33.7  x1=  62.1  text='28/04/24'
+  top= 696.0  bot= 704.0  x0=  68.0  x1= 198.9  text='SWEEP-INCREDIT-50300869158723'
+  top= 696.0  bot= 704.0  x0= 294.6  x1= 354.6  text='000000000000000'
+  top= 696.0  bot= 704.0  x0= 362.5  x1= 390.9  text='27/04/24'
+  top= 696.0  bot= 704.0  x0= 526.2  x1= 548.2  text='149.00'
+  top= 696.0  bot= 704.0  x0= 612.7  x1= 626.7  text='0.51'
+  top= 713.2  bot= 721.2  x0=  33.7  x1=  62.1  text='28/04/24'
+  top= 713.2  bot= 721.2  x0=  68.0  x1= 193.8  text='INT.ONSWCRON-50300869158723'
+  top= 713.2  bot= 721.2  x0= 294.6  x1= 354.6  text='000000000000000'
+  top= 713.2  bot= 721.2  x0= 362.5  x1= 390.9  text='27/04/24'
+  top= 713.2  bot= 721.2  x0= 534.2  x1= 548.2  text='3.50'
+  top= 713.2  bot= 721.2  x0= 612.7  x1= 626.7  text='4.01'
+  top= 730.4  bot= 738.4  x0=  33.7  x1=  62.1  text='28/04/24'
+  top= 730.4  bot= 738.4  x0=  68.0  x1= 251.8  text='UPI-SWIGGY-SWIGGYSTORES@ICICI-ICIC0DC009'
+  top= 730.4  bot= 738.4  x0= 292.6  x1= 356.6  text='0000411936051471'
+  top= 730.4  bot= 738.4  x0= 362.5  x1= 390.9  text='28/04/24'
+  top= 730.4  bot= 738.4  x0= 448.2  x1= 470.2  text='145.00'
+  top= 730.4  bot= 738.4  x0= 602.0  x1= 626.7  text='-140.99'
+  top= 747.6  bot= 755.6  x0=  68.0  x1= 136.9  text='9-411936051471-NA'
+  top= 764.8  bot= 772.8  x0=  33.7  x1=  62.1  text='29/04/24'
+  top= 764.8  bot= 772.8  x0=  68.0  x1= 198.9  text='SWEEP-INCREDIT-50300869158723'
+  top= 764.8  bot= 772.8  x0= 294.6  x1= 354.6  text='000000000000000'
+  top= 764.8  bot= 772.8  x0= 362.5  x1= 390.9  text='28/04/24'
+  top= 764.8  bot= 772.8  x0= 526.2  x1= 548.2  text='141.00'
+  top= 764.8  bot= 772.8  x0= 612.7  x1= 626.7  text='0.01'
+  top= 784.8  bot= 793.8  x0=  28.3  x1= 124.3  text='HDFCBANKLIMITED'
+  top= 794.9  bot= 802.9  x0=  28.3  x1= 261.8  text='*Closingbalanceincludesfundsearmarkedforholdandunclearedfunds'
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 644.4  words=6  '26/04/24'@x34  |  'CRVPOS416021******8325AMAZON'@x68  |  '000000000000000'@x295  |  '26/04/24'@x362  |  '2.00'@x534  |  '99.51'@x609
+  row 01  top= 661.6  words=6  '27/04/24'@x34  |  'UPI-SHREEJEEMILKFOOD-GPAY-11243172112'@x68  |  '0000411839992055'@x293  |  '27/04/24'@x362  |  '248.00'@x448  |  '-148.49'@x602
+  row 02  top= 678.8  words=1  '@OKBIZAXIS-UTIB0000000-411839992055-NA'@x68
+  row 03  top= 696.0  words=6  '28/04/24'@x34  |  'SWEEP-INCREDIT-50300869158723'@x68  |  '000000000000000'@x295  |  '27/04/24'@x362  |  '149.00'@x526  |  '0.51'@x613
+  row 04  top= 713.2  words=6  '28/04/24'@x34  |  'INT.ONSWCRON-50300869158723'@x68  |  '000000000000000'@x295  |  '27/04/24'@x362  |  '3.50'@x534  |  '4.01'@x613
+  row 05  top= 730.4  words=6  '28/04/24'@x34  |  'UPI-SWIGGY-SWIGGYSTORES@ICICI-ICIC0DC009'@x68  |  '0000411936051471'@x293  |  '28/04/24'@x362  |  '145.00'@x448  |  '-140.99'@x602
+  row 06  top= 747.6  words=1  '9-411936051471-NA'@x68
+  row 07  top= 764.8  words=6  '29/04/24'@x34  |  'SWEEP-INCREDIT-50300869158723'@x68  |  '000000000000000'@x295  |  '28/04/24'@x362  |  '141.00'@x526  |  '0.01'@x613
+  row 08  top= 784.8  words=1  'HDFCBANKLIMITED'@x28
+  row 09  top= 794.9  words=1  '*Closingbalanceincludesfundsearmarkedforholdandunclearedfunds'@x28
+  row 10  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 11  top= 811.5  words=1  'thisstatement.'@x28
+  row 12  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 13  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 14  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 644.4  [FILTERED]
+  row 01  top= 661.6  [FILTERED]
+  row 02  top= 678.8  [FILTERED]
+  row 03  top= 696.0  [FILTERED]
+  row 04  top= 713.2  [FILTERED]
+  row 05  top= 730.4  [FILTERED]
+  row 06  top= 747.6  [FILTERED]
+  row 07  top= 764.8  [FILTERED]
+  row 08  top= 784.8  [FILTERED]
+  row 09  top= 794.9  [FILTERED]
+  row 10  top= 804.2  [FILTERED]
+  row 11  top= 811.5  [FILTERED]
+  row 12  top= 818.8  [FILTERED]
+  row 13  top= 826.0  [FILTERED]
+  row 14  top= 833.3  [FILTERED]
+
+============================================================
+PAGE 6  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 7  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 8  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 9  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 10  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 11  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 12  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 13  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 14  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 15  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 16  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 17  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 18  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 19  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 20  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 21  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 22  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 23  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 24  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 25  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 26  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 27  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 28  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 29  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 30  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 31  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 32  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 33  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 34  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 35  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 36  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 37  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 38  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 39  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 40  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 41  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 42  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 43  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 44  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 45  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 46  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 47  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 48  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 49  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 50  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 51  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 52  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 53  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 54  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 55  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 56  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 57  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 58  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 59  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 60  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 61  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 62  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 63  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 64  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 65  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 66  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 67  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 68  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 69  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping
+
+============================================================
+PAGE 70  (width=638.0  height=842.0)
+============================================================
+
+--- DETECTED HEADERS ---
+  'OpeningBalance'                x0=   0.0  x1= 307.9  numeric=False  narration=False
+  'Debits'                        x0= 307.9  x1= 473.9  numeric=True  narration=False
+  'Credits'                       x0= 473.9  x1= 638.0  numeric=True  narration=False
+
+  header_y (table starts below): 620.4
+
+--- RAW WORDS below header_y ---
+  top= 631.5  bot= 639.5  x0= 143.6  x1= 179.6  text='102,760.66'
+  top= 631.5  bot= 639.5  x0= 300.1  x1= 312.1  text='661'
+  top= 631.5  bot= 639.5  x0= 371.0  x1= 383.0  text='591'
+  top= 631.5  bot= 639.5  x0= 414.8  x1= 456.8  text='3,900,056.62'
+  top= 631.5  bot= 639.5  x0= 492.8  x1= 534.8  text='3,797,477.94'
+  top= 631.5  bot= 639.5  x0= 580.7  x1= 602.7  text='181.98'
+  top= 689.8  bot= 697.8  x0=  76.8  x1= 207.2  text='GeneratedOn:15-APR-202507:51:39'
+  top= 689.8  bot= 697.8  x0= 264.4  x1= 348.4  text='GeneratedBy:20656646'
+  top= 689.8  bot= 697.8  x0= 441.2  x1= 547.2  text='RequestingBranchCode:4074'
+  top= 784.8  bot= 793.8  x0=  28.3  x1= 124.3  text='HDFCBANKLIMITED'
+  top= 794.9  bot= 802.9  x0=  28.3  x1= 261.8  text='*Closingbalanceincludesfundsearmarkedforholdandunclearedfunds'
+  top= 804.2  bot= 811.2  x0=  28.3  x1= 592.3  text='Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'
+  top= 811.5  bot= 818.5  x0=  28.3  x1=  68.8  text='thisstatement.'
+  top= 818.8  bot= 825.8  x0=  28.3  x1= 178.7  text='StateaccountbranchGSTN:07AAACH2702H1Z2'
+  top= 826.0  bot= 833.0  x0=  28.3  x1= 451.6  text='HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'
+  top= 833.3  bot= 840.3  x0=  28.3  x1= 306.4  text='RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'
+
+--- GROUPED ROWS (tolerance=5) ---
+  row 00  top= 631.5  words=6  '102,760.66'@x144  |  '661'@x300  |  '591'@x371  |  '3,900,056.62'@x415  |  '3,797,477.94'@x493  |  '181.98'@x581
+  row 01  top= 689.8  words=3  'GeneratedOn:15-APR-202507:51:39'@x77  |  'GeneratedBy:20656646'@x264  |  'RequestingBranchCode:4074'@x441
+  row 02  top= 784.8  words=1  'HDFCBANKLIMITED'@x28
+  row 03  top= 794.9  words=1  '*Closingbalanceincludesfundsearmarkedforholdandunclearedfunds'@x28
+  row 04  top= 804.2  words=1  'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'@x28
+  row 05  top= 811.5  words=1  'thisstatement.'@x28
+  row 06  top= 818.8  words=1  'StateaccountbranchGSTN:07AAACH2702H1Z2'@x28
+  row 07  top= 826.0  words=1  'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'@x28
+  row 08  top= 833.3  words=1  'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'@x28
+
+--- PARSED ROWS (column-assigned) ---
+  date_column = None
+  row 00  top= 631.5  starts_txn=False  {'OpeningBalance': '102,760.66 661', 'Debits': '591 3,900,056.62', 'Credits': '3,797,477.94 181.98'}
+  row 01  top= 689.8  starts_txn=False  {'OpeningBalance': 'GeneratedOn:15-APR-202507:51:39 GeneratedBy:20656646', 'Credits': 'RequestingBranchCode:4074'}
+  row 02  top= 784.8  starts_txn=False  {'OpeningBalance': 'HDFCBANKLIMITED'}
+  row 03  top= 794.9  starts_txn=False  {'OpeningBalance': '*Closingbalanceincludesfundsearmarkedforholdandunclearedfunds'}
+  row 04  top= 804.2  starts_txn=False  {'Debits': 'Contentsofthisstatementwillbeconsideredcorrectifnoerrorisreportedwithin30daysofreceiptofstatement.TheaddressonthisstatementisthatonrecordwiththeBankasatthedayofrequesting'}
+  row 05  top= 811.5  starts_txn=False  {'OpeningBalance': 'thisstatement.'}
+  row 06  top= 818.8  starts_txn=False  {'OpeningBalance': 'StateaccountbranchGSTN:07AAACH2702H1Z2'}
+  row 07  top= 826.0  starts_txn=False  {'OpeningBalance': 'HDFCBankGSTINnumberdetailsareavailableathttps://www.hdfcbank.com/personal/making-payments/online-tax-payment/goods-and-service-tax.'}
+  row 08  top= 833.3  starts_txn=False  {'OpeningBalance': 'RegisteredOfficeAddress:HDFCBankHouse,SenapatiBapatMarg,LowerParel,Mumbai400013'}
+
+============================================================
+PAGE 71  (width=638.0  height=842.0)
+============================================================
+  [!] No layout detected for this page — skipping

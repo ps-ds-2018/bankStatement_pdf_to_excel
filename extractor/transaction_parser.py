@@ -18,6 +18,14 @@ DATE_PATTERN = re.compile(
     r"^\d{2}[-/]\d{2}[-/](?:\d{2}|\d{4})$"
 )
 
+#Matches the start of a UPI/NEFT/IMPS/RTGS narration line.
+#These lines always begin the narration block for the next transaction
+#and should never be treated as continuations of the current one
+_NARRATION_LEAD_PATTERN = re.compile(
+    r"^(?:UPI|NEFT|IMPS|RTGS|INF|INFT|ACH|ECS|CHQ|CLG|ATM|POS|IFT|FT)[/\s\-]",
+    re.IGNORECASE,
+)
+
 
 class ParsedRow:
 
@@ -174,42 +182,140 @@ def _is_numeric_column(header: str, layout: LayoutDetectionResult) -> bool:
 
 
 # --------------------------------------------------
-# TRANSACTION GROUPING  ← the core fix
+# NARRATION LEAD-IN DETECTION
 # --------------------------------------------------
 
+def _row_is_narration_lead(row: ParsedRow, narration_col: Optional[str]) -> bool:
+    """"
+    Returns True if this continuation row is the start of a new 
+    transaction's narration lead-in (eg. 'UPI/...', 'NEFT/....').
+
+    Once a narration-lead row is seen in the inter-anchor gap, all
+    subsequent rows in that gap also belong to the next transaction.
+    """
+    if narration_col is None:
+        return False
+    text = row.values.get(narration_col,"").strip()
+    return bool(_NARRATION_LEAD_PATTERN.match(text))
+
+
+# --------------------------------------------------
+# ANCHOR-FIRST BLOCK STRATEGY
+# --------------------------------------------------
+
+def _split_inter_anchor_rows(
+        inter_rows: List[ParsedRow],
+        narration_col: Optional[str],
+) -> tuple[List[ParsedRow], List[ParsedRow]]:
+    """"
+    Split the rows between two anchors into:
+    (post_rows, lead_in_rows)
+
+    post_rows ---- continuation of the current (earlier) row
+    lead_in_rows ---- lead-in narration for the next (later) row
+
+    Split point: the first row that matches _NARRATION_LEAD_PATTERN.
+    Everything before it --- post; it and everything after --- lead-in.
+    """
+    split_idx = len(inter_rows)   #default: all post, no lead-in
+
+    for idx, row in enumerate(inter_rows):
+        if _row_is_narration_lead(row, narration_col):
+            split_idx = idx
+            break
+
+    return inter_rows[:split_idx], inter_rows[split_idx:]
+
+
+def _find_narration_column(values: Dict[str, str]) -> Optional[str]:
+    NARRATION_NAMES = {
+        "PARTICULARS", "NARRATION", "DESCRIPTION",
+        "TRANSACTION DETAILS", "DETAILS", "REMARKS",
+    }
+
+    for key in values:
+        normalized = key.upper().replace(":", "").replace("*", "").strip()
+        if normalized in NARRATION_NAMES:
+            return key
+    return None
+
+def _collect_narration_text(
+        rows: List[ParsedRow],
+        narration_col: str,
+) -> str:
+    parts = []
+    for row in rows:
+        text = row.values.get(narration_col,"").strip()
+        if text:
+            parts.append(text)
+    return " ".join(parts)
+
+
 def group_into_transaction_blocks(
-    parsed_rows: List[ParsedRow],
-    date_column: str,
+        parsed_rows: List[ParsedRow],
+        date_column: str,
 ) -> List[List[ParsedRow]]:
-    """
-    Splits the flat list of parsed rows into blocks where each block
-    is exactly one transaction: one anchor row (has a date) followed
-    by zero or more continuation rows (no date).
+    """"
+    Anchor-first block strategy.
 
-    A new block starts ONLY when a date row is encountered.
-    All rows between two date rows — regardless of what columns they
-    fill — belong to the preceding date row's transaction.
+    For each anchor row, collects the rows between the previous anchor
+    and this one, splits them into post-anchor continuation rows (for
+    the previous transaction) and lead-in rows (for this transaction), 
+    then patches this anchor's PARTICULARS with the lead-in text 
+    prepended.
 
-    This means: iterate through ALL continuation rows of a transaction
-    before moving on to the next, which prevents partial narration
-    lines from bleeding into adjacent transactions.
+    Returns blocks as [anchor_row, *post_anchor_continuation_rows].
+    The lead-in narration is already baked into anchor_row.values.
     """
+    anchor_indices = [
+        idx for idx, row in enumerate(parsed_rows)
+        if row_starts_transaction(row, date_column)
+    ]
+
+    if not anchor_indices:
+        return []
+    
+    #Resolve narration column from the first anchor row
+    narration_col = _find_narration_column(parsed_rows[anchor_indices[0]].values)
+
     blocks: List[List[ParsedRow]] = []
-    current_block: List[ParsedRow] = []
 
-    for row in parsed_rows:
-        if row_starts_transaction(row, date_column):
-            if current_block:
-                blocks.append(current_block)
-            current_block = [row]
+    for slot, anchor_idx in enumerate(anchor_indices):
+        anchor_row = parsed_rows[anchor_idx]
+
+        #Rows between the previous anchor (exclusive) and this one (exclusive)
+        prev_anchor_idx = anchor_indices[slot - 1] if slot > 0 else -1
+        inter_rows = parsed_rows[prev_anchor_idx + 1 : anchor_idx]
+
+        #Split: rows before first UPI/NEFT/.... ----- post of previous txn
+        #       rows from first UPI/NEFT/....   ----- lead-in of this txn
+        _post_of_prev, lead_in_rows = _split_inter_anchor_rows(inter_rows, narration_col)
+
+        #_post_of_prev was already appended to the previous block; we
+        # record lead_in_rows here to patch the current anchor.
+
+        #Patch anchor's PARTICULARS: preprend lead-in text
+        if narration_col and lead_in_rows:
+            lead_in_text = _collect_narration_text(lead_in_rows, narration_col)
+            if lead_in_text:
+                existing = anchor_row.values.get(narration_col, "").strip()
+                anchor_row.values[narration_col] = (
+                    (lead_in_text + " " + existing).strip() if existing else lead_in_text
+                )
+
+
+        #Rows after this anchor up to the next anchor (exclusive)
+        if slot + 1 < len(anchor_indices):
+            next_anchor_idx = anchor_indices[slot + 1]
         else:
-            # Continuation row — always belongs to the current block
-            if current_block:
-                current_block.append(row)
-            # Rows before the very first date (page headers, etc.) → skip
+            next_anchor_idx = len(parsed_rows)
 
-    if current_block:
-        blocks.append(current_block)
+        inter_after  = parsed_rows[anchor_idx + 1 : next_anchor_idx]
+        
+        #The post_rows for THIS block  = rows before the first narration-lead
+        post_rows, _lead_in_of_next = _split_inter_anchor_rows(inter_after, narration_col)
+
+        blocks.append([anchor_row] + post_rows)
 
     return blocks
 
@@ -225,22 +331,19 @@ def build_transaction_from_block(
     page_number: int,
 ) -> Transaction:
     """
-    Collapses a block (anchor row + continuation rows) into a single
-    Transaction by iterating through every row in the block fully
-    before moving on — exactly as you suggested.
+    Collapses a block (anchor row + post-anchor continuation rows) into a single
+    Transaction. 
 
-    Rules per continuation row:
-    - Numeric columns: accept only values that look like amounts.
-      This stops UPI hash fragments from entering amount cells.
-    - Text columns: append with a space separator.
+    Lead-in narration was already merged into anchor_row.values by
+    group_into_transaction_blocks(); only post-anchor remain here.
     """
-    # Start with the anchor row's values
+    
     txn = Transaction(
         data=block[0].values.copy(),
         source_page=page_number,
     )
 
-    for row in block[1:]:  # continuation rows
+    for row in block[1:]:  
         for key, value in row.values.items():
             value = value.strip()
             if not value:
@@ -249,7 +352,7 @@ def build_transaction_from_block(
             if _is_numeric_column(key, layout):
                 if _looks_like_amount(value):
                     txn.data[key] = value
-                # Non-numeric text in an amount column → discard
+                
             else:
                 existing = txn.data.get(key, "").strip()
                 txn.data[key] = (existing + " " + value).strip() if existing else value
