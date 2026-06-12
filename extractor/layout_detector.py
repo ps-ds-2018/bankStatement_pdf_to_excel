@@ -5,6 +5,7 @@ from typing import Dict, List, Optional
 
 from extractor.models import PDFPage
 
+import re
 
 # -----------------------------------------
 # Banking Header Vocabulary
@@ -387,6 +388,107 @@ def build_boundaries(
 
 
 # -----------------------------------------
+# DATA-CALIBRATED BOUNDARY REFINEMENT
+# -----------------------------------------
+
+_AMOUNT_PATTERN = re.compile(r"^[\d,]+(?:\.\d{1,2})?$")
+
+
+def _collect_numeric_x_centers(page: PDFPage, header_y: float) -> List[float]:
+    """
+    Return the x-centers of all words below header_y that look like
+    Indian-format currency amounts (e.g. '4000.00', '1,23,456.78').
+    These are used to calibrate the boundaries of numeric columns.
+    """
+    centers = []
+    for w in page.words:
+        if w.top <= header_y:
+            continue
+        text = w.text.strip().lstrip("₹").strip()
+        if _AMOUNT_PATTERN.match(text):
+            centers.append((w.x0 + w.x1) / 2)
+    return centers
+
+
+def _recalibrate_numeric_boundaries(
+    boundaries: Dict[str, ColumnBoundary],
+    data_centers: List[float],
+    page_width: float,
+) -> Dict[str, ColumnBoundary]:
+    """
+    When numeric column headers are printed at positions that don't align
+    with their data (a known Bank of India quirk), the midpoint boundaries
+    derived from header positions will mis-assign amounts to the wrong
+    column.
+
+    Strategy: for each pair of adjacent numeric columns, collect all data
+    x-centers that fall anywhere between the left edge of the first and the
+    right edge of the second, then use the largest gap in that set as the
+    true boundary between them.  This correctly splits Debit vs Credit vs
+    Balance regardless of where the header words happen to be printed.
+    """
+    # Only act when there are at least 2 numeric columns.
+    numeric_cols = [
+        name for name, b in boundaries.items() if b.is_numeric
+    ]
+    if len(numeric_cols) < 2:
+        return boundaries
+
+    # Sort numeric columns left-to-right by their current x0.
+    numeric_cols.sort(key=lambda n: boundaries[n].x0)
+
+    # Build a mutable copy so we can update boundaries in place.
+    result = dict(boundaries)
+
+    for i in range(len(numeric_cols) - 1):
+        left_name  = numeric_cols[i]
+        right_name = numeric_cols[i + 1]
+        left_b  = result[left_name]
+        right_b = result[right_name]
+
+        # Collect data x-centers in the combined span of both columns.
+        span_x0 = left_b.x0
+        span_x1 = right_b.x1
+        span_centers = sorted(
+            c for c in data_centers if span_x0 <= c <= span_x1
+        )
+
+        if len(span_centers) < 2:
+            continue  # Not enough data to recalibrate this pair.
+
+        # Find the largest gap between consecutive x-centers.
+        max_gap = 0.0
+        split_x = (left_b.x1 + right_b.x0) / 2  # fallback: current midpoint
+
+        for j in range(len(span_centers) - 1):
+            gap = span_centers[j + 1] - span_centers[j]
+            if gap > max_gap:
+                max_gap = gap
+                split_x = (span_centers[j] + span_centers[j + 1]) / 2
+
+        # Only update if the gap-based split differs meaningfully from
+        # the current boundary (avoids jitter on already-correct layouts).
+        current_boundary = (left_b.x1 + right_b.x0) / 2
+        if abs(split_x - current_boundary) > 5.0:
+            result[left_name]  = ColumnBoundary(
+                header=left_b.header,
+                x0=left_b.x0,
+                x1=split_x,
+                is_numeric=left_b.is_numeric,
+                is_narration=left_b.is_narration,
+            )
+            result[right_name] = ColumnBoundary(
+                header=right_b.header,
+                x0=split_x,
+                x1=right_b.x1,
+                is_numeric=right_b.is_numeric,
+                is_narration=right_b.is_narration,
+            )
+
+    return result
+
+
+# -----------------------------------------
 # MAIN DETECTOR
 # -----------------------------------------
 
@@ -423,6 +525,15 @@ class LayoutDetector:
             )
 
         boundaries = build_boundaries(valid_headers, page_width)
+
+        # Refine numeric column boundaries using the actual x-positions of
+        # amount values in the data rows.  This corrects for statements where
+        # the column header words are not centred over their data columns
+        # (e.g. Bank of India: Debit/Credit/Balance headers misaligned).
+        data_centers = _collect_numeric_x_centers(page, header_row["top"])
+        boundaries = _recalibrate_numeric_boundaries(
+            boundaries, data_centers, page_width
+        )
 
         confidence = min(1.0, len(valid_headers) / 6)
 

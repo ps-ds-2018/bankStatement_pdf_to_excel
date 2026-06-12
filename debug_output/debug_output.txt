@@ -4,10 +4,10 @@ PAGE 1  (width=1550.0  height=1900.0)
 ============================================================
 
 --- DETECTED HEADERS ---
-  'Date'                          x0=   0.0  x1= 278.7  numeric=False  narration=False
-  'Debit'                         x0= 552.3  x1= 947.0  numeric=True  narration=False
-  'Credit'                        x0= 947.0  x1=1143.8  numeric=True  narration=False
-  'Balance'                       x0=1143.8  x1=1550.0  numeric=True  narration=False
+  'Date'                          x0=   0.0  x1= 552.3  numeric=False  narration=False
+  'Debit'                         x0= 552.3  x1=1042.9  numeric=True  narration=False
+  'Credit'                        x0=1042.9  x1=1251.5  numeric=True  narration=False
+  'Balance'                       x0=1251.5  x1=1550.0  numeric=True  narration=False
 
   header_y (table starts below): 786.3
 
@@ -123,32 +123,32 @@ PAGE 1  (width=1550.0  height=1900.0)
 
 --- PARSED ROWS (column-assigned) ---
   date_column = 'Date'
-  row 00  top= 842.5  starts_txn=True   {'Date': '1', 'Balance': '4000.00 ₹ 7,910.65'}
-  row 01  top= 865.0  [FILTERED]
-  row 02  top= 919.6  starts_txn=True   {'Date': '2', 'Debit': 'UPI/446020781772/CR/SACHIN/PUNB/9311826', 'Balance': '2000.00 ₹ 9,910.65'}
-  row 03  top= 942.1  [FILTERED]
-  row 04  top= 996.7  starts_txn=True   {'Date': '3', 'Debit': 'UPI/446102278860/CR/Sagar/AIRP/971815390/', 'Balance': '1500.00 ₹ 11,410.65'}
-  row 05  top=1019.2  [FILTERED]
-  row 06  top=1073.8  starts_txn=True   {'Date': '4', 'Debit': 'UPI/446374223453/DR/PRAMOD/CNRB/82878', 'Credit': '8000.00', 'Balance': '₹ 3,410.65'}
-  row 07  top=1096.3  [FILTERED]
-  row 08  top=1150.9  starts_txn=True   {'Date': '5', 'Credit': '15000.00', 'Balance': '₹ 18,410.65'}
-  row 09  top=1173.4  [FILTERED]
-  row 10  top=1228.0  starts_txn=True   {'Date': '6', 'Debit': 'UPI/446719968530/CR/ABHISH/UTIB/96504125', 'Balance': '1000.00 ₹ 19,410.65'}
-  row 11  top=1250.5  [FILTERED]
-  row 12  top=1305.1  starts_txn=True   {'Date': '7', 'Debit': 'NEFT/ICIB241010015055/ICIC/Panchsheel', 'Credit': '19903.00', 'Balance': '₹ 39,313.65'}
-  row 13  top=1327.6  [FILTERED]
-  row 14  top=1382.2  starts_txn=True   {'Date': '8', 'Debit': 'NEFT/ICIB241010014899/ICIC/Panchsheel', 'Credit': '46956.00', 'Balance': '₹ 86,269.65'}
-  row 15  top=1404.7  [FILTERED]
-  row 16  top=1459.3  starts_txn=True   {'Date': '9', 'Debit': 'NEFT/ICIB241010015053/ICIC/Panchsheel', 'Credit': '255656.00', 'Balance': '₹ 341,925.65'}
-  row 17  top=1481.8  [FILTERED]
-  row 18  top=1536.4  starts_txn=True   {'Date': '10', 'Debit': 'NEFT/ICIB241010015052/ICIC/Panchsheel', 'Credit': '121004.00', 'Balance': '₹ 462,929.65'}
-  row 19  top=1558.9  [FILTERED]
-  row 20  top=1613.5  starts_txn=True   {'Date': '11', 'Debit': 'UPI/446804369344/DR/KAMANI/PUNB/9891269 95000.00', 'Balance': '₹ 367,929.65'}
-  row 21  top=1636.0  [FILTERED]
-  row 22  top=1690.6  starts_txn=True   {'Date': '12', 'Debit': '20000.00', 'Balance': '₹ 347,929.65'}
-  row 23  top=1713.1  [FILTERED]
-  row 24  top=1767.7  starts_txn=True   {'Date': '13', 'Debit': '10000.00', 'Balance': '₹ 337,929.65'}
-  row 25  top=1790.2  [FILTERED]
+  row 00  top= 842.5  starts_txn=True   {'Date': '1 02-04-2024 UPI/445944675964/CR/ARUN', 'Credit': '4000.00', 'Balance': '₹ 7,910.65'}
+  row 01  top= 865.0  starts_txn=False  {'Date': 'S/BKID/971191070/Paymen'}
+  row 02  top= 919.6  starts_txn=True   {'Date': '2 03-04-2024', 'Debit': 'UPI/446020781772/CR/SACHIN/PUNB/9311826', 'Credit': '2000.00', 'Balance': '₹ 9,910.65'}
+  row 03  top= 942.1  starts_txn=False  {'Date': '88/Paymen'}
+  row 04  top= 996.7  starts_txn=True   {'Date': '3 04-04-2024', 'Debit': 'UPI/446102278860/CR/Sagar/AIRP/971815390/', 'Credit': '1500.00', 'Balance': '₹ 11,410.65'}
+  row 05  top=1019.2  starts_txn=False  {'Date': 'Paymen'}
+  row 06  top=1073.8  starts_txn=True   {'Date': '4 06-04-2024', 'Debit': 'UPI/446374223453/DR/PRAMOD/CNRB/82878 8000.00', 'Balance': '₹ 3,410.65'}
+  row 07  top=1096.3  starts_txn=False  {'Date': '7858/Paymen'}
+  row 08  top=1150.9  starts_txn=True   {'Date': '5 10-04-2024 UPI/446798879307/CR/SUMIT', 'Credit': '15000.00', 'Balance': '₹ 18,410.65'}
+  row 09  top=1173.4  starts_txn=False  {'Date': '/UBIN/981863712/Paymen'}
+  row 10  top=1228.0  starts_txn=True   {'Date': '6 10-04-2024', 'Debit': 'UPI/446719968530/CR/ABHISH/UTIB/96504125', 'Credit': '1000.00', 'Balance': '₹ 19,410.65'}
+  row 11  top=1250.5  starts_txn=False  {'Date': '1/Sent f'}
+  row 12  top=1305.1  starts_txn=True   {'Date': '7 10-04-2024', 'Debit': 'NEFT/ICIB241010015055/ICIC/Panchsheel', 'Credit': '19903.00', 'Balance': '₹ 39,313.65'}
+  row 13  top=1327.6  starts_txn=False  {'Date': 'Buildtech P'}
+  row 14  top=1382.2  starts_txn=True   {'Date': '8 10-04-2024', 'Debit': 'NEFT/ICIB241010014899/ICIC/Panchsheel', 'Credit': '46956.00', 'Balance': '₹ 86,269.65'}
+  row 15  top=1404.7  starts_txn=False  {'Date': 'Buildtech P'}
+  row 16  top=1459.3  starts_txn=True   {'Date': '9 10-04-2024', 'Debit': 'NEFT/ICIB241010015053/ICIC/Panchsheel', 'Credit': '255656.00', 'Balance': '₹ 341,925.65'}
+  row 17  top=1481.8  starts_txn=False  {'Date': 'Buildtech P'}
+  row 18  top=1536.4  starts_txn=True   {'Date': '10 10-04-2024', 'Debit': 'NEFT/ICIB241010015052/ICIC/Panchsheel', 'Credit': '121004.00', 'Balance': '₹ 462,929.65'}
+  row 19  top=1558.9  starts_txn=False  {'Date': 'Buildtech P'}
+  row 20  top=1613.5  starts_txn=True   {'Date': '11 11-04-2024', 'Debit': 'UPI/446804369344/DR/KAMANI/PUNB/9891269 95000.00', 'Balance': '₹ 367,929.65'}
+  row 21  top=1636.0  starts_txn=False  {'Date': '40/Paymen'}
+  row 22  top=1690.6  starts_txn=True   {'Date': '12 14-04-2024 UPI/447100869140/DR/RAHUL', 'Debit': '20000.00', 'Balance': '₹ 347,929.65'}
+  row 23  top=1713.1  starts_txn=False  {'Date': '/PUNB/880098319/Paymen'}
+  row 24  top=1767.7  starts_txn=True   {'Date': '13 16-04-2024 UPI/410796010438/DR/NAVAL', 'Debit': '10000.00', 'Balance': '₹ 337,929.65'}
+  row 25  top=1790.2  starts_txn=False  {'Date': '/PSIB/778294131/Paymen'}
 
 ============================================================
 PAGE 2  (width=1550.0  height=1900.0)
@@ -156,10 +156,10 @@ PAGE 2  (width=1550.0  height=1900.0)
   [~] No layout detected — using propagated layout from page 1
 
 --- DETECTED HEADERS ---
-  'Date'                          x0=   0.0  x1= 278.7  numeric=False  narration=False
-  'Debit'                         x0= 552.3  x1= 947.0  numeric=True  narration=False
-  'Credit'                        x0= 947.0  x1=1143.8  numeric=True  narration=False
-  'Balance'                       x0=1143.8  x1=1550.0  numeric=True  narration=False
+  'Date'                          x0=   0.0  x1= 552.3  numeric=False  narration=False
+  'Debit'                         x0= 552.3  x1=1042.9  numeric=True  narration=False
+  'Credit'                        x0=1042.9  x1=1251.5  numeric=True  narration=False
+  'Balance'                       x0=1251.5  x1=1550.0  numeric=True  narration=False
 
   header_y (table starts below): 786.3
 
@@ -275,32 +275,32 @@ PAGE 2  (width=1550.0  height=1900.0)
 
 --- PARSED ROWS (column-assigned) ---
   date_column = 'Date'
-  row 00  top= 801.4  starts_txn=True   {'Date': '23', 'Debit': '45000.00', 'Balance': '₹ 244,728.65'}
-  row 01  top= 823.8  [FILTERED]
-  row 02  top= 878.5  starts_txn=True   {'Date': '24', 'Debit': '55000.00', 'Balance': '₹ 189,728.65'}
-  row 03  top= 900.9  [FILTERED]
-  row 04  top= 955.6  starts_txn=True   {'Date': '25', 'Debit': '50000.00', 'Balance': '₹ 139,728.65'}
-  row 05  top= 978.0  starts_txn=False  {'Debit': 'f'}
-  row 06  top=1032.7  starts_txn=True   {'Date': '26', 'Debit': '/YESB/paytm- 30000.00', 'Balance': '₹ 109,728.65'}
-  row 07  top=1055.1  [FILTERED]
-  row 08  top=1109.8  starts_txn=True   {'Date': '27', 'Debit': '/YESB/paytm- 20000.00', 'Balance': '₹ 89,728.65'}
-  row 09  top=1132.2  [FILTERED]
-  row 10  top=1186.9  starts_txn=True   {'Date': '28', 'Debit': '/YESB/paytm- 30000.00', 'Balance': '₹ 59,728.65'}
-  row 11  top=1209.3  [FILTERED]
-  row 12  top=1264.0  starts_txn=True   {'Date': '29', 'Debit': 'to 30-', 'Balance': '1444.00 ₹ 61,172.65'}
-  row 13  top=1286.4  [FILTERED]
-  row 14  top=1341.1  starts_txn=True   {'Date': '30', 'Debit': 'UPI/412744680142/CR/Shobhi/FINO/98187059', 'Balance': '4000.00 ₹ 65,172.65'}
-  row 15  top=1363.5  [FILTERED]
-  row 16  top=1418.2  starts_txn=True   {'Date': '31', 'Debit': 'UPI/449417907942/CR/ABHISH/UTIB/96504125', 'Balance': '2000.00 ₹ 67,172.65'}
-  row 17  top=1440.6  [FILTERED]
-  row 18  top=1495.3  starts_txn=True   {'Date': '32', 'Debit': 'CUST', 'Credit': '17.70', 'Balance': '₹ 67,154.95'}
-  row 19  top=1517.7  [FILTERED]
-  row 20  top=1572.4  starts_txn=True   {'Date': '33', 'Debit': '65000.00', 'Balance': '₹ 2,154.95'}
-  row 21  top=1631.2  starts_txn=True   {'Date': '34', 'Credit': '1.00', 'Balance': '₹ 2,153.95'}
-  row 22  top=1653.6  starts_txn=False  {'Debit': 'Ma'}
-  row 23  top=1708.3  starts_txn=True   {'Date': '35', 'Balance': '1.00 ₹ 2,154.95'}
-  row 24  top=1730.7  [FILTERED]
-  row 25  top=1785.4  starts_txn=True   {'Date': '36', 'Debit': 'UPI/451303798519/CR/SANDEE/KKBK/977369', 'Balance': '450.00 ₹ 2,604.95'}
+  row 00  top= 801.4  starts_txn=True   {'Date': '23 29-04-2024 UPI/448661290692/DR/Mr', 'Debit': '45000.00', 'Balance': '₹ 244,728.65'}
+  row 01  top= 823.8  starts_txn=False  {'Date': 'DHI/IDIB/dhirendra/Paymen'}
+  row 02  top= 878.5  starts_txn=True   {'Date': '24 29-04-2024 UPI/448623824219/DR/Mr', 'Debit': '55000.00', 'Balance': '₹ 189,728.65'}
+  row 03  top= 900.9  starts_txn=False  {'Date': 'DHI/IDIB/dhirendra/Paymen'}
+  row 04  top= 955.6  starts_txn=True   {'Date': '25 01-05-2024 UPI/448835650656/DR/RAHUL', 'Debit': '50000.00', 'Balance': '₹ 139,728.65'}
+  row 05  top= 978.0  starts_txn=False  {'Date': '/PUNB/880098319/Sent', 'Debit': 'f'}
+  row 06  top=1032.7  starts_txn=True   {'Date': '26 03-05-2024 UPI/412425715793/DR/MOHIT', 'Debit': '/YESB/paytm- 30000.00', 'Balance': '₹ 109,728.65'}
+  row 07  top=1055.1  starts_txn=False  {'Date': '379/Oid202'}
+  row 08  top=1109.8  starts_txn=True   {'Date': '27 03-05-2024 UPI/449020589731/DR/MOHIT', 'Debit': '/YESB/paytm- 20000.00', 'Balance': '₹ 89,728.65'}
+  row 09  top=1132.2  starts_txn=False  {'Date': '379/Oid202'}
+  row 10  top=1186.9  starts_txn=True   {'Date': '28 03-05-2024 UPI/449022162149/DR/MOHIT', 'Debit': '/YESB/paytm- 30000.00', 'Balance': '₹ 59,728.65'}
+  row 11  top=1209.3  starts_txn=False  {'Date': '379/Oid202'}
+  row 12  top=1264.0  starts_txn=True   {'Date': '29 05-05-2024 711210110007383:SBInt.Pd:01-02-2024', 'Debit': 'to 30-', 'Credit': '1444.00', 'Balance': '₹ 61,172.65'}
+  row 13  top=1286.4  starts_txn=False  {'Date': '04-2024'}
+  row 14  top=1341.1  starts_txn=True   {'Date': '30 06-05-2024', 'Debit': 'UPI/412744680142/CR/Shobhi/FINO/98187059', 'Credit': '4000.00', 'Balance': '₹ 65,172.65'}
+  row 15  top=1363.5  starts_txn=False  {'Date': '2/NA'}
+  row 16  top=1418.2  starts_txn=True   {'Date': '31 07-05-2024', 'Debit': 'UPI/449417907942/CR/ABHISH/UTIB/96504125', 'Credit': '2000.00', 'Balance': '₹ 67,172.65'}
+  row 17  top=1440.6  starts_txn=False  {'Date': '1/Sent f'}
+  row 18  top=1495.3  starts_txn=True   {'Date': '32 07-05-2024 SMSChrgsJAN-MAR24+GST+G', 'Debit': 'CUST 17.70', 'Balance': '₹ 67,154.95'}
+  row 19  top=1517.7  starts_txn=False  {'Date': '121044631'}
+  row 20  top=1572.4  starts_txn=True   {'Date': '33 10-05-2024 TO CASH', 'Debit': '65000.00', 'Balance': '₹ 2,154.95'}
+  row 21  top=1631.2  starts_txn=True   {'Date': '34 20-05-2024 UPI/414193893656/DR/BAJAJ', 'Debit': '1.00', 'Balance': '₹ 2,153.95'}
+  row 22  top=1653.6  starts_txn=False  {'Date': '/HDFC/bflautopa/UPI', 'Debit': 'Ma'}
+  row 23  top=1708.3  starts_txn=True   {'Date': '35 20-05-2024 UPI/414193893672/CR/BAJAJ', 'Credit': '1.00', 'Balance': '₹ 2,154.95'}
+  row 24  top=1730.7  starts_txn=False  {'Date': '/HDFC/bflautopa/Mandat'}
+  row 25  top=1785.4  starts_txn=True   {'Date': '36 26-05-2024', 'Debit': 'UPI/451303798519/CR/SANDEE/KKBK/977369', 'Credit': '450.00', 'Balance': '₹ 2,604.95'}
 
 ============================================================
 PAGE 3  (width=1550.0  height=1900.0)
@@ -308,10 +308,10 @@ PAGE 3  (width=1550.0  height=1900.0)
   [~] No layout detected — using propagated layout from page 1
 
 --- DETECTED HEADERS ---
-  'Date'                          x0=   0.0  x1= 278.7  numeric=False  narration=False
-  'Debit'                         x0= 552.3  x1= 947.0  numeric=True  narration=False
-  'Credit'                        x0= 947.0  x1=1143.8  numeric=True  narration=False
-  'Balance'                       x0=1143.8  x1=1550.0  numeric=True  narration=False
+  'Date'                          x0=   0.0  x1= 552.3  numeric=False  narration=False
+  'Debit'                         x0= 552.3  x1=1042.9  numeric=True  narration=False
+  'Credit'                        x0=1042.9  x1=1251.5  numeric=True  narration=False
+  'Balance'                       x0=1251.5  x1=1550.0  numeric=True  narration=False
 
   header_y (table starts below): 786.3
 
@@ -426,31 +426,31 @@ PAGE 3  (width=1550.0  height=1900.0)
 
 --- PARSED ROWS (column-assigned) ---
   date_column = 'Date'
-  row 00  top= 837.8  starts_txn=True   {'Date': '46', 'Credit': '5000.00', 'Balance': '₹ 60,398.95'}
-  row 01  top= 860.2  starts_txn=False  {'Debit': 'f'}
-  row 02  top= 914.9  starts_txn=True   {'Date': '47', 'Debit': 'UPI/452405758890/DR/SANJIV/SBIN/93118545 20000.00', 'Balance': '₹ 40,398.95'}
-  row 03  top= 937.3  [FILTERED]
-  row 04  top= 992.0  starts_txn=True   {'Date': '48', 'Debit': 'UPI/415961473363/CR/SANJIV/SBIN/93118545', 'Balance': '300.00 ₹ 40,698.95'}
-  row 05  top=1014.4  [FILTERED]
-  row 06  top=1069.1  starts_txn=True   {'Date': '49', 'Debit': 'UPI/416045131652/DR/GAURAV/UTIB/mail.gau 25125.00', 'Balance': '₹ 15,573.95'}
-  row 07  top=1091.5  [FILTERED]
-  row 08  top=1146.2  starts_txn=True   {'Date': '50', 'Debit': 'INFRA LLP', 'Balance': '8000.00 ₹ 23,573.95'}
-  row 09  top=1205.0  starts_txn=True   {'Date': '51', 'Debit': 'UPI/416049914446/DR/YOGITA/UBIN/gopal170', 'Credit': '5000.00', 'Balance': '₹ 18,573.95'}
-  row 10  top=1227.4  [FILTERED]
-  row 11  top=1282.1  starts_txn=True   {'Date': '52', 'Debit': '10000.00', 'Balance': '₹ 8,573.95'}
-  row 12  top=1304.5  starts_txn=False  {'Debit': 'f'}
-  row 13  top=1359.2  starts_txn=True   {'Date': '53', 'Balance': '5000.00 ₹ 13,573.95'}
-  row 14  top=1381.6  [FILTERED]
-  row 15  top=1436.3  starts_txn=True   {'Date': '54', 'Debit': 'UPI/452727265046/CR/YOGITA/UBIN/gopal170', 'Balance': '5000.00 ₹ 18,573.95'}
-  row 16  top=1458.7  [FILTERED]
-  row 17  top=1513.4  starts_txn=True   {'Date': '55', 'Debit': '10000.00', 'Balance': '₹ 8,573.95'}
-  row 18  top=1535.8  [FILTERED]
-  row 19  top=1590.5  starts_txn=True   {'Date': '56', 'Debit': 'UPI/452904889818/CR/Manish/AIRP/96507266', 'Balance': '500.00 ₹ 9,073.95'}
-  row 20  top=1612.9  [FILTERED]
-  row 21  top=1667.6  starts_txn=True   {'Date': '57', 'Credit': '3500.00', 'Balance': '₹ 5,573.95'}
-  row 22  top=1690.0  [FILTERED]
-  row 23  top=1744.7  starts_txn=True   {'Date': '58', 'Debit': 'UPI/452930118097/CR/SANJIV/SBIN/sanjiv.sa/', 'Balance': '3200.00 ₹ 8,773.95'}
-  row 24  top=1767.1  [FILTERED]
+  row 00  top= 837.8  starts_txn=True   {'Date': '46 05-06-2024 UPI/415749677354/DR/ARUN', 'Debit': '5000.00', 'Balance': '₹ 60,398.95'}
+  row 01  top= 860.2  starts_txn=False  {'Date': 'K/HDFC/931111414/Sent', 'Debit': 'f'}
+  row 02  top= 914.9  starts_txn=True   {'Date': '47 06-06-2024', 'Debit': 'UPI/452405758890/DR/SANJIV/SBIN/93118545 20000.00', 'Balance': '₹ 40,398.95'}
+  row 03  top= 937.3  starts_txn=False  {'Date': '4/Sent f'}
+  row 04  top= 992.0  starts_txn=True   {'Date': '48 07-06-2024', 'Debit': 'UPI/415961473363/CR/SANJIV/SBIN/93118545', 'Credit': '300.00', 'Balance': '₹ 40,698.95'}
+  row 05  top=1014.4  starts_txn=False  {'Date': '4/NA'}
+  row 06  top=1069.1  starts_txn=True   {'Date': '49 08-06-2024', 'Debit': 'UPI/416045131652/DR/GAURAV/UTIB/mail.gau 25125.00', 'Balance': '₹ 15,573.95'}
+  row 07  top=1091.5  starts_txn=False  {'Date': 'r/Paymen'}
+  row 08  top=1146.2  starts_txn=True   {'Date': '50 08-06-2024 NEFT/CMS4214165526/ICIC/RYSN', 'Debit': 'INFRA LLP', 'Credit': '8000.00', 'Balance': '₹ 23,573.95'}
+  row 09  top=1205.0  starts_txn=True   {'Date': '51 08-06-2024', 'Debit': 'UPI/416049914446/DR/YOGITA/UBIN/gopal170 5000.00', 'Balance': '₹ 18,573.95'}
+  row 10  top=1227.4  starts_txn=False  {'Date': '8/NA'}
+  row 11  top=1282.1  starts_txn=True   {'Date': '52 08-06-2024 UPI/416042613233/DR/ARUN', 'Debit': '10000.00', 'Balance': '₹ 8,573.95'}
+  row 12  top=1304.5  starts_txn=False  {'Date': 'K/HDFC/931111414/Sent', 'Debit': 'f'}
+  row 13  top=1359.2  starts_txn=True   {'Date': '53 08-06-2024 UPI/452669591848/CR/ARUN', 'Credit': '5000.00', 'Balance': '₹ 13,573.95'}
+  row 14  top=1381.6  starts_txn=False  {'Date': 'K/HDFC/931111414/Paymen'}
+  row 15  top=1436.3  starts_txn=True   {'Date': '54 09-06-2024', 'Debit': 'UPI/452727265046/CR/YOGITA/UBIN/gopal170', 'Credit': '5000.00', 'Balance': '₹ 18,573.95'}
+  row 16  top=1458.7  starts_txn=False  {'Date': '8/NA'}
+  row 17  top=1513.4  starts_txn=True   {'Date': '55 10-06-2024 UPI/452871599561/DR/ARUN', 'Debit': '10000.00', 'Balance': '₹ 8,573.95'}
+  row 18  top=1535.8  starts_txn=False  {'Date': 'K/HDFC/931111414/Paymen'}
+  row 19  top=1590.5  starts_txn=True   {'Date': '56 11-06-2024', 'Debit': 'UPI/452904889818/CR/Manish/AIRP/96507266', 'Credit': '500.00', 'Balance': '₹ 9,073.95'}
+  row 20  top=1612.9  starts_txn=False  {'Date': '7/Paymen'}
+  row 21  top=1667.6  starts_txn=True   {'Date': '57 11-06-2024 UPI/416359566591/DR//UTIB/gpay-', 'Debit': '3500.00', 'Balance': '₹ 5,573.95'}
+  row 22  top=1690.0  starts_txn=False  {'Date': '1118/Paymen'}
+  row 23  top=1744.7  starts_txn=True   {'Date': '58 11-06-2024', 'Debit': 'UPI/452930118097/CR/SANJIV/SBIN/sanjiv.sa/', 'Credit': '3200.00', 'Balance': '₹ 8,773.95'}
+  row 24  top=1767.1  starts_txn=False  {'Date': 'NA'}
 
 ============================================================
 PAGE 4  (width=1550.0  height=1900.0)
@@ -458,10 +458,10 @@ PAGE 4  (width=1550.0  height=1900.0)
   [~] No layout detected — using propagated layout from page 1
 
 --- DETECTED HEADERS ---
-  'Date'                          x0=   0.0  x1= 278.7  numeric=False  narration=False
-  'Debit'                         x0= 552.3  x1= 947.0  numeric=True  narration=False
-  'Credit'                        x0= 947.0  x1=1143.8  numeric=True  narration=False
-  'Balance'                       x0=1143.8  x1=1550.0  numeric=True  narration=False
+  'Date'                          x0=   0.0  x1= 552.3  numeric=False  narration=False
+  'Debit'                         x0= 552.3  x1=1042.9  numeric=True  narration=False
+  'Credit'                        x0=1042.9  x1=1251.5  numeric=True  narration=False
+  'Balance'                       x0=1251.5  x1=1550.0  numeric=True  narration=False
 
   header_y (table starts below): 786.3
 
@@ -576,31 +576,31 @@ PAGE 4  (width=1550.0  height=1900.0)
 
 --- PARSED ROWS (column-assigned) ---
   date_column = 'Date'
-  row 00  top= 787.2  [FILTERED]
-  row 01  top= 841.9  starts_txn=True   {'Date': '69', 'Debit': 'INFRA LLP', 'Credit': '12000.00', 'Balance': '₹ 35,085.95'}
-  row 02  top= 900.7  starts_txn=True   {'Date': '70', 'Debit': 'UPI/454307181231/DR//SBIN/753208460/NA', 'Credit': '5000.00', 'Balance': '₹ 30,085.95'}
-  row 03  top= 959.5  starts_txn=True   {'Date': '71', 'Debit': 'UPI/454617441731/DR/DEEPAK/YESB/q45131', 'Credit': '1.00', 'Balance': '₹ 30,084.95'}
-  row 04  top= 981.9  [FILTERED]
-  row 05  top=1036.6  starts_txn=True   {'Date': '72', 'Debit': 'UPI/454665481645/DR/DEEPAK/UTIB/9999722', 'Credit': '1.00', 'Balance': '₹ 30,083.95'}
-  row 06  top=1059.0  [FILTERED]
-  row 07  top=1113.7  starts_txn=True   {'Date': '73', 'Debit': 'UPI/454662665392/DR/DEEPAK/UTIB/9999722 17933.00', 'Balance': '₹ 12,150.95'}
-  row 08  top=1136.1  [FILTERED]
-  row 09  top=1190.8  starts_txn=True   {'Date': '74', 'Debit': 'UPI/454637684383/CR/SUHAIL/PUNB/8882226', 'Credit': '10000.00', 'Balance': '₹ 22,150.95'}
-  row 10  top=1213.2  [FILTERED]
-  row 11  top=1267.9  starts_txn=True   {'Date': '75', 'Debit': 'UPI/454638174204/CR/SUHAIL/PUNB/8882226', 'Credit': '10000.00', 'Balance': '₹ 32,150.95'}
-  row 12  top=1290.3  [FILTERED]
-  row 13  top=1345.0  starts_txn=True   {'Date': '76', 'Debit': '18000.00', 'Balance': '₹ 14,150.95'}
-  row 14  top=1367.4  [FILTERED]
-  row 15  top=1422.1  starts_txn=True   {'Date': '77', 'Debit': 'INFRA LLP', 'Balance': '8000.00 ₹ 22,150.95'}
-  row 16  top=1480.9  starts_txn=True   {'Date': '78', 'Debit': '17000.00', 'Balance': '₹ 5,150.95'}
-  row 17  top=1503.3  starts_txn=False  {'Debit': 'f'}
-  row 18  top=1558.0  starts_txn=True   {'Date': '79', 'Debit': 'UPI/418313096561/CR//KKBK/964382341/NA', 'Balance': '2000.00 ₹ 7,150.95'}
-  row 19  top=1616.8  starts_txn=True   {'Date': '80', 'Balance': '5000.00 ₹ 12,150.95'}
-  row 20  top=1639.3  [FILTERED]
-  row 21  top=1693.9  starts_txn=True   {'Date': '81', 'Credit': '3309.00', 'Balance': '₹ 8,841.95'}
-  row 22  top=1716.4  starts_txn=False  {'Debit': 'Ma'}
-  row 23  top=1771.0  starts_txn=True   {'Date': '82', 'Credit': '2417.00', 'Balance': '₹ 6,424.95'}
-  row 24  top=1793.5  starts_txn=False  {'Debit': 'Ma'}
+  row 00  top= 787.2  starts_txn=False  {'Date': '4/Sent f'}
+  row 01  top= 841.9  starts_txn=True   {'Date': '69 24-06-2024 NEFT/CMS4243568246/ICIC/RYSN', 'Debit': 'INFRA LLP', 'Credit': '12000.00', 'Balance': '₹ 35,085.95'}
+  row 02  top= 900.7  starts_txn=True   {'Date': '70 25-06-2024', 'Debit': 'UPI/454307181231/DR//SBIN/753208460/NA 5000.00', 'Balance': '₹ 30,085.95'}
+  row 03  top= 959.5  starts_txn=True   {'Date': '71 28-06-2024', 'Debit': 'UPI/454617441731/DR/DEEPAK/YESB/q45131 1.00', 'Balance': '₹ 30,084.95'}
+  row 04  top= 981.9  starts_txn=False  {'Date': '374/NA'}
+  row 05  top=1036.6  starts_txn=True   {'Date': '72 28-06-2024', 'Debit': 'UPI/454665481645/DR/DEEPAK/UTIB/9999722 1.00', 'Balance': '₹ 30,083.95'}
+  row 06  top=1059.0  starts_txn=False  {'Date': '09/Paymen'}
+  row 07  top=1113.7  starts_txn=True   {'Date': '73 28-06-2024', 'Debit': 'UPI/454662665392/DR/DEEPAK/UTIB/9999722 17933.00', 'Balance': '₹ 12,150.95'}
+  row 08  top=1136.1  starts_txn=False  {'Date': '09/Paymen'}
+  row 09  top=1190.8  starts_txn=True   {'Date': '74 28-06-2024', 'Debit': 'UPI/454637684383/CR/SUHAIL/PUNB/8882226', 'Credit': '10000.00', 'Balance': '₹ 22,150.95'}
+  row 10  top=1213.2  starts_txn=False  {'Date': '46/NA'}
+  row 11  top=1267.9  starts_txn=True   {'Date': '75 28-06-2024', 'Debit': 'UPI/454638174204/CR/SUHAIL/PUNB/8882226', 'Credit': '10000.00', 'Balance': '₹ 32,150.95'}
+  row 12  top=1290.3  starts_txn=False  {'Date': '46/NA'}
+  row 13  top=1345.0  starts_txn=True   {'Date': '76 28-06-2024 UPI/454638715927/DR/SUNIL', 'Debit': '18000.00', 'Balance': '₹ 14,150.95'}
+  row 14  top=1367.4  starts_txn=False  {'Date': '/BKID/959946244/NA'}
+  row 15  top=1422.1  starts_txn=True   {'Date': '77 29-06-2024 NEFT/CMS4271699510/ICIC/RYSN', 'Debit': 'INFRA LLP', 'Credit': '8000.00', 'Balance': '₹ 22,150.95'}
+  row 16  top=1480.9  starts_txn=True   {'Date': '78 01-07-2024 UPI/418302582987/DR/SUMIT', 'Debit': '17000.00', 'Balance': '₹ 5,150.95'}
+  row 17  top=1503.3  starts_txn=False  {'Date': '/UBIN/981863712/Sent', 'Debit': 'f'}
+  row 18  top=1558.0  starts_txn=True   {'Date': '79 01-07-2024', 'Debit': 'UPI/418313096561/CR//KKBK/964382341/NA', 'Credit': '2000.00', 'Balance': '₹ 7,150.95'}
+  row 19  top=1616.8  starts_txn=True   {'Date': '80 01-07-2024 UPI/454992871179/CR/VIPIN', 'Credit': '5000.00', 'Balance': '₹ 12,150.95'}
+  row 20  top=1639.3  starts_txn=False  {'Date': '/PUNB/956065523/Paymen'}
+  row 21  top=1693.9  starts_txn=True   {'Date': '81 02-07-2024 UPI/418430645157/DR/BAJAJ', 'Debit': '3309.00', 'Balance': '₹ 8,841.95'}
+  row 22  top=1716.4  starts_txn=False  {'Date': '/HDFC/bflautopa/UPI', 'Debit': 'Ma'}
+  row 23  top=1771.0  starts_txn=True   {'Date': '82 02-07-2024 UPI/418430660810/DR/BAJAJ', 'Debit': '2417.00', 'Balance': '₹ 6,424.95'}
+  row 24  top=1793.5  starts_txn=False  {'Date': '/HDFC/bflautopa/UPI', 'Debit': 'Ma'}
 
 ============================================================
 PAGE 5  (width=1550.0  height=1900.0)
@@ -608,10 +608,10 @@ PAGE 5  (width=1550.0  height=1900.0)
   [~] No layout detected — using propagated layout from page 1
 
 --- DETECTED HEADERS ---
-  'Date'                          x0=   0.0  x1= 278.7  numeric=False  narration=False
-  'Debit'                         x0= 552.3  x1= 947.0  numeric=True  narration=False
-  'Credit'                        x0= 947.0  x1=1143.8  numeric=True  narration=False
-  'Balance'                       x0=1143.8  x1=1550.0  numeric=True  narration=False
+  'Date'                          x0=   0.0  x1= 552.3  numeric=False  narration=False
+  'Debit'                         x0= 552.3  x1=1042.9  numeric=True  narration=False
+  'Credit'                        x0=1042.9  x1=1251.5  numeric=True  narration=False
+  'Balance'                       x0=1251.5  x1=1550.0  numeric=True  narration=False
 
   header_y (table starts below): 786.3
 
@@ -726,31 +726,31 @@ PAGE 5  (width=1550.0  height=1900.0)
 
 --- PARSED ROWS (column-assigned) ---
   date_column = 'Date'
-  row 00  top= 801.4  starts_txn=True   {'Date': '92', 'Debit': 'UPI/418709956912/DR/DHIRAJ/BKID/75308165', 'Credit': '40.00', 'Balance': '₹ 2,447.95'}
-  row 01  top= 823.8  [FILTERED]
-  row 02  top= 878.5  starts_txn=True   {'Date': '93', 'Debit': 'UPI/418779820538/DR/Sonam/YESB/paytmqr2t', 'Credit': '25.00', 'Balance': '₹ 2,422.95'}
-  row 03  top= 900.9  [FILTERED]
-  row 04  top= 955.6  starts_txn=True   {'Date': '94', 'Debit': 'UPI/455334769787/DR/SARDAR/PUNB/931311', 'Credit': '165.00', 'Balance': '₹ 2,257.95'}
-  row 05  top= 978.0  [FILTERED]
-  row 06  top=1032.7  starts_txn=True   {'Date': '95', 'Debit': 'INFRA LLP', 'Credit': '17652.00', 'Balance': '₹ 19,909.95'}
-  row 07  top=1091.5  starts_txn=True   {'Date': '96', 'Debit': 'UPI/492238444143/CR//BKID/971853376/NA', 'Balance': '2000.00 ₹ 21,909.95'}
-  row 08  top=1150.3  starts_txn=True   {'Date': '97', 'Credit': '9000.00', 'Balance': '₹ 12,909.95'}
-  row 09  top=1172.7  starts_txn=False  {'Debit': 'f'}
-  row 10  top=1227.4  starts_txn=True   {'Date': '98', 'Balance': '3000.00 ₹ 15,909.95'}
-  row 11  top=1249.8  [FILTERED]
-  row 12  top=1304.5  starts_txn=True   {'Date': '99', 'Debit': 'INFRA LLP', 'Credit': '10000.00', 'Balance': '₹ 25,909.95'}
-  row 13  top=1363.3  starts_txn=True   {'Date': '100', 'Debit': 'NEFT/ICIB242010028115/ICIC/Panchsheel', 'Credit': '106243.00', 'Balance': '₹ 132,152.95'}
-  row 14  top=1385.7  [FILTERED]
-  row 15  top=1440.4  starts_txn=True   {'Date': '101', 'Debit': 'NEFT/ICIB242010028102/ICIC/Panchsheel', 'Credit': '203619.00', 'Balance': '₹ 335,771.95'}
-  row 16  top=1462.8  [FILTERED]
-  row 17  top=1517.5  starts_txn=True   {'Date': '102', 'Debit': 'NEFT/ICIB242010055872/ICIC/Panchsheel', 'Credit': '33656.00', 'Balance': '₹ 369,427.95'}
-  row 18  top=1539.9  [FILTERED]
-  row 19  top=1594.6  starts_txn=True   {'Date': '103', 'Debit': '18413.00', 'Balance': '₹ 351,014.95'}
-  row 20  top=1617.0  [FILTERED]
-  row 21  top=1671.7  starts_txn=True   {'Date': '104', 'Credit': '50000.00', 'Balance': '₹ 401,014.95'}
-  row 22  top=1694.1  [FILTERED]
-  row 23  top=1748.8  starts_txn=True   {'Date': '105', 'Balance': '4480.00 ₹ 405,494.95'}
-  row 24  top=1771.2  [FILTERED]
+  row 00  top= 801.4  starts_txn=True   {'Date': '92 05-07-2024', 'Debit': 'UPI/418709956912/DR/DHIRAJ/BKID/75308165 40.00', 'Balance': '₹ 2,447.95'}
+  row 01  top= 823.8  starts_txn=False  {'Date': '1/NA'}
+  row 02  top= 878.5  starts_txn=True   {'Date': '93 05-07-2024', 'Debit': 'UPI/418779820538/DR/Sonam/YESB/paytmqr2t 25.00', 'Balance': '₹ 2,422.95'}
+  row 03  top= 900.9  starts_txn=False  {'Date': '/NA'}
+  row 04  top= 955.6  starts_txn=True   {'Date': '94 05-07-2024', 'Debit': 'UPI/455334769787/DR/SARDAR/PUNB/931311 165.00', 'Balance': '₹ 2,257.95'}
+  row 05  top= 978.0  starts_txn=False  {'Date': '238/NA'}
+  row 06  top=1032.7  starts_txn=True   {'Date': '95 06-07-2024 NEFT/CMS4290129360/ICIC/RYSN', 'Debit': 'INFRA LLP', 'Credit': '17652.00', 'Balance': '₹ 19,909.95'}
+  row 07  top=1091.5  starts_txn=True   {'Date': '96 08-07-2024', 'Debit': 'UPI/492238444143/CR//BKID/971853376/NA', 'Credit': '2000.00', 'Balance': '₹ 21,909.95'}
+  row 08  top=1150.3  starts_txn=True   {'Date': '97 09-07-2024 UPI/419111189695/DR/SUMIT', 'Debit': '9000.00', 'Balance': '₹ 12,909.95'}
+  row 09  top=1172.7  starts_txn=False  {'Date': '/UBIN/981863712/Sent', 'Debit': 'f'}
+  row 10  top=1227.4  starts_txn=True   {'Date': '98 09-07-2024 UPI/455774305780/CR/Chunu', 'Credit': '3000.00', 'Balance': '₹ 15,909.95'}
+  row 11  top=1249.8  starts_txn=False  {'Date': '/SBIN/chunukuma/UPI'}
+  row 12  top=1304.5  starts_txn=True   {'Date': '99 12-07-2024 NEFT/CMS4316909954/ICIC/RYSN', 'Debit': 'INFRA LLP', 'Credit': '10000.00', 'Balance': '₹ 25,909.95'}
+  row 13  top=1363.3  starts_txn=True   {'Date': '100 19-07-2024', 'Debit': 'NEFT/ICIB242010028115/ICIC/Panchsheel', 'Credit': '106243.00', 'Balance': '₹ 132,152.95'}
+  row 14  top=1385.7  starts_txn=False  {'Date': 'Buildtech P'}
+  row 15  top=1440.4  starts_txn=True   {'Date': '101 19-07-2024', 'Debit': 'NEFT/ICIB242010028102/ICIC/Panchsheel', 'Credit': '203619.00', 'Balance': '₹ 335,771.95'}
+  row 16  top=1462.8  starts_txn=False  {'Date': 'Buildtech P'}
+  row 17  top=1517.5  starts_txn=True   {'Date': '102 19-07-2024', 'Debit': 'NEFT/ICIB242010055872/ICIC/Panchsheel', 'Credit': '33656.00', 'Balance': '₹ 369,427.95'}
+  row 18  top=1539.9  starts_txn=False  {'Date': 'Buildtech P'}
+  row 19  top=1594.6  starts_txn=True   {'Date': '103 20-07-2024 UPI/420238223568/DR/RAVI', 'Debit': '18413.00', 'Balance': '₹ 351,014.95'}
+  row 20  top=1617.0  starts_txn=False  {'Date': 'K/YESB/paytmqrdw/NA'}
+  row 21  top=1671.7  starts_txn=True   {'Date': '104 20-07-2024 UPI/420295163171/CR/Mr', 'Credit': '50000.00', 'Balance': '₹ 401,014.95'}
+  row 22  top=1694.1  starts_txn=False  {'Date': 'RAJ/IDIB/montu.198/Paymen'}
+  row 23  top=1748.8  starts_txn=True   {'Date': '105 21-07-2024 NEFT/SBIN424203731877/SBIN/ITDTAX', 'Credit': '4480.00', 'Balance': '₹ 405,494.95'}
+  row 24  top=1771.2  starts_txn=False  {'Date': 'REFUND 2023-24'}
 
 ============================================================
 PAGE 6  (width=1550.0  height=1900.0)
@@ -758,10 +758,10 @@ PAGE 6  (width=1550.0  height=1900.0)
   [~] No layout detected — using propagated layout from page 1
 
 --- DETECTED HEADERS ---
-  'Date'                          x0=   0.0  x1= 278.7  numeric=False  narration=False
-  'Debit'                         x0= 552.3  x1= 947.0  numeric=True  narration=False
-  'Credit'                        x0= 947.0  x1=1143.8  numeric=True  narration=False
-  'Balance'                       x0=1143.8  x1=1550.0  numeric=True  narration=False
+  'Date'                          x0=   0.0  x1= 552.3  numeric=False  narration=False
+  'Debit'                         x0= 552.3  x1=1042.9  numeric=True  narration=False
+  'Credit'                        x0=1042.9  x1=1251.5  numeric=True  narration=False
+  'Balance'                       x0=1251.5  x1=1550.0  numeric=True  narration=False
 
   header_y (table starts below): 786.3
 
@@ -877,32 +877,32 @@ PAGE 6  (width=1550.0  height=1900.0)
 
 --- PARSED ROWS (column-assigned) ---
   date_column = 'Date'
-  row 00  top= 805.3  starts_txn=True   {'Date': '116', 'Debit': '20000.00', 'Balance': '₹ 76,782.95'}
-  row 01  top= 827.7  [FILTERED]
-  row 02  top= 882.4  starts_txn=True   {'Date': '117', 'Debit': '20000.00', 'Balance': '₹ 56,782.95'}
-  row 03  top= 904.8  starts_txn=False  {'Debit': 'f'}
-  row 04  top= 959.5  starts_txn=True   {'Date': '118', 'Debit': '40000.00', 'Balance': '₹ 16,782.95'}
-  row 05  top= 981.9  [FILTERED]
-  row 06  top=1036.6  starts_txn=True   {'Date': '119', 'Balance': '2000.00 ₹ 18,782.95'}
-  row 07  top=1059.0  [FILTERED]
-  row 08  top=1113.7  starts_txn=True   {'Date': '120', 'Debit': '10000.00', 'Balance': '₹ 8,782.95'}
-  row 09  top=1136.1  starts_txn=False  {'Debit': 'f'}
-  row 10  top=1190.8  starts_txn=True   {'Date': '121', 'Balance': '5000.00 ₹ 13,782.95'}
-  row 11  top=1213.2  [FILTERED]
-  row 12  top=1267.9  starts_txn=True   {'Date': '122', 'Credit': '3083.00', 'Balance': '₹ 10,699.95'}
-  row 13  top=1290.3  starts_txn=False  {'Debit': 'Ma'}
-  row 14  top=1345.0  starts_txn=True   {'Date': '123', 'Credit': '2417.00', 'Balance': '₹ 8,282.95'}
-  row 15  top=1367.4  starts_txn=False  {'Debit': 'Ma'}
-  row 16  top=1422.1  starts_txn=True   {'Date': '124', 'Credit': '2000.00', 'Balance': '₹ 6,282.95'}
-  row 17  top=1444.5  [FILTERED]
-  row 18  top=1499.2  starts_txn=True   {'Date': '125', 'Debit': 'UPI/421513206720/DR//SBIN/rahulrahu/Sent f', 'Credit': '460.00', 'Balance': '₹ 5,822.95'}
-  row 19  top=1558.0  starts_txn=True   {'Date': '126', 'Debit': 'INFRA LLP', 'Credit': '10000.00', 'Balance': '₹ 15,822.95'}
-  row 20  top=1616.8  starts_txn=True   {'Date': '127', 'Debit': 'UPI/421647638270/CR/bhavis/PPIW/23bhavish/', 'Balance': '1000.00 ₹ 16,822.95'}
-  row 21  top=1639.3  [FILTERED]
-  row 22  top=1693.9  starts_txn=True   {'Date': '128', 'Debit': 'to 31-', 'Balance': '295.00 ₹ 17,117.95'}
-  row 23  top=1716.4  [FILTERED]
-  row 24  top=1771.0  starts_txn=True   {'Date': '129', 'Debit': '10000.00', 'Balance': '₹ 7,117.95'}
-  row 25  top=1793.5  [FILTERED]
+  row 00  top= 805.3  starts_txn=True   {'Date': '116 26-07-2024 UPI/457472154334/DR/Mr', 'Debit': '20000.00', 'Balance': '₹ 76,782.95'}
+  row 01  top= 827.7  starts_txn=False  {'Date': 'RAJ/IDIB/montu.198/Paymen'}
+  row 02  top= 882.4  starts_txn=True   {'Date': '117 26-07-2024 UPI/420845358173/DR/ARUN', 'Debit': '20000.00', 'Balance': '₹ 56,782.95'}
+  row 03  top= 904.8  starts_txn=False  {'Date': 'K/HDFC/931111414/Sent', 'Debit': 'f'}
+  row 04  top= 959.5  starts_txn=True   {'Date': '118 29-07-2024 UPI/457724339533/DR/SUMIT', 'Debit': '40000.00', 'Balance': '₹ 16,782.95'}
+  row 05  top= 981.9  starts_txn=False  {'Date': '/UBIN/981863712/Paymen'}
+  row 06  top=1036.6  starts_txn=True   {'Date': '119 29-07-2024 UPI/421143372952/CR/SUNIL', 'Credit': '2000.00', 'Balance': '₹ 18,782.95'}
+  row 07  top=1059.0  starts_txn=False  {'Date': '/BKID/959946244/NA'}
+  row 08  top=1113.7  starts_txn=True   {'Date': '120 30-07-2024 UPI/457801206033/DR/ARUN', 'Debit': '10000.00', 'Balance': '₹ 8,782.95'}
+  row 09  top=1136.1  starts_txn=False  {'Date': 'K/HDFC/931111414/Sent', 'Debit': 'f'}
+  row 10  top=1190.8  starts_txn=True   {'Date': '121 01-08-2024 UPI/458066840742/CR/ARUN', 'Credit': '5000.00', 'Balance': '₹ 13,782.95'}
+  row 11  top=1213.2  starts_txn=False  {'Date': 'K/HDFC/931111414/Paymen'}
+  row 12  top=1267.9  starts_txn=True   {'Date': '122 02-08-2024 UPI/421542372570/DR/BAJAJ', 'Debit': '3083.00', 'Balance': '₹ 10,699.95'}
+  row 13  top=1290.3  starts_txn=False  {'Date': '/HDFC/bflautopa/UPI', 'Debit': 'Ma'}
+  row 14  top=1345.0  starts_txn=True   {'Date': '123 02-08-2024 UPI/421543679059/DR/BAJAJ', 'Debit': '2417.00', 'Balance': '₹ 8,282.95'}
+  row 15  top=1367.4  starts_txn=False  {'Date': '/HDFC/bflautopa/UPI', 'Debit': 'Ma'}
+  row 16  top=1422.1  starts_txn=True   {'Date': '124 02-08-2024 UPI/458165819934/DR/PAPPU', 'Debit': '2000.00', 'Balance': '₹ 6,282.95'}
+  row 17  top=1444.5  starts_txn=False  {'Date': '/CNRB/pappushar/Paymen'}
+  row 18  top=1499.2  starts_txn=True   {'Date': '125 02-08-2024', 'Debit': 'UPI/421513206720/DR//SBIN/rahulrahu/Sent f 460.00', 'Balance': '₹ 5,822.95'}
+  row 19  top=1558.0  starts_txn=True   {'Date': '126 03-08-2024 NEFT/CMS4375323523/ICIC/RYSN', 'Debit': 'INFRA LLP', 'Credit': '10000.00', 'Balance': '₹ 15,822.95'}
+  row 20  top=1616.8  starts_txn=True   {'Date': '127 03-08-2024', 'Debit': 'UPI/421647638270/CR/bhavis/PPIW/23bhavish/', 'Credit': '1000.00', 'Balance': '₹ 16,822.95'}
+  row 21  top=1639.3  starts_txn=False  {'Date': 'UPI Pa'}
+  row 22  top=1693.9  starts_txn=True   {'Date': '128 04-08-2024 711210110007383:SBInt.Pd:01-05-2024', 'Debit': 'to 31-', 'Credit': '295.00', 'Balance': '₹ 17,117.95'}
+  row 23  top=1716.4  starts_txn=False  {'Date': '07-2024'}
+  row 24  top=1771.0  starts_txn=True   {'Date': '129 04-08-2024 UPI/458305886728/DR/ARUN', 'Debit': '10000.00', 'Balance': '₹ 7,117.95'}
+  row 25  top=1793.5  starts_txn=False  {'Date': 'K/HDFC/931111414/Paymen'}
 
 ============================================================
 PAGE 7  (width=1550.0  height=1900.0)
@@ -910,10 +910,10 @@ PAGE 7  (width=1550.0  height=1900.0)
   [~] No layout detected — using propagated layout from page 1
 
 --- DETECTED HEADERS ---
-  'Date'                          x0=   0.0  x1= 278.7  numeric=False  narration=False
-  'Debit'                         x0= 552.3  x1= 947.0  numeric=True  narration=False
-  'Credit'                        x0= 947.0  x1=1143.8  numeric=True  narration=False
-  'Balance'                       x0=1143.8  x1=1550.0  numeric=True  narration=False
+  'Date'                          x0=   0.0  x1= 552.3  numeric=False  narration=False
+  'Debit'                         x0= 552.3  x1=1042.9  numeric=True  narration=False
+  'Credit'                        x0=1042.9  x1=1251.5  numeric=True  narration=False
+  'Balance'                       x0=1251.5  x1=1550.0  numeric=True  narration=False
 
   header_y (table starts below): 786.3
 
@@ -1028,31 +1028,31 @@ PAGE 7  (width=1550.0  height=1900.0)
 
 --- PARSED ROWS (column-assigned) ---
   date_column = 'Date'
-  row 00  top= 805.5  [FILTERED]
-  row 01  top= 860.2  starts_txn=True   {'Date': '140', 'Debit': 'INFRA LLP', 'Credit': '251067.00', 'Balance': '₹ 254,415.95'}
-  row 02  top= 919.0  starts_txn=True   {'Date': '141', 'Debit': '65000.00', 'Balance': '₹ 189,415.95'}
-  row 03  top= 941.4  [FILTERED]
-  row 04  top= 996.1  starts_txn=True   {'Date': '142', 'Debit': 'CUST', 'Credit': '17.70', 'Balance': '₹ 189,398.25'}
-  row 05  top=1018.5  [FILTERED]
-  row 06  top=1073.2  starts_txn=True   {'Date': '143', 'Debit': 'UPI/423739854316/DR/SANJIV/SBIN/93118545 20000.00', 'Balance': '₹ 169,398.25'}
-  row 07  top=1095.6  [FILTERED]
-  row 08  top=1150.3  starts_txn=True   {'Date': '144', 'Balance': '3000.00 ₹ 172,398.25'}
-  row 09  top=1172.7  [FILTERED]
-  row 10  top=1227.4  starts_txn=True   {'Date': '145', 'Balance': '4000.00 ₹ 176,398.25'}
-  row 11  top=1249.8  [FILTERED]
-  row 12  top=1304.5  starts_txn=True   {'Date': '146', 'Credit': '1.00', 'Balance': '₹ 176,397.25'}
-  row 13  top=1326.9  [FILTERED]
-  row 14  top=1381.6  starts_txn=True   {'Date': '147', 'Debit': '60000.00', 'Balance': '₹ 116,397.25'}
-  row 15  top=1404.0  [FILTERED]
-  row 16  top=1458.7  starts_txn=True   {'Date': '148', 'Credit': '20350.00', 'Balance': '₹ 136,747.25'}
-  row 17  top=1481.1  [FILTERED]
-  row 18  top=1535.8  starts_txn=True   {'Date': '149', 'Debit': '10000.00', 'Balance': '₹ 126,747.25'}
-  row 19  top=1558.2  starts_txn=False  {'Debit': 'f'}
-  row 20  top=1612.9  starts_txn=True   {'Date': '150', 'Debit': 'INFRA LLP', 'Balance': '9000.00 ₹ 135,747.25'}
-  row 21  top=1671.7  starts_txn=True   {'Date': '151', 'Debit': '90000.00', 'Balance': '₹ 45,747.25'}
-  row 22  top=1694.1  [FILTERED]
-  row 23  top=1748.8  starts_txn=True   {'Date': '152', 'Debit': 'UPI/423953386673/CR/SANJIV/SBIN/93118545', 'Balance': '1000.00 ₹ 46,747.25'}
-  row 24  top=1771.2  [FILTERED]
+  row 00  top= 805.5  starts_txn=False  {'Date': '/PSIB/995821109/Paymen'}
+  row 01  top= 860.2  starts_txn=True   {'Date': '140 21-08-2024 NEFT/CMS4419885553/ICIC/RYSN', 'Debit': 'INFRA LLP', 'Credit': '251067.00', 'Balance': '₹ 254,415.95'}
+  row 02  top= 919.0  starts_txn=True   {'Date': '141 23-08-2024 UPI/417384421052/DR/VIPIN', 'Debit': '65000.00', 'Balance': '₹ 189,415.95'}
+  row 03  top= 941.4  starts_txn=False  {'Date': '/PUNB/956065523/Paymen'}
+  row 04  top= 996.1  starts_txn=True   {'Date': '142 24-08-2024 SMSChrgsAPR-JUN24+GST+G', 'Debit': 'CUST 17.70', 'Balance': '₹ 189,398.25'}
+  row 05  top=1018.5  starts_txn=False  {'Date': '121044631'}
+  row 06  top=1073.2  starts_txn=True   {'Date': '143 24-08-2024', 'Debit': 'UPI/423739854316/DR/SANJIV/SBIN/93118545 20000.00', 'Balance': '₹ 169,398.25'}
+  row 07  top=1095.6  starts_txn=False  {'Date': '4/NA'}
+  row 08  top=1150.3  starts_txn=True   {'Date': '144 25-08-2024 UPI/409049625230/CR/RAHUL', 'Credit': '3000.00', 'Balance': '₹ 172,398.25'}
+  row 09  top=1172.7  starts_txn=False  {'Date': '/PUNB/880098319/Paymen'}
+  row 10  top=1227.4  starts_txn=True   {'Date': '145 25-08-2024 UPI/785261775199/CR/ARUN', 'Credit': '4000.00', 'Balance': '₹ 176,398.25'}
+  row 11  top=1249.8  starts_txn=False  {'Date': 'S/BKID/971191070/Paymen'}
+  row 12  top=1304.5  starts_txn=True   {'Date': '146 25-08-2024 UPI/460400836137/DR/Mr', 'Debit': '1.00', 'Balance': '₹ 176,397.25'}
+  row 13  top=1326.9  starts_txn=False  {'Date': 'RAJ/IDIB/montu.198/Paymen'}
+  row 14  top=1381.6  starts_txn=True   {'Date': '147 25-08-2024 UPI/460462002464/DR/Mr', 'Debit': '60000.00', 'Balance': '₹ 116,397.25'}
+  row 15  top=1404.0  starts_txn=False  {'Date': 'RAJ/IDIB/montu.198/Paymen'}
+  row 16  top=1458.7  starts_txn=True   {'Date': '148 26-08-2024 NEFT/SBIN224239246173/SBIN/ITDTAX', 'Credit': '20350.00', 'Balance': '₹ 136,747.25'}
+  row 17  top=1481.1  starts_txn=False  {'Date': 'REFUND 2024-25'}
+  row 18  top=1535.8  starts_txn=True   {'Date': '149 26-08-2024 UPI/423950460879/DR/SUMIT', 'Debit': '10000.00', 'Balance': '₹ 126,747.25'}
+  row 19  top=1558.2  starts_txn=False  {'Date': '/UBIN/981863712/Sent', 'Debit': 'f'}
+  row 20  top=1612.9  starts_txn=True   {'Date': '150 26-08-2024 NEFT/CMS4428601411/ICIC/RYSN', 'Debit': 'INFRA LLP', 'Credit': '9000.00', 'Balance': '₹ 135,747.25'}
+  row 21  top=1671.7  starts_txn=True   {'Date': '151 26-08-2024 UPI/818465200682/DR/SUMIT', 'Debit': '90000.00', 'Balance': '₹ 45,747.25'}
+  row 22  top=1694.1  starts_txn=False  {'Date': '/UBIN/981863712/Paymen'}
+  row 23  top=1748.8  starts_txn=True   {'Date': '152 26-08-2024', 'Debit': 'UPI/423953386673/CR/SANJIV/SBIN/93118545', 'Credit': '1000.00', 'Balance': '₹ 46,747.25'}
+  row 24  top=1771.2  starts_txn=False  {'Date': '4/NA'}
 
 ============================================================
 PAGE 8  (width=1550.0  height=1900.0)
@@ -1060,10 +1060,10 @@ PAGE 8  (width=1550.0  height=1900.0)
   [~] No layout detected — using propagated layout from page 1
 
 --- DETECTED HEADERS ---
-  'Date'                          x0=   0.0  x1= 278.7  numeric=False  narration=False
-  'Debit'                         x0= 552.3  x1= 947.0  numeric=True  narration=False
-  'Credit'                        x0= 947.0  x1=1143.8  numeric=True  narration=False
-  'Balance'                       x0=1143.8  x1=1550.0  numeric=True  narration=False
+  'Date'                          x0=   0.0  x1= 552.3  numeric=False  narration=False
+  'Debit'                         x0= 552.3  x1=1042.9  numeric=True  narration=False
+  'Credit'                        x0=1042.9  x1=1251.5  numeric=True  narration=False
+  'Balance'                       x0=1251.5  x1=1550.0  numeric=True  narration=False
 
   header_y (table starts below): 786.3
 
@@ -1178,31 +1178,31 @@ PAGE 8  (width=1550.0  height=1900.0)
 
 --- PARSED ROWS (column-assigned) ---
   date_column = 'Date'
-  row 00  top= 801.4  starts_txn=True   {'Date': '162', 'Debit': 'INFRA LLP', 'Balance': '9000.00 ₹ 13,472.25'}
-  row 01  top= 860.2  starts_txn=True   {'Date': '163', 'Credit': '9000.00', 'Balance': '₹ 4,472.25'}
-  row 02  top= 882.6  starts_txn=False  {'Debit': 'f'}
-  row 03  top= 937.3  starts_txn=True   {'Date': '164', 'Credit': '20000.00', 'Balance': '₹ 24,472.25'}
-  row 04  top= 959.7  [FILTERED]
-  row 05  top=1014.4  starts_txn=True   {'Date': '165', 'Debit': '20000.00', 'Balance': '₹ 4,472.25'}
-  row 06  top=1036.8  [FILTERED]
-  row 07  top=1091.5  starts_txn=True   {'Date': '166', 'Debit': 'INFRA LLP', 'Credit': '13000.00', 'Balance': '₹ 17,472.25'}
-  row 08  top=1150.3  starts_txn=True   {'Date': '167', 'Debit': '13000.00', 'Balance': '₹ 4,472.25'}
-  row 09  top=1172.7  [FILTERED]
-  row 10  top=1227.4  starts_txn=True   {'Date': '168', 'Debit': 'UPI/425346680608/CR/SANJIV/SBIN/93118545', 'Balance': '600.00 ₹ 5,072.25'}
-  row 11  top=1249.8  [FILTERED]
-  row 12  top=1304.5  starts_txn=True   {'Date': '169', 'Debit': 'UPI/425399279210/DR/RANJIT/YESB/paytmqr1', 'Credit': '40.00', 'Balance': '₹ 5,032.25'}
-  row 13  top=1326.9  [FILTERED]
-  row 14  top=1381.6  starts_txn=True   {'Date': '170', 'Balance': '2000.00 ₹ 7,032.25'}
-  row 15  top=1404.0  [FILTERED]
-  row 16  top=1458.7  starts_txn=True   {'Date': '171', 'Debit': 'UPI/462200595835/CR/Brijes/SBIN/798236825/', 'Credit': '13000.00', 'Balance': '₹ 20,032.25'}
-  row 17  top=1481.1  [FILTERED]
-  row 18  top=1535.8  starts_txn=True   {'Date': '172', 'Debit': 'UPI/425673816238/DR/RISHAB/BARB/8630387 10000.00', 'Balance': '₹ 10,032.25'}
-  row 19  top=1558.2  [FILTERED]
-  row 20  top=1612.9  starts_txn=True   {'Date': '173', 'Debit': 'INFRA LLP', 'Credit': '15000.00', 'Balance': '₹ 25,032.25'}
-  row 21  top=1671.7  starts_txn=True   {'Date': '174', 'Debit': 'UPI/462720620381/DR/SANJIV/SBIN/93118545', 'Credit': '1000.00', 'Balance': '₹ 24,032.25'}
-  row 22  top=1694.1  [FILTERED]
-  row 23  top=1748.8  starts_txn=True   {'Date': '175', 'Debit': 'UPI/426159073718/DR/Brijes/SBIN/798236825/ 20000.00', 'Balance': '₹ 4,032.25'}
-  row 24  top=1771.2  [FILTERED]
+  row 00  top= 801.4  starts_txn=True   {'Date': '162 03-09-2024 NEFT/CMS4459752173/ICIC/RYSN', 'Debit': 'INFRA LLP', 'Credit': '9000.00', 'Balance': '₹ 13,472.25'}
+  row 01  top= 860.2  starts_txn=True   {'Date': '163 04-09-2024 UPI/461454567681/DR/SUMIT', 'Debit': '9000.00', 'Balance': '₹ 4,472.25'}
+  row 02  top= 882.6  starts_txn=False  {'Date': '/UBIN/981863712/Sent', 'Debit': 'f'}
+  row 03  top= 937.3  starts_txn=True   {'Date': '164 05-09-2024 UPI/386080217470/CR/AMIT', 'Credit': '20000.00', 'Balance': '₹ 24,472.25'}
+  row 04  top= 959.7  starts_txn=False  {'Date': 'K/BKID/971853376/Paymen'}
+  row 05  top=1014.4  starts_txn=True   {'Date': '165 05-09-2024 UPI/016576167216/DR/ARUN', 'Debit': '20000.00', 'Balance': '₹ 4,472.25'}
+  row 06  top=1036.8  starts_txn=False  {'Date': 'K/HDFC/931111414/Paymen'}
+  row 07  top=1091.5  starts_txn=True   {'Date': '166 06-09-2024 NEFT/CMS4474366565/ICIC/RYSN', 'Debit': 'INFRA LLP', 'Credit': '13000.00', 'Balance': '₹ 17,472.25'}
+  row 08  top=1150.3  starts_txn=True   {'Date': '167 07-09-2024 UPI/131986756381/DR/SUMIT', 'Debit': '13000.00', 'Balance': '₹ 4,472.25'}
+  row 09  top=1172.7  starts_txn=False  {'Date': '/UBIN/981863712/Paymen'}
+  row 10  top=1227.4  starts_txn=True   {'Date': '168 09-09-2024', 'Debit': 'UPI/425346680608/CR/SANJIV/SBIN/93118545', 'Credit': '600.00', 'Balance': '₹ 5,072.25'}
+  row 11  top=1249.8  starts_txn=False  {'Date': '4/NA'}
+  row 12  top=1304.5  starts_txn=True   {'Date': '169 09-09-2024', 'Debit': 'UPI/425399279210/DR/RANJIT/YESB/paytmqr1 40.00', 'Balance': '₹ 5,032.25'}
+  row 13  top=1326.9  starts_txn=False  {'Date': '5/NA'}
+  row 14  top=1381.6  starts_txn=True   {'Date': '170 11-09-2024 UPI/425592240113/CR/SUNIL', 'Credit': '2000.00', 'Balance': '₹ 7,032.25'}
+  row 15  top=1404.0  starts_txn=False  {'Date': '/BKID/959946244/NA'}
+  row 16  top=1458.7  starts_txn=True   {'Date': '171 12-09-2024', 'Debit': 'UPI/462200595835/CR/Brijes/SBIN/798236825/', 'Credit': '13000.00', 'Balance': '₹ 20,032.25'}
+  row 17  top=1481.1  starts_txn=False  {'Date': 'NA'}
+  row 18  top=1535.8  starts_txn=True   {'Date': '172 12-09-2024', 'Debit': 'UPI/425673816238/DR/RISHAB/BARB/8630387 10000.00', 'Balance': '₹ 10,032.25'}
+  row 19  top=1558.2  starts_txn=False  {'Date': '93/NA'}
+  row 20  top=1612.9  starts_txn=True   {'Date': '173 14-09-2024 NEFT/CMS4493156897/ICIC/RYSN', 'Debit': 'INFRA LLP', 'Credit': '15000.00', 'Balance': '₹ 25,032.25'}
+  row 21  top=1671.7  starts_txn=True   {'Date': '174 17-09-2024', 'Debit': 'UPI/462720620381/DR/SANJIV/SBIN/93118545 1000.00', 'Balance': '₹ 24,032.25'}
+  row 22  top=1694.1  starts_txn=False  {'Date': '4/NA'}
+  row 23  top=1748.8  starts_txn=True   {'Date': '175 17-09-2024', 'Debit': 'UPI/426159073718/DR/Brijes/SBIN/798236825/ 20000.00', 'Balance': '₹ 4,032.25'}
+  row 24  top=1771.2  starts_txn=False  {'Date': 'NA'}
 
 ============================================================
 PAGE 9  (width=1550.0  height=1900.0)
@@ -1210,10 +1210,10 @@ PAGE 9  (width=1550.0  height=1900.0)
   [~] No layout detected — using propagated layout from page 1
 
 --- DETECTED HEADERS ---
-  'Date'                          x0=   0.0  x1= 278.7  numeric=False  narration=False
-  'Debit'                         x0= 552.3  x1= 947.0  numeric=True  narration=False
-  'Credit'                        x0= 947.0  x1=1143.8  numeric=True  narration=False
-  'Balance'                       x0=1143.8  x1=1550.0  numeric=True  narration=False
+  'Date'                          x0=   0.0  x1= 552.3  numeric=False  narration=False
+  'Debit'                         x0= 552.3  x1=1042.9  numeric=True  narration=False
+  'Credit'                        x0=1042.9  x1=1251.5  numeric=True  narration=False
+  'Balance'                       x0=1251.5  x1=1550.0  numeric=True  narration=False
 
   header_y (table starts below): 786.3
 
@@ -1329,32 +1329,32 @@ PAGE 9  (width=1550.0  height=1900.0)
 
 --- PARSED ROWS (column-assigned) ---
   date_column = 'Date'
-  row 00  top= 787.2  starts_txn=False  {'Debit': 'f'}
-  row 01  top= 841.9  starts_txn=True   {'Date': '186', 'Debit': 'UPI/463476755571/CR/ABHISH/UTIB/96504125', 'Balance': '7000.00 ₹ 9,976.25'}
-  row 02  top= 864.3  [FILTERED]
-  row 03  top= 919.0  starts_txn=True   {'Date': '187', 'Credit': '10000.00', 'Balance': '₹ 19,976.25'}
-  row 04  top= 941.4  [FILTERED]
-  row 05  top= 996.1  starts_txn=True   {'Date': '188', 'Debit': '10000.00', 'Balance': '₹ 9,976.25'}
-  row 06  top=1018.5  starts_txn=False  {'Debit': 'f'}
-  row 07  top=1073.2  starts_txn=True   {'Date': '189', 'Debit': 'UPI/426804448710/DR/Abhish/UTIB/965041251', 'Credit': '7000.00', 'Balance': '₹ 2,976.25'}
-  row 08  top=1095.6  [FILTERED]
-  row 09  top=1150.3  starts_txn=True   {'Date': '190', 'Debit': 'UPI/426810491518/CR/Brijes/SBIN/798236825/', 'Balance': '4500.00 ₹ 7,476.25'}
-  row 10  top=1172.7  [FILTERED]
-  row 11  top=1227.4  starts_txn=True   {'Date': '191', 'Debit': 'UPI/426929532951/CR/SANJIV/SBIN/93118545', 'Balance': '1000.00 ₹ 8,476.25'}
-  row 12  top=1249.8  [FILTERED]
-  row 13  top=1304.5  starts_txn=True   {'Date': '192', 'Credit': '3000.00', 'Balance': '₹ 5,476.25'}
-  row 14  top=1326.9  starts_txn=False  {'Debit': 'f'}
-  row 15  top=1381.6  starts_txn=True   {'Date': '193', 'Debit': 'UPI/427155250751/DR/Mohan/YESB/paytmqr5c', 'Credit': '150.00', 'Balance': '₹ 5,326.25'}
-  row 16  top=1404.0  [FILTERED]
-  row 17  top=1458.7  starts_txn=True   {'Date': '194', 'Debit': 'INFRA LLP', 'Credit': '16000.00', 'Balance': '₹ 21,326.25'}
-  row 18  top=1517.5  starts_txn=True   {'Date': '195', 'Debit': '10000.00', 'Balance': '₹ 11,326.25'}
-  row 19  top=1539.9  starts_txn=False  {'Debit': 'f'}
-  row 20  top=1594.6  starts_txn=True   {'Date': '196', 'Debit': 'UPI/427254988275/CR/TUSHAR/KKBK/964382', 'Balance': '4350.00 ₹ 15,676.25'}
-  row 21  top=1617.0  [FILTERED]
-  row 22  top=1671.7  starts_txn=True   {'Date': '197', 'Debit': 'UPI/463943272531/CR/SANJIV/SBIN/93118545', 'Balance': '5000.00 ₹ 20,676.25'}
-  row 23  top=1694.1  [FILTERED]
-  row 24  top=1748.8  starts_txn=True   {'Date': '198', 'Credit': '5000.00', 'Balance': '₹ 15,676.25'}
-  row 25  top=1771.2  starts_txn=False  {'Debit': 'f'}
+  row 00  top= 787.2  starts_txn=False  {'Date': 'K/HDFC/931111414/Sent', 'Debit': 'f'}
+  row 01  top= 841.9  starts_txn=True   {'Date': '186 24-09-2024', 'Debit': 'UPI/463476755571/CR/ABHISH/UTIB/96504125', 'Credit': '7000.00', 'Balance': '₹ 9,976.25'}
+  row 02  top= 864.3  starts_txn=False  {'Date': '1/Sent f'}
+  row 03  top= 919.0  starts_txn=True   {'Date': '187 24-09-2024 UPI/463493628168/CR/AMIT', 'Credit': '10000.00', 'Balance': '₹ 19,976.25'}
+  row 04  top= 941.4  starts_txn=False  {'Date': 'K/BKID/971853376/Paymen'}
+  row 05  top= 996.1  starts_txn=True   {'Date': '188 24-09-2024 UPI/426805453826/DR/ARUN', 'Debit': '10000.00', 'Balance': '₹ 9,976.25'}
+  row 06  top=1018.5  starts_txn=False  {'Date': 'K/HDFC/931111414/Sent', 'Debit': 'f'}
+  row 07  top=1073.2  starts_txn=True   {'Date': '189 24-09-2024', 'Debit': 'UPI/426804448710/DR/Abhish/UTIB/965041251 7000.00', 'Balance': '₹ 2,976.25'}
+  row 08  top=1095.6  starts_txn=False  {'Date': '/NA'}
+  row 09  top=1150.3  starts_txn=True   {'Date': '190 24-09-2024', 'Debit': 'UPI/426810491518/CR/Brijes/SBIN/798236825/', 'Credit': '4500.00', 'Balance': '₹ 7,476.25'}
+  row 10  top=1172.7  starts_txn=False  {'Date': 'NA'}
+  row 11  top=1227.4  starts_txn=True   {'Date': '191 25-09-2024', 'Debit': 'UPI/426929532951/CR/SANJIV/SBIN/93118545', 'Credit': '1000.00', 'Balance': '₹ 8,476.25'}
+  row 12  top=1249.8  starts_txn=False  {'Date': '4/NA'}
+  row 13  top=1304.5  starts_txn=True   {'Date': '192 26-09-2024 UPI/427082145824/DR/SUMIT', 'Debit': '3000.00', 'Balance': '₹ 5,476.25'}
+  row 14  top=1326.9  starts_txn=False  {'Date': '/UBIN/981863712/Sent', 'Debit': 'f'}
+  row 15  top=1381.6  starts_txn=True   {'Date': '193 27-09-2024', 'Debit': 'UPI/427155250751/DR/Mohan/YESB/paytmqr5c 150.00', 'Balance': '₹ 5,326.25'}
+  row 16  top=1404.0  starts_txn=False  {'Date': '/NA'}
+  row 17  top=1458.7  starts_txn=True   {'Date': '194 28-09-2024 NEFT/CMS4529688397/ICIC/RYSN', 'Debit': 'INFRA LLP', 'Credit': '16000.00', 'Balance': '₹ 21,326.25'}
+  row 18  top=1517.5  starts_txn=True   {'Date': '195 28-09-2024 UPI/427246896349/DR/SUMIT', 'Debit': '10000.00', 'Balance': '₹ 11,326.25'}
+  row 19  top=1539.9  starts_txn=False  {'Date': '/UBIN/981863712/Sent', 'Debit': 'f'}
+  row 20  top=1594.6  starts_txn=True   {'Date': '196 28-09-2024', 'Debit': 'UPI/427254988275/CR/TUSHAR/KKBK/964382', 'Credit': '4350.00', 'Balance': '₹ 15,676.25'}
+  row 21  top=1617.0  starts_txn=False  {'Date': '341/NA'}
+  row 22  top=1671.7  starts_txn=True   {'Date': '197 29-09-2024', 'Debit': 'UPI/463943272531/CR/SANJIV/SBIN/93118545', 'Credit': '5000.00', 'Balance': '₹ 20,676.25'}
+  row 23  top=1694.1  starts_txn=False  {'Date': '4/NA'}
+  row 24  top=1748.8  starts_txn=True   {'Date': '198 01-10-2024 UPI/427512766875/DR/ARUN', 'Debit': '5000.00', 'Balance': '₹ 15,676.25'}
+  row 25  top=1771.2  starts_txn=False  {'Date': 'K/HDFC/931111414/Sent', 'Debit': 'f'}
 
 ============================================================
 PAGE 10  (width=1550.0  height=1900.0)
@@ -1362,10 +1362,10 @@ PAGE 10  (width=1550.0  height=1900.0)
   [~] No layout detected — using propagated layout from page 1
 
 --- DETECTED HEADERS ---
-  'Date'                          x0=   0.0  x1= 278.7  numeric=False  narration=False
-  'Debit'                         x0= 552.3  x1= 947.0  numeric=True  narration=False
-  'Credit'                        x0= 947.0  x1=1143.8  numeric=True  narration=False
-  'Balance'                       x0=1143.8  x1=1550.0  numeric=True  narration=False
+  'Date'                          x0=   0.0  x1= 552.3  numeric=False  narration=False
+  'Debit'                         x0= 552.3  x1=1042.9  numeric=True  narration=False
+  'Credit'                        x0=1042.9  x1=1251.5  numeric=True  narration=False
+  'Balance'                       x0=1251.5  x1=1550.0  numeric=True  narration=False
 
   header_y (table starts below): 786.3
 
@@ -1480,31 +1480,31 @@ PAGE 10  (width=1550.0  height=1900.0)
 
 --- PARSED ROWS (column-assigned) ---
   date_column = 'Date'
-  row 00  top= 805.5  [FILTERED]
-  row 01  top= 860.2  starts_txn=True   {'Date': '209', 'Debit': '10000.00', 'Balance': '₹ 5,133.25'}
-  row 02  top= 882.6  [FILTERED]
-  row 03  top= 937.3  starts_txn=True   {'Date': '210', 'Balance': '2000.00 ₹ 7,133.25'}
-  row 04  top= 959.7  [FILTERED]
-  row 05  top=1014.4  starts_txn=True   {'Date': '211', 'Debit': 'UPI/428336448221/CR/bhavis/PPIW/23bhavish/', 'Balance': '1500.00 ₹ 8,633.25'}
-  row 06  top=1036.8  [FILTERED]
-  row 07  top=1091.5  starts_txn=True   {'Date': '212', 'Balance': '5000.00 ₹ 13,633.25'}
-  row 08  top=1113.9  [FILTERED]
-  row 09  top=1168.6  starts_txn=True   {'Date': '213', 'Debit': '10000.00', 'Balance': '₹ 3,633.25'}
-  row 10  top=1191.0  [FILTERED]
-  row 11  top=1245.7  starts_txn=True   {'Date': '214', 'Debit': 'UPI/465041057901/CR/SANJIV/SBIN/93118545', 'Balance': '500.00 ₹ 4,133.25'}
-  row 12  top=1268.1  [FILTERED]
-  row 13  top=1322.8  starts_txn=True   {'Date': '215', 'Debit': 'INFRA LLP', 'Credit': '10000.00', 'Balance': '₹ 14,133.25'}
-  row 14  top=1381.6  starts_txn=True   {'Date': '216', 'Credit': '30000.00', 'Balance': '₹ 44,133.25'}
-  row 15  top=1404.0  [FILTERED]
-  row 16  top=1458.7  starts_txn=True   {'Date': '217', 'Debit': '30000.00', 'Balance': '₹ 14,133.25'}
-  row 17  top=1481.1  [FILTERED]
-  row 18  top=1535.8  starts_txn=True   {'Date': '218', 'Debit': 'UPI/465482006824/CR/Brijes/SBIN/798236825/', 'Credit': '10000.00', 'Balance': '₹ 24,133.25'}
-  row 19  top=1558.2  [FILTERED]
-  row 20  top=1612.9  starts_txn=True   {'Date': '219', 'Debit': 'UPI/428861131250/DR//KKBK/931002563/Pay 20000.00', 'Balance': '₹ 4,133.25'}
-  row 21  top=1635.3  [FILTERED]
-  row 22  top=1690.0  starts_txn=True   {'Date': '220', 'Debit': 'UPI/429282596063/CR/SANJIV/SBIN/93118545', 'Balance': '200.00 ₹ 4,333.25'}
-  row 23  top=1712.4  [FILTERED]
-  row 24  top=1767.1  starts_txn=True   {'Date': '221', 'Debit': 'INFRA LLP', 'Credit': '160878.00', 'Balance': '₹ 165,211.25'}
+  row 00  top= 805.5  starts_txn=False  {'Date': '4/NA'}
+  row 01  top= 860.2  starts_txn=True   {'Date': '209 08-10-2024 UPI/464859878619/DR/SUMIT', 'Debit': '10000.00', 'Balance': '₹ 5,133.25'}
+  row 02  top= 882.6  starts_txn=False  {'Date': '/UBIN/981863712/Paymen'}
+  row 03  top= 937.3  starts_txn=True   {'Date': '210 08-10-2024 UPI/464859991154/CR/SUNIL', 'Credit': '2000.00', 'Balance': '₹ 7,133.25'}
+  row 04  top= 959.7  starts_txn=False  {'Date': '/BKID/959946244/NA'}
+  row 05  top=1014.4  starts_txn=True   {'Date': '211 09-10-2024', 'Debit': 'UPI/428336448221/CR/bhavis/PPIW/23bhavish/', 'Credit': '1500.00', 'Balance': '₹ 8,633.25'}
+  row 06  top=1036.8  starts_txn=False  {'Date': 'UPI Pa'}
+  row 07  top=1091.5  starts_txn=True   {'Date': '212 10-10-2024 UPI/663742489494/CR/SUMIT', 'Credit': '5000.00', 'Balance': '₹ 13,633.25'}
+  row 08  top=1113.9  starts_txn=False  {'Date': '/UBIN/981863712/Paymen'}
+  row 09  top=1168.6  starts_txn=True   {'Date': '213 10-10-2024 UPI/465008189645/DR/AMIT', 'Debit': '10000.00', 'Balance': '₹ 3,633.25'}
+  row 10  top=1191.0  starts_txn=False  {'Date': 'K/BKID/971853376/Paymen'}
+  row 11  top=1245.7  starts_txn=True   {'Date': '214 10-10-2024', 'Debit': 'UPI/465041057901/CR/SANJIV/SBIN/93118545', 'Credit': '500.00', 'Balance': '₹ 4,133.25'}
+  row 12  top=1268.1  starts_txn=False  {'Date': '4/NA'}
+  row 13  top=1322.8  starts_txn=True   {'Date': '215 12-10-2024 NEFT/CMS4573955672/ICIC/RYSN', 'Debit': 'INFRA LLP', 'Credit': '10000.00', 'Balance': '₹ 14,133.25'}
+  row 14  top=1381.6  starts_txn=True   {'Date': '216 13-10-2024 UPI/131829567945/CR/SUMIT', 'Credit': '30000.00', 'Balance': '₹ 44,133.25'}
+  row 15  top=1404.0  starts_txn=False  {'Date': '/UBIN/981863712/Paymen'}
+  row 16  top=1458.7  starts_txn=True   {'Date': '217 13-10-2024 UPI/465349192696/DR/AMIT', 'Debit': '30000.00', 'Balance': '₹ 14,133.25'}
+  row 17  top=1481.1  starts_txn=False  {'Date': 'K/BKID/971853376/Paymen'}
+  row 18  top=1535.8  starts_txn=True   {'Date': '218 14-10-2024', 'Debit': 'UPI/465482006824/CR/Brijes/SBIN/798236825/', 'Credit': '10000.00', 'Balance': '₹ 24,133.25'}
+  row 19  top=1558.2  starts_txn=False  {'Date': 'NA'}
+  row 20  top=1612.9  starts_txn=True   {'Date': '219 14-10-2024', 'Debit': 'UPI/428861131250/DR//KKBK/931002563/Pay 20000.00', 'Balance': '₹ 4,133.25'}
+  row 21  top=1635.3  starts_txn=False  {'Date': 'men'}
+  row 22  top=1690.0  starts_txn=True   {'Date': '220 18-10-2024', 'Debit': 'UPI/429282596063/CR/SANJIV/SBIN/93118545', 'Credit': '200.00', 'Balance': '₹ 4,333.25'}
+  row 23  top=1712.4  starts_txn=False  {'Date': '4/NA'}
+  row 24  top=1767.1  starts_txn=True   {'Date': '221 18-10-2024 NEFT/CMS4587583294/ICIC/RYSN', 'Debit': 'INFRA LLP', 'Credit': '160878.00', 'Balance': '₹ 165,211.25'}
 
 ============================================================
 PAGE 11  (width=1550.0  height=1900.0)
@@ -1512,10 +1512,10 @@ PAGE 11  (width=1550.0  height=1900.0)
   [~] No layout detected — using propagated layout from page 1
 
 --- DETECTED HEADERS ---
-  'Date'                          x0=   0.0  x1= 278.7  numeric=False  narration=False
-  'Debit'                         x0= 552.3  x1= 947.0  numeric=True  narration=False
-  'Credit'                        x0= 947.0  x1=1143.8  numeric=True  narration=False
-  'Balance'                       x0=1143.8  x1=1550.0  numeric=True  narration=False
+  'Date'                          x0=   0.0  x1= 552.3  numeric=False  narration=False
+  'Debit'                         x0= 552.3  x1=1042.9  numeric=True  narration=False
+  'Credit'                        x0=1042.9  x1=1251.5  numeric=True  narration=False
+  'Balance'                       x0=1251.5  x1=1550.0  numeric=True  narration=False
 
   header_y (table starts below): 786.3
 
@@ -1631,32 +1631,32 @@ PAGE 11  (width=1550.0  height=1900.0)
 
 --- PARSED ROWS (column-assigned) ---
   date_column = 'Date'
-  row 00  top= 801.4  starts_txn=True   {'Date': '231', 'Credit': '3000.00', 'Balance': '₹ 101,211.25'}
-  row 01  top= 823.8  [FILTERED]
-  row 02  top= 878.5  starts_txn=True   {'Date': '232', 'Debit': '20000.00', 'Balance': '₹ 81,211.25'}
-  row 03  top= 900.9  [FILTERED]
-  row 04  top= 955.6  starts_txn=True   {'Date': '233', 'Debit': '20000.00', 'Balance': '₹ 61,211.25'}
-  row 05  top= 978.0  [FILTERED]
-  row 06  top=1032.7  starts_txn=True   {'Date': '234', 'Debit': '48000.00', 'Balance': '₹ 13,211.25'}
-  row 07  top=1055.1  [FILTERED]
-  row 08  top=1109.8  starts_txn=True   {'Date': '235', 'Balance': '5000.00 ₹ 18,211.25'}
-  row 09  top=1132.2  [FILTERED]
-  row 10  top=1186.9  starts_txn=True   {'Date': '236', 'Debit': 'UPI/466819516889/CR/SANJIV/SBIN/93118545', 'Balance': '1000.00 ₹ 19,211.25'}
-  row 11  top=1209.3  [FILTERED]
-  row 12  top=1264.0  starts_txn=True   {'Date': '237', 'Debit': 'INFRA LLP', 'Credit': '14000.00', 'Balance': '₹ 33,211.25'}
-  row 13  top=1322.8  starts_txn=True   {'Date': '238', 'Debit': 'UPI/466981813232/DR/TANEJA/CBIN/1152226', 'Credit': '1000.00', 'Balance': '₹ 32,211.25'}
-  row 14  top=1345.2  [FILTERED]
-  row 15  top=1399.9  starts_txn=True   {'Date': '239', 'Debit': 'UPI/319120699621/DR/DEEPAK/YESB/paytmqr 14800.00', 'Balance': '₹ 17,411.25'}
-  row 16  top=1422.3  [FILTERED]
-  row 17  top=1477.0  starts_txn=True   {'Date': '240', 'Balance': '4000.00 ₹ 21,411.25'}
-  row 18  top=1499.4  [FILTERED]
-  row 19  top=1554.1  starts_txn=True   {'Date': '241', 'Credit': '35000.00', 'Balance': '₹ 56,411.25'}
-  row 20  top=1576.5  [FILTERED]
-  row 21  top=1631.2  starts_txn=True   {'Date': '242', 'Debit': '35000.00', 'Balance': '₹ 21,411.25'}
-  row 22  top=1653.6  [FILTERED]
-  row 23  top=1708.3  starts_txn=True   {'Date': '243', 'Debit': 'UPI/430601705643/CR/SANJIV/SBIN/93118545', 'Balance': '1000.00 ₹ 22,411.25'}
-  row 24  top=1730.7  [FILTERED]
-  row 25  top=1785.4  starts_txn=True   {'Date': '244', 'Debit': 'UPI/467209743769/CR/TUSHAR/KKBK/964382', 'Balance': '5000.00 ₹ 27,411.25'}
+  row 00  top= 801.4  starts_txn=True   {'Date': '231 23-10-2024 UPI/462044407321/DR/SUMIT', 'Debit': '3000.00', 'Balance': '₹ 101,211.25'}
+  row 01  top= 823.8  starts_txn=False  {'Date': '/UBIN/981863712/Paymen'}
+  row 02  top= 878.5  starts_txn=True   {'Date': '232 23-10-2024 UPI/797810369092/DR/SUMIT', 'Debit': '20000.00', 'Balance': '₹ 81,211.25'}
+  row 03  top= 900.9  starts_txn=False  {'Date': '/UBIN/981863712/Paymen'}
+  row 04  top= 955.6  starts_txn=True   {'Date': '233 24-10-2024 UPI/136134817674/DR/Mr', 'Debit': '20000.00', 'Balance': '₹ 61,211.25'}
+  row 05  top= 978.0  starts_txn=False  {'Date': 'PRA/IDIB/959970522/Paymen'}
+  row 06  top=1032.7  starts_txn=True   {'Date': '234 27-10-2024 UPI/500658456569/DR/SUMIT', 'Debit': '48000.00', 'Balance': '₹ 13,211.25'}
+  row 07  top=1055.1  starts_txn=False  {'Date': '/UBIN/981863712/Paymen'}
+  row 08  top=1109.8  starts_txn=True   {'Date': '235 27-10-2024 UPI/015231065075/CR/MONU', 'Credit': '5000.00', 'Balance': '₹ 18,211.25'}
+  row 09  top=1132.2  starts_txn=False  {'Date': 'S/PUNB/999078277/Paymen'}
+  row 10  top=1186.9  starts_txn=True   {'Date': '236 28-10-2024', 'Debit': 'UPI/466819516889/CR/SANJIV/SBIN/93118545', 'Credit': '1000.00', 'Balance': '₹ 19,211.25'}
+  row 11  top=1209.3  starts_txn=False  {'Date': '4/NA'}
+  row 12  top=1264.0  starts_txn=True   {'Date': '237 29-10-2024 NEFT/CMS4608411069/ICIC/RYSN', 'Debit': 'INFRA LLP', 'Credit': '14000.00', 'Balance': '₹ 33,211.25'}
+  row 13  top=1322.8  starts_txn=True   {'Date': '238 29-10-2024', 'Debit': 'UPI/466981813232/DR/TANEJA/CBIN/1152226 1000.00', 'Balance': '₹ 32,211.25'}
+  row 14  top=1345.2  starts_txn=False  {'Date': '7@/NA'}
+  row 15  top=1399.9  starts_txn=True   {'Date': '239 30-10-2024', 'Debit': 'UPI/319120699621/DR/DEEPAK/YESB/paytmqr 14800.00', 'Balance': '₹ 17,411.25'}
+  row 16  top=1422.3  starts_txn=False  {'Date': 'fx/Paymen'}
+  row 17  top=1477.0  starts_txn=True   {'Date': '240 30-10-2024 UPI/559971989622/CR/ARUN', 'Credit': '4000.00', 'Balance': '₹ 21,411.25'}
+  row 18  top=1499.4  starts_txn=False  {'Date': 'S/BKID/971191070/Paymen'}
+  row 19  top=1554.1  starts_txn=True   {'Date': '241 30-10-2024 UPI/074869177932/CR/ARUN', 'Credit': '35000.00', 'Balance': '₹ 56,411.25'}
+  row 20  top=1576.5  starts_txn=False  {'Date': 'K/HDFC/931111414/Paymen'}
+  row 21  top=1631.2  starts_txn=True   {'Date': '242 30-10-2024 UPI/857624928336/DR/ARUN', 'Debit': '35000.00', 'Balance': '₹ 21,411.25'}
+  row 22  top=1653.6  starts_txn=False  {'Date': 'K/HDFC/931111414/Paymen'}
+  row 23  top=1708.3  starts_txn=True   {'Date': '243 01-11-2024', 'Debit': 'UPI/430601705643/CR/SANJIV/SBIN/93118545', 'Credit': '1000.00', 'Balance': '₹ 22,411.25'}
+  row 24  top=1730.7  starts_txn=False  {'Date': '4/NA'}
+  row 25  top=1785.4  starts_txn=True   {'Date': '244 01-11-2024', 'Debit': 'UPI/467209743769/CR/TUSHAR/KKBK/964382', 'Credit': '5000.00', 'Balance': '₹ 27,411.25'}
 
 ============================================================
 PAGE 12  (width=1550.0  height=1900.0)
@@ -1664,10 +1664,10 @@ PAGE 12  (width=1550.0  height=1900.0)
   [~] No layout detected — using propagated layout from page 1
 
 --- DETECTED HEADERS ---
-  'Date'                          x0=   0.0  x1= 278.7  numeric=False  narration=False
-  'Debit'                         x0= 552.3  x1= 947.0  numeric=True  narration=False
-  'Credit'                        x0= 947.0  x1=1143.8  numeric=True  narration=False
-  'Balance'                       x0=1143.8  x1=1550.0  numeric=True  narration=False
+  'Date'                          x0=   0.0  x1= 552.3  numeric=False  narration=False
+  'Debit'                         x0= 552.3  x1=1042.9  numeric=True  narration=False
+  'Credit'                        x0=1042.9  x1=1251.5  numeric=True  narration=False
+  'Balance'                       x0=1251.5  x1=1550.0  numeric=True  narration=False
 
   header_y (table starts below): 786.3
 
@@ -1782,31 +1782,31 @@ PAGE 12  (width=1550.0  height=1900.0)
 
 --- PARSED ROWS (column-assigned) ---
   date_column = 'Date'
-  row 00  top= 819.5  starts_txn=True   {'Date': '254', 'Debit': '45000.00', 'Balance': '₹ 185,894.25'}
-  row 01  top= 841.9  [FILTERED]
-  row 02  top= 896.6  starts_txn=True   {'Date': '255', 'Credit': '51500.00', 'Balance': '₹ 237,394.25'}
-  row 03  top= 919.0  [FILTERED]
-  row 04  top= 973.7  starts_txn=True   {'Date': '256', 'Debit': 'UPI/109163970252/CR/DEEPAK/UTIB/9999722', 'Balance': '55.00 ₹ 237,449.25'}
-  row 05  top= 996.1  [FILTERED]
-  row 06  top=1050.8  starts_txn=True   {'Date': '257', 'Debit': '10000.00', 'Balance': '₹ 227,449.25'}
-  row 07  top=1073.2  [FILTERED]
-  row 08  top=1127.9  starts_txn=True   {'Date': '258', 'Debit': 'UPI/431045202787/CR/bhopal/PPIW/98372570', 'Balance': '1500.00 ₹ 228,949.25'}
-  row 09  top=1150.3  [FILTERED]
-  row 10  top=1205.0  starts_txn=True   {'Date': '259', 'Debit': 'UPI/467600076416/CR/Brijes/SBIN/798236825/', 'Credit': '10000.00', 'Balance': '₹ 238,949.25'}
-  row 11  top=1227.4  [FILTERED]
-  row 12  top=1282.1  starts_txn=True   {'Date': '260', 'Debit': 'UPI/240705388639/DR//SCBL/870000199/Paym 14298.00', 'Balance': '₹ 224,651.25'}
-  row 13  top=1304.5  [FILTERED]
-  row 14  top=1359.2  starts_txn=True   {'Date': '261', 'Debit': 'UPI/431331830271/CR/SULABH/SBIN/9910224', 'Balance': '5000.00 ₹ 229,651.25'}
-  row 15  top=1381.6  [FILTERED]
-  row 16  top=1436.3  starts_txn=True   {'Date': '262', 'Debit': 'UPI/467917827993/CR/SULABH/SBIN/9910224', 'Balance': '5000.00 ₹ 234,651.25'}
-  row 17  top=1458.7  [FILTERED]
-  row 18  top=1513.4  starts_txn=True   {'Date': '263', 'Debit': 'UPI/467922836010/CR/SULABH/SBIN/9910224', 'Balance': '8000.00 ₹ 242,651.25'}
-  row 19  top=1535.8  [FILTERED]
-  row 20  top=1590.5  starts_txn=True   {'Date': '264', 'Debit': 'INFRA LLP', 'Credit': '10000.00', 'Balance': '₹ 252,651.25'}
-  row 21  top=1649.3  starts_txn=True   {'Date': '265', 'Debit': '20000.00', 'Balance': '₹ 232,651.25'}
-  row 22  top=1671.7  [FILTERED]
-  row 23  top=1726.4  starts_txn=True   {'Date': '266', 'Debit': 'UPI/468016201648/DR/Nishan/KKBK/97737395', 'Credit': '5000.00', 'Balance': '₹ 227,651.25'}
-  row 24  top=1748.8  [FILTERED]
+  row 00  top= 819.5  starts_txn=True   {'Date': '254 04-11-2024 UPI/776185389983/DR/SUMIT', 'Debit': '45000.00', 'Balance': '₹ 185,894.25'}
+  row 01  top= 841.9  starts_txn=False  {'Date': '/UBIN/981863712/Paymen'}
+  row 02  top= 896.6  starts_txn=True   {'Date': '255 04-11-2024 UPI/681963325787/CR/Mr', 'Credit': '51500.00', 'Balance': '₹ 237,394.25'}
+  row 03  top= 919.0  starts_txn=False  {'Date': 'RAJ/IDIB/montu.198/Paymen'}
+  row 04  top= 973.7  starts_txn=True   {'Date': '256 04-11-2024', 'Debit': 'UPI/109163970252/CR/DEEPAK/UTIB/9999722', 'Credit': '55.00', 'Balance': '₹ 237,449.25'}
+  row 05  top= 996.1  starts_txn=False  {'Date': '09/Paymen'}
+  row 06  top=1050.8  starts_txn=True   {'Date': '257 05-11-2024 UPI/534044947097/DR/SUMIT', 'Debit': '10000.00', 'Balance': '₹ 227,449.25'}
+  row 07  top=1073.2  starts_txn=False  {'Date': '/UBIN/981863712/Paymen'}
+  row 08  top=1127.9  starts_txn=True   {'Date': '258 05-11-2024', 'Debit': 'UPI/431045202787/CR/bhopal/PPIW/98372570', 'Credit': '1500.00', 'Balance': '₹ 228,949.25'}
+  row 09  top=1150.3  starts_txn=False  {'Date': '0/UPI Pa'}
+  row 10  top=1205.0  starts_txn=True   {'Date': '259 05-11-2024', 'Debit': 'UPI/467600076416/CR/Brijes/SBIN/798236825/', 'Credit': '10000.00', 'Balance': '₹ 238,949.25'}
+  row 11  top=1227.4  starts_txn=False  {'Date': 'Sent f'}
+  row 12  top=1282.1  starts_txn=True   {'Date': '260 06-11-2024', 'Debit': 'UPI/240705388639/DR//SCBL/870000199/Paym 14298.00', 'Balance': '₹ 224,651.25'}
+  row 13  top=1304.5  starts_txn=False  {'Date': 'en'}
+  row 14  top=1359.2  starts_txn=True   {'Date': '261 08-11-2024', 'Debit': 'UPI/431331830271/CR/SULABH/SBIN/9910224', 'Credit': '5000.00', 'Balance': '₹ 229,651.25'}
+  row 15  top=1381.6  starts_txn=False  {'Date': '45/Sent f'}
+  row 16  top=1436.3  starts_txn=True   {'Date': '262 08-11-2024', 'Debit': 'UPI/467917827993/CR/SULABH/SBIN/9910224', 'Credit': '5000.00', 'Balance': '₹ 234,651.25'}
+  row 17  top=1458.7  starts_txn=False  {'Date': '45/Sent f'}
+  row 18  top=1513.4  starts_txn=True   {'Date': '263 08-11-2024', 'Debit': 'UPI/467922836010/CR/SULABH/SBIN/9910224', 'Credit': '8000.00', 'Balance': '₹ 242,651.25'}
+  row 19  top=1535.8  starts_txn=False  {'Date': '45/Sent f'}
+  row 20  top=1590.5  starts_txn=True   {'Date': '264 09-11-2024 NEFT/CMS4638081676/ICIC/RYSN', 'Debit': 'INFRA LLP', 'Credit': '10000.00', 'Balance': '₹ 252,651.25'}
+  row 21  top=1649.3  starts_txn=True   {'Date': '265 09-11-2024 UPI/631746281238/DR/ARUN', 'Debit': '20000.00', 'Balance': '₹ 232,651.25'}
+  row 22  top=1671.7  starts_txn=False  {'Date': 'K/HDFC/931111414/Paymen'}
+  row 23  top=1726.4  starts_txn=True   {'Date': '266 09-11-2024', 'Debit': 'UPI/468016201648/DR/Nishan/KKBK/97737395 5000.00', 'Balance': '₹ 227,651.25'}
+  row 24  top=1748.8  starts_txn=False  {'Date': '4/NA'}
 
 ============================================================
 PAGE 13  (width=1550.0  height=1900.0)
@@ -1814,10 +1814,10 @@ PAGE 13  (width=1550.0  height=1900.0)
   [~] No layout detected — using propagated layout from page 1
 
 --- DETECTED HEADERS ---
-  'Date'                          x0=   0.0  x1= 278.7  numeric=False  narration=False
-  'Debit'                         x0= 552.3  x1= 947.0  numeric=True  narration=False
-  'Credit'                        x0= 947.0  x1=1143.8  numeric=True  narration=False
-  'Balance'                       x0=1143.8  x1=1550.0  numeric=True  narration=False
+  'Date'                          x0=   0.0  x1= 552.3  numeric=False  narration=False
+  'Debit'                         x0= 552.3  x1=1042.9  numeric=True  narration=False
+  'Credit'                        x0=1042.9  x1=1251.5  numeric=True  narration=False
+  'Balance'                       x0=1251.5  x1=1550.0  numeric=True  narration=False
 
   header_y (table starts below): 786.3
 
@@ -1933,32 +1933,32 @@ PAGE 13  (width=1550.0  height=1900.0)
 
 --- PARSED ROWS (column-assigned) ---
   date_column = 'Date'
-  row 00  top= 801.4  starts_txn=True   {'Date': '276', 'Debit': '15000.00', 'Balance': '₹ 203,151.25'}
-  row 01  top= 823.8  [FILTERED]
-  row 02  top= 878.5  starts_txn=True   {'Date': '277', 'Credit': '5000.00', 'Balance': '₹ 198,151.25'}
-  row 03  top= 900.9  [FILTERED]
-  row 04  top= 955.6  starts_txn=True   {'Date': '278', 'Credit': '5000.00', 'Balance': '₹ 193,151.25'}
-  row 05  top= 978.0  [FILTERED]
-  row 06  top=1032.7  starts_txn=True   {'Date': '279', 'Debit': '10000.00', 'Balance': '₹ 183,151.25'}
-  row 07  top=1055.1  [FILTERED]
-  row 08  top=1109.8  starts_txn=True   {'Date': '280', 'Credit': '20000.00', 'Balance': '₹ 203,151.25'}
-  row 09  top=1132.2  [FILTERED]
-  row 10  top=1186.9  starts_txn=True   {'Date': '281', 'Debit': 'INFRA LLP', 'Credit': '10000.00', 'Balance': '₹ 213,151.25'}
-  row 11  top=1245.7  starts_txn=True   {'Date': '282', 'Debit': '20000.00', 'Balance': '₹ 193,151.25'}
-  row 12  top=1268.1  [FILTERED]
-  row 13  top=1322.8  starts_txn=True   {'Date': '283', 'Debit': 'UPI/432511543383/CR/SANJIV/SBIN/93118545', 'Balance': '1000.00 ₹ 194,151.25'}
-  row 14  top=1345.2  [FILTERED]
-  row 15  top=1399.9  starts_txn=True   {'Date': '284', 'Debit': 'CUST', 'Credit': '17.70', 'Balance': '₹ 194,133.55'}
-  row 16  top=1422.3  [FILTERED]
-  row 17  top=1477.0  starts_txn=True   {'Date': '285', 'Debit': 'UPI/432625757491/DR/SANJIV/SBIN/93118545', 'Credit': '1200.00', 'Balance': '₹ 192,933.55'}
-  row 18  top=1499.4  [FILTERED]
-  row 19  top=1554.1  starts_txn=True   {'Date': '286', 'Debit': 'UPI/679221609799/DR/SARDAR/YESB/kalevee', 'Credit': '340.00', 'Balance': '₹ 192,593.55'}
-  row 20  top=1576.5  [FILTERED]
-  row 21  top=1631.2  starts_txn=True   {'Date': '287', 'Debit': '10000.00', 'Balance': '₹ 182,593.55'}
-  row 22  top=1653.6  [FILTERED]
-  row 23  top=1708.3  starts_txn=True   {'Date': '288', 'Debit': '10000.00', 'Balance': '₹ 172,593.55'}
-  row 24  top=1730.7  starts_txn=False  {'Debit': 'f'}
-  row 25  top=1785.4  starts_txn=True   {'Date': '289', 'Debit': 'INFRA LLP', 'Credit': '168464.00', 'Balance': '₹ 341,057.55'}
+  row 00  top= 801.4  starts_txn=True   {'Date': '276 17-11-2024 UPI/414255921016/DR/ARUN', 'Debit': '15000.00', 'Balance': '₹ 203,151.25'}
+  row 01  top= 823.8  starts_txn=False  {'Date': 'K/HDFC/931111414/Paymen'}
+  row 02  top= 878.5  starts_txn=True   {'Date': '277 17-11-2024 UPI/836360306202/DR/ARUN', 'Debit': '5000.00', 'Balance': '₹ 198,151.25'}
+  row 03  top= 900.9  starts_txn=False  {'Date': 'K/HDFC/931111414/Paymen'}
+  row 04  top= 955.6  starts_txn=True   {'Date': '278 17-11-2024 UPI/089190609401/DR/ARUN', 'Debit': '5000.00', 'Balance': '₹ 193,151.25'}
+  row 05  top= 978.0  starts_txn=False  {'Date': 'K/HDFC/931111414/Paymen'}
+  row 06  top=1032.7  starts_txn=True   {'Date': '279 17-11-2024 UPI/937567198985/DR/ARUN', 'Debit': '10000.00', 'Balance': '₹ 183,151.25'}
+  row 07  top=1055.1  starts_txn=False  {'Date': 'K/HDFC/931111414/Paymen'}
+  row 08  top=1109.8  starts_txn=True   {'Date': '280 17-11-2024 UPI/648447687259/CR/ARUN', 'Credit': '20000.00', 'Balance': '₹ 203,151.25'}
+  row 09  top=1132.2  starts_txn=False  {'Date': 'K/HDFC/931111414/Paymen'}
+  row 10  top=1186.9  starts_txn=True   {'Date': '281 18-11-2024 NEFT/CMS4655516884/ICIC/RYSN', 'Debit': 'INFRA LLP', 'Credit': '10000.00', 'Balance': '₹ 213,151.25'}
+  row 11  top=1245.7  starts_txn=True   {'Date': '282 18-11-2024 UPI/108323614706/DR/Mr', 'Debit': '20000.00', 'Balance': '₹ 193,151.25'}
+  row 12  top=1268.1  starts_txn=False  {'Date': 'RAJ/IDIB/montu.198/Paymen'}
+  row 13  top=1322.8  starts_txn=True   {'Date': '283 20-11-2024', 'Debit': 'UPI/432511543383/CR/SANJIV/SBIN/93118545', 'Credit': '1000.00', 'Balance': '₹ 194,151.25'}
+  row 14  top=1345.2  starts_txn=False  {'Date': '4/NA'}
+  row 15  top=1399.9  starts_txn=True   {'Date': '284 21-11-2024 SMSChrgsJUL-SEP24+GST+G', 'Debit': 'CUST 17.70', 'Balance': '₹ 194,133.55'}
+  row 16  top=1422.3  starts_txn=False  {'Date': '121044631'}
+  row 17  top=1477.0  starts_txn=True   {'Date': '285 21-11-2024', 'Debit': 'UPI/432625757491/DR/SANJIV/SBIN/93118545 1200.00', 'Balance': '₹ 192,933.55'}
+  row 18  top=1499.4  starts_txn=False  {'Date': '4/NA'}
+  row 19  top=1554.1  starts_txn=True   {'Date': '286 21-11-2024', 'Debit': 'UPI/679221609799/DR/SARDAR/YESB/kalevee 340.00', 'Balance': '₹ 192,593.55'}
+  row 20  top=1576.5  starts_txn=False  {'Date': 'r8/Paymen'}
+  row 21  top=1631.2  starts_txn=True   {'Date': '287 21-11-2024 UPI/906242778839/DR/AZAD', 'Debit': '10000.00', 'Balance': '₹ 182,593.55'}
+  row 22  top=1653.6  starts_txn=False  {'Date': 'K/BARB/azadpandi/Paymen'}
+  row 23  top=1708.3  starts_txn=True   {'Date': '288 21-11-2024 UPI/432642962781/DR/AZAD', 'Debit': '10000.00', 'Balance': '₹ 172,593.55'}
+  row 24  top=1730.7  starts_txn=False  {'Date': 'K/BARB/azadpandi/Sent', 'Debit': 'f'}
+  row 25  top=1785.4  starts_txn=True   {'Date': '289 22-11-2024 NEFT/CMS4665558639/ICIC/RYSN', 'Debit': 'INFRA LLP', 'Credit': '168464.00', 'Balance': '₹ 341,057.55'}
 
 ============================================================
 PAGE 14  (width=1550.0  height=1900.0)
@@ -1966,10 +1966,10 @@ PAGE 14  (width=1550.0  height=1900.0)
   [~] No layout detected — using propagated layout from page 1
 
 --- DETECTED HEADERS ---
-  'Date'                          x0=   0.0  x1= 278.7  numeric=False  narration=False
-  'Debit'                         x0= 552.3  x1= 947.0  numeric=True  narration=False
-  'Credit'                        x0= 947.0  x1=1143.8  numeric=True  narration=False
-  'Balance'                       x0=1143.8  x1=1550.0  numeric=True  narration=False
+  'Date'                          x0=   0.0  x1= 552.3  numeric=False  narration=False
+  'Debit'                         x0= 552.3  x1=1042.9  numeric=True  narration=False
+  'Credit'                        x0=1042.9  x1=1251.5  numeric=True  narration=False
+  'Balance'                       x0=1251.5  x1=1550.0  numeric=True  narration=False
 
   header_y (table starts below): 786.3
 
@@ -2085,32 +2085,32 @@ PAGE 14  (width=1550.0  height=1900.0)
 
 --- PARSED ROWS (column-assigned) ---
   date_column = 'Date'
-  row 00  top= 787.2  [FILTERED]
-  row 01  top= 841.9  starts_txn=True   {'Date': '300', 'Credit': '170.00', 'Balance': '₹ 332,987.55'}
-  row 02  top= 864.3  [FILTERED]
-  row 03  top= 919.0  starts_txn=True   {'Date': '301', 'Debit': 'UPI/433333527631/CR/SANJIV/SBIN/93118545', 'Balance': '1000.00 ₹ 333,987.55'}
-  row 04  top= 941.4  [FILTERED]
-  row 05  top= 996.1  starts_txn=True   {'Date': '302', 'Debit': 'INFRA LLP', 'Credit': '10000.00', 'Balance': '₹ 343,987.55'}
-  row 06  top=1054.9  starts_txn=True   {'Date': '303', 'Debit': '10000.00', 'Balance': '₹ 333,987.55'}
-  row 07  top=1077.3  [FILTERED]
-  row 08  top=1132.0  starts_txn=True   {'Date': '304', 'Debit': '10000.00', 'Balance': '₹ 323,987.55'}
-  row 09  top=1154.4  [FILTERED]
-  row 10  top=1209.1  starts_txn=True   {'Date': '305', 'Credit': '20000.00', 'Balance': '₹ 343,987.55'}
-  row 11  top=1231.5  [FILTERED]
-  row 12  top=1286.2  starts_txn=True   {'Date': '306', 'Debit': '10000.00', 'Balance': '₹ 333,987.55'}
-  row 13  top=1308.6  [FILTERED]
-  row 14  top=1363.3  starts_txn=True   {'Date': '307', 'Debit': '10000.00', 'Balance': '₹ 323,987.55'}
-  row 15  top=1385.7  [FILTERED]
-  row 16  top=1440.4  starts_txn=True   {'Date': '308', 'Credit': '3083.00', 'Balance': '₹ 320,904.55'}
-  row 17  top=1462.8  starts_txn=False  {'Debit': 'Ma'}
-  row 18  top=1517.5  starts_txn=True   {'Date': '309', 'Credit': '2417.00', 'Balance': '₹ 318,487.55'}
-  row 19  top=1539.9  starts_txn=False  {'Debit': 'Ma'}
-  row 20  top=1594.6  starts_txn=True   {'Date': '310', 'Credit': '4125.00', 'Balance': '₹ 314,362.55'}
-  row 21  top=1617.0  starts_txn=False  {'Debit': 'Ma'}
-  row 22  top=1671.7  starts_txn=True   {'Date': '311', 'Balance': '4000.00 ₹ 318,362.55'}
-  row 23  top=1694.1  [FILTERED]
-  row 24  top=1748.8  starts_txn=True   {'Date': '312', 'Debit': 'UPI/434009345050/DR/SANJIV/SBIN/93118545', 'Credit': '500.00', 'Balance': '₹ 317,862.55'}
-  row 25  top=1771.2  [FILTERED]
+  row 00  top= 787.2  starts_txn=False  {'Date': '/UBIN/981863712/Paymen'}
+  row 01  top= 841.9  starts_txn=True   {'Date': '300 27-11-2024 UPI/656255543224/DR/Bhura', 'Debit': '170.00', 'Balance': '₹ 332,987.55'}
+  row 02  top= 864.3  starts_txn=False  {'Date': '/YESB/paytmqr62/Paymen'}
+  row 03  top= 919.0  starts_txn=True   {'Date': '301 28-11-2024', 'Debit': 'UPI/433333527631/CR/SANJIV/SBIN/93118545', 'Credit': '1000.00', 'Balance': '₹ 333,987.55'}
+  row 04  top= 941.4  starts_txn=False  {'Date': '4/NA'}
+  row 05  top= 996.1  starts_txn=True   {'Date': '302 30-11-2024 NEFT/CMS4686648486/ICIC/RYSN', 'Debit': 'INFRA LLP', 'Credit': '10000.00', 'Balance': '₹ 343,987.55'}
+  row 06  top=1054.9  starts_txn=True   {'Date': '303 30-11-2024 UPI/879125148894/DR/ARUN', 'Debit': '10000.00', 'Balance': '₹ 333,987.55'}
+  row 07  top=1077.3  starts_txn=False  {'Date': 'K/HDFC/931111414/Paymen'}
+  row 08  top=1132.0  starts_txn=True   {'Date': '304 30-11-2024 UPI/039315633426/DR/ARUN', 'Debit': '10000.00', 'Balance': '₹ 323,987.55'}
+  row 09  top=1154.4  starts_txn=False  {'Date': 'K/HDFC/931111414/Paymen'}
+  row 10  top=1209.1  starts_txn=True   {'Date': '305 30-11-2024 UPI/439217848269/CR/ARUN', 'Credit': '20000.00', 'Balance': '₹ 343,987.55'}
+  row 11  top=1231.5  starts_txn=False  {'Date': 'K/HDFC/931111414/Paymen'}
+  row 12  top=1286.2  starts_txn=True   {'Date': '306 30-11-2024 UPI/410718345735/DR/ARUN', 'Debit': '10000.00', 'Balance': '₹ 333,987.55'}
+  row 13  top=1308.6  starts_txn=False  {'Date': 'K/HDFC/931111414/Paymen'}
+  row 14  top=1363.3  starts_txn=True   {'Date': '307 30-11-2024 UPI/891776785118/DR/ARUN', 'Debit': '10000.00', 'Balance': '₹ 323,987.55'}
+  row 15  top=1385.7  starts_txn=False  {'Date': 'K/HDFC/931111414/Paymen'}
+  row 16  top=1440.4  starts_txn=True   {'Date': '308 02-12-2024 UPI/433716810762/DR/BAJAJ', 'Debit': '3083.00', 'Balance': '₹ 320,904.55'}
+  row 17  top=1462.8  starts_txn=False  {'Date': '/HDFC/bflautopa/UPI', 'Debit': 'Ma'}
+  row 18  top=1517.5  starts_txn=True   {'Date': '309 02-12-2024 UPI/433718084100/DR/BAJAJ', 'Debit': '2417.00', 'Balance': '₹ 318,487.55'}
+  row 19  top=1539.9  starts_txn=False  {'Date': '/HDFC/bflautopa/UPI', 'Debit': 'Ma'}
+  row 20  top=1594.6  starts_txn=True   {'Date': '310 02-12-2024 UPI/433719740904/DR/BAJAJ', 'Debit': '4125.00', 'Balance': '₹ 314,362.55'}
+  row 21  top=1617.0  starts_txn=False  {'Date': '/HDFC/bflautopa/UPI', 'Debit': 'Ma'}
+  row 22  top=1671.7  starts_txn=True   {'Date': '311 03-12-2024 UPI/433822781611/CR/SUNIL', 'Credit': '4000.00', 'Balance': '₹ 318,362.55'}
+  row 23  top=1694.1  starts_txn=False  {'Date': '/BKID/959946244/NA'}
+  row 24  top=1748.8  starts_txn=True   {'Date': '312 05-12-2024', 'Debit': 'UPI/434009345050/DR/SANJIV/SBIN/93118545 500.00', 'Balance': '₹ 317,862.55'}
+  row 25  top=1771.2  starts_txn=False  {'Date': '4/NA'}
 
 ============================================================
 PAGE 15  (width=1550.0  height=1900.0)
@@ -2118,10 +2118,10 @@ PAGE 15  (width=1550.0  height=1900.0)
   [~] No layout detected — using propagated layout from page 1
 
 --- DETECTED HEADERS ---
-  'Date'                          x0=   0.0  x1= 278.7  numeric=False  narration=False
-  'Debit'                         x0= 552.3  x1= 947.0  numeric=True  narration=False
-  'Credit'                        x0= 947.0  x1=1143.8  numeric=True  narration=False
-  'Balance'                       x0=1143.8  x1=1550.0  numeric=True  narration=False
+  'Date'                          x0=   0.0  x1= 552.3  numeric=False  narration=False
+  'Debit'                         x0= 552.3  x1=1042.9  numeric=True  narration=False
+  'Credit'                        x0=1042.9  x1=1251.5  numeric=True  narration=False
+  'Balance'                       x0=1251.5  x1=1550.0  numeric=True  narration=False
 
   header_y (table starts below): 786.3
 
@@ -2236,31 +2236,31 @@ PAGE 15  (width=1550.0  height=1900.0)
 
 --- PARSED ROWS (column-assigned) ---
   date_column = 'Date'
-  row 00  top= 805.5  [FILTERED]
-  row 01  top= 860.2  starts_txn=True   {'Date': '323', 'Debit': 'UPI/434445541749/DR/SANJIV/SBIN/93118545', 'Credit': '5000.00', 'Balance': '₹ 88,362.55'}
-  row 02  top= 882.6  [FILTERED]
-  row 03  top= 937.3  starts_txn=True   {'Date': '324', 'Debit': 'UPI/434459664754/CR/bhavis/PPIW/23bhavish/', 'Balance': '1500.00 ₹ 89,862.55'}
-  row 04  top= 959.7  [FILTERED]
-  row 05  top=1014.4  starts_txn=True   {'Date': '325', 'Debit': '10000.00', 'Balance': '₹ 79,862.55'}
-  row 06  top=1036.8  [FILTERED]
-  row 07  top=1091.5  starts_txn=True   {'Date': '326', 'Credit': '10000.00', 'Balance': '₹ 89,862.55'}
-  row 08  top=1113.9  [FILTERED]
-  row 09  top=1168.6  starts_txn=True   {'Date': '327', 'Credit': '10000.00', 'Balance': '₹ 99,862.55'}
-  row 10  top=1191.0  [FILTERED]
-  row 11  top=1245.7  starts_txn=True   {'Date': '328', 'Balance': '5000.00 ₹ 104,862.55'}
-  row 12  top=1268.1  [FILTERED]
-  row 13  top=1322.8  starts_txn=True   {'Date': '329', 'Debit': 'UPI/434793144421/DR/Manish/YESB/paytmqre', 'Credit': '40.00', 'Balance': '₹ 104,822.55'}
-  row 14  top=1345.2  [FILTERED]
-  row 15  top=1399.9  starts_txn=True   {'Date': '330', 'Debit': 'UPI/434775526905/CR/SANJIV/SBIN/93118545', 'Balance': '1000.00 ₹ 105,822.55'}
-  row 16  top=1422.3  [FILTERED]
-  row 17  top=1477.0  starts_txn=True   {'Date': '331', 'Credit': '7000.00', 'Balance': '₹ 98,822.55'}
-  row 18  top=1499.4  starts_txn=False  {'Debit': 'u'}
-  row 19  top=1554.1  starts_txn=True   {'Date': '332', 'Debit': 'UPI/435024031190/CR/SANJIV/SBIN/93118545', 'Balance': '500.00 ₹ 99,322.55'}
-  row 20  top=1576.5  [FILTERED]
-  row 21  top=1631.2  starts_txn=True   {'Date': '333', 'Debit': 'INFRA LLP', 'Credit': '10000.00', 'Balance': '₹ 109,322.55'}
-  row 22  top=1690.0  starts_txn=True   {'Date': '334', 'Debit': '10000.00', 'Balance': '₹ 99,322.55'}
-  row 23  top=1712.4  [FILTERED]
-  row 24  top=1767.1  starts_txn=True   {'Date': '335', 'Debit': 'INFRA LLP', 'Credit': '85457.00', 'Balance': '₹ 184,779.55'}
+  row 00  top= 805.5  starts_txn=False  {'Date': '/UBIN/981863712/Paymen'}
+  row 01  top= 860.2  starts_txn=True   {'Date': '323 09-12-2024', 'Debit': 'UPI/434445541749/DR/SANJIV/SBIN/93118545 5000.00', 'Balance': '₹ 88,362.55'}
+  row 02  top= 882.6  starts_txn=False  {'Date': '4/NA'}
+  row 03  top= 937.3  starts_txn=True   {'Date': '324 09-12-2024', 'Debit': 'UPI/434459664754/CR/bhavis/PPIW/23bhavish/', 'Credit': '1500.00', 'Balance': '₹ 89,862.55'}
+  row 04  top= 959.7  starts_txn=False  {'Date': 'UPI Pa'}
+  row 05  top=1014.4  starts_txn=True   {'Date': '325 09-12-2024 UPI/452298320721/DR/ARUN', 'Debit': '10000.00', 'Balance': '₹ 79,862.55'}
+  row 06  top=1036.8  starts_txn=False  {'Date': 'K/HDFC/931111414/Paymen'}
+  row 07  top=1091.5  starts_txn=True   {'Date': '326 09-12-2024 UPI/267141832067/CR/ARUN', 'Credit': '10000.00', 'Balance': '₹ 89,862.55'}
+  row 08  top=1113.9  starts_txn=False  {'Date': 'K/HDFC/931111414/Paymen'}
+  row 09  top=1168.6  starts_txn=True   {'Date': '327 09-12-2024 UPI/958475710829/CR/ARUN', 'Credit': '10000.00', 'Balance': '₹ 99,862.55'}
+  row 10  top=1191.0  starts_txn=False  {'Date': 'K/HDFC/931111414/Paymen'}
+  row 11  top=1245.7  starts_txn=True   {'Date': '328 10-12-2024 UPI/414417072610/CR/MONU', 'Credit': '5000.00', 'Balance': '₹ 104,862.55'}
+  row 12  top=1268.1  starts_txn=False  {'Date': 'S/PUNB/999078277/Paymen'}
+  row 13  top=1322.8  starts_txn=True   {'Date': '329 12-12-2024', 'Debit': 'UPI/434793144421/DR/Manish/YESB/paytmqre 40.00', 'Balance': '₹ 104,822.55'}
+  row 14  top=1345.2  starts_txn=False  {'Date': 'w/NA'}
+  row 15  top=1399.9  starts_txn=True   {'Date': '330 12-12-2024', 'Debit': 'UPI/434775526905/CR/SANJIV/SBIN/93118545', 'Credit': '1000.00', 'Balance': '₹ 105,822.55'}
+  row 16  top=1422.3  starts_txn=False  {'Date': '4/NA'}
+  row 17  top=1477.0  starts_txn=True   {'Date': '331 13-12-2024 UPI/434806159183/DR/Mohit', 'Debit': '7000.00', 'Balance': '₹ 98,822.55'}
+  row 18  top=1499.4  starts_txn=False  {'Date': '/PSIB/mohitgupt/Sent', 'Debit': 'u'}
+  row 19  top=1554.1  starts_txn=True   {'Date': '332 15-12-2024', 'Debit': 'UPI/435024031190/CR/SANJIV/SBIN/93118545', 'Credit': '500.00', 'Balance': '₹ 99,322.55'}
+  row 20  top=1576.5  starts_txn=False  {'Date': '4/NA'}
+  row 21  top=1631.2  starts_txn=True   {'Date': '333 17-12-2024 NEFT/CMS4723961018/ICIC/RYSN', 'Debit': 'INFRA LLP', 'Credit': '10000.00', 'Balance': '₹ 109,322.55'}
+  row 22  top=1690.0  starts_txn=True   {'Date': '334 17-12-2024 UPI/735892548681/DR/ARUN', 'Debit': '10000.00', 'Balance': '₹ 99,322.55'}
+  row 23  top=1712.4  starts_txn=False  {'Date': 'K/HDFC/931111414/Paymen'}
+  row 24  top=1767.1  starts_txn=True   {'Date': '335 19-12-2024 NEFT/CMS4735411739/ICIC/RYSN', 'Debit': 'INFRA LLP', 'Credit': '85457.00', 'Balance': '₹ 184,779.55'}
 
 ============================================================
 PAGE 16  (width=1550.0  height=1900.0)
@@ -2268,10 +2268,10 @@ PAGE 16  (width=1550.0  height=1900.0)
   [~] No layout detected — using propagated layout from page 1
 
 --- DETECTED HEADERS ---
-  'Date'                          x0=   0.0  x1= 278.7  numeric=False  narration=False
-  'Debit'                         x0= 552.3  x1= 947.0  numeric=True  narration=False
-  'Credit'                        x0= 947.0  x1=1143.8  numeric=True  narration=False
-  'Balance'                       x0=1143.8  x1=1550.0  numeric=True  narration=False
+  'Date'                          x0=   0.0  x1= 552.3  numeric=False  narration=False
+  'Debit'                         x0= 552.3  x1=1042.9  numeric=True  narration=False
+  'Credit'                        x0=1042.9  x1=1251.5  numeric=True  narration=False
+  'Balance'                       x0=1251.5  x1=1550.0  numeric=True  narration=False
 
   header_y (table starts below): 786.3
 
@@ -2386,31 +2386,31 @@ PAGE 16  (width=1550.0  height=1900.0)
 
 --- PARSED ROWS (column-assigned) ---
   date_column = 'Date'
-  row 00  top= 805.5  [FILTERED]
-  row 01  top= 860.2  starts_txn=True   {'Date': '346', 'Credit': '10000.00', 'Balance': '₹ 67,241.55'}
-  row 02  top= 882.6  [FILTERED]
-  row 03  top= 937.3  starts_txn=True   {'Date': '347', 'Debit': 'ROAD', 'Credit': '200000.00', 'Balance': '₹ 267,241.55'}
-  row 04  top= 959.7  [FILTERED]
-  row 05  top=1014.4  starts_txn=True   {'Date': '348', 'Debit': '50000.00', 'Balance': '₹ 217,241.55'}
-  row 06  top=1036.8  starts_txn=False  {'Debit': 'u'}
-  row 07  top=1091.5  starts_txn=True   {'Date': '349', 'Debit': 'UPI/435967066165/CR/GIRISH/BKID/97179562', 'Credit': '10000.00', 'Balance': '₹ 227,241.55'}
-  row 08  top=1113.9  [FILTERED]
-  row 09  top=1168.6  starts_txn=True   {'Date': '350', 'Credit': '31500.00', 'Balance': '₹ 258,741.55'}
-  row 10  top=1227.4  starts_txn=True   {'Date': '351', 'Debit': '45000.00', 'Balance': '₹ 213,741.55'}
-  row 11  top=1249.8  starts_txn=False  {'Debit': 'u'}
-  row 12  top=1304.5  starts_txn=True   {'Date': '352', 'Balance': '500.00 ₹ 214,241.55'}
-  row 13  top=1363.3  starts_txn=True   {'Date': '353', 'Credit': '5000.00', 'Balance': '₹ 209,241.55'}
-  row 14  top=1385.7  starts_txn=False  {'Debit': 'u'}
-  row 15  top=1440.4  starts_txn=True   {'Date': '354', 'Credit': '10000.00', 'Balance': '₹ 219,241.55'}
-  row 16  top=1462.8  [FILTERED]
-  row 17  top=1517.5  starts_txn=True   {'Date': '355', 'Debit': '10000.00', 'Balance': '₹ 209,241.55'}
-  row 18  top=1539.9  starts_txn=False  {'Debit': 'u'}
-  row 19  top=1594.6  starts_txn=True   {'Date': '356', 'Debit': 'UPI/436053987028/DR/PRETIP/YESB/paytmqr5', 'Credit': '180.00', 'Balance': '₹ 209,061.55'}
-  row 20  top=1617.0  [FILTERED]
-  row 21  top=1671.7  starts_txn=True   {'Date': '357', 'Balance': '4000.00 ₹ 213,061.55'}
-  row 22  top=1694.1  [FILTERED]
-  row 23  top=1748.8  starts_txn=True   {'Date': '358', 'Balance': '500.00 ₹ 213,561.55'}
-  row 24  top=1771.2  [FILTERED]
+  row 00  top= 805.5  starts_txn=False  {'Date': '009/NA'}
+  row 01  top= 860.2  starts_txn=True   {'Date': '346 23-12-2024 UPI/816222300634/CR/NEETU', 'Credit': '10000.00', 'Balance': '₹ 67,241.55'}
+  row 02  top= 882.6  starts_txn=False  {'Date': '/BKID/874592870/Paymen'}
+  row 03  top= 937.3  starts_txn=True   {'Date': '347 24-12-2024 BY CASH-7112-BULANDSHAHAR', 'Debit': 'ROAD', 'Credit': '200000.00', 'Balance': '₹ 267,241.55'}
+  row 04  top= 959.7  starts_txn=False  {'Date': 'INDUSTRIAL AR'}
+  row 05  top=1014.4  starts_txn=True   {'Date': '348 24-12-2024 UPI/435939209317/DR/KARAN', 'Debit': '50000.00', 'Balance': '₹ 217,241.55'}
+  row 06  top=1036.8  starts_txn=False  {'Date': '/PUNB/987154599/Sent', 'Debit': 'u'}
+  row 07  top=1091.5  starts_txn=True   {'Date': '349 24-12-2024', 'Debit': 'UPI/435967066165/CR/GIRISH/BKID/97179562', 'Credit': '10000.00', 'Balance': '₹ 227,241.55'}
+  row 08  top=1113.9  starts_txn=False  {'Date': '5/NA'}
+  row 09  top=1168.6  starts_txn=True   {'Date': '350 24-12-2024 Cash dep at R7112030', 'Credit': '31500.00', 'Balance': '₹ 258,741.55'}
+  row 10  top=1227.4  starts_txn=True   {'Date': '351 24-12-2024 UPI/435967802068/DR/KARAN', 'Debit': '45000.00', 'Balance': '₹ 213,741.55'}
+  row 11  top=1249.8  starts_txn=False  {'Date': '/PUNB/987154599/Sent', 'Debit': 'u'}
+  row 12  top=1304.5  starts_txn=True   {'Date': '352 24-12-2024 Cash dep at R7112030', 'Credit': '500.00', 'Balance': '₹ 214,241.55'}
+  row 13  top=1363.3  starts_txn=True   {'Date': '353 24-12-2024 UPI/435940127020/DR/KARAN', 'Debit': '5000.00', 'Balance': '₹ 209,241.55'}
+  row 14  top=1385.7  starts_txn=False  {'Date': '/PUNB/987154599/Sent', 'Debit': 'u'}
+  row 15  top=1440.4  starts_txn=True   {'Date': '354 25-12-2024 UPI/818991395059/CR/SUMIT', 'Credit': '10000.00', 'Balance': '₹ 219,241.55'}
+  row 16  top=1462.8  starts_txn=False  {'Date': '/UBIN/981863712/Paymen'}
+  row 17  top=1517.5  starts_txn=True   {'Date': '355 25-12-2024 UPI/436051728009/DR/Mr', 'Debit': '10000.00', 'Balance': '₹ 209,241.55'}
+  row 18  top=1539.9  starts_txn=False  {'Date': 'PRA/CBIN/750318474/Sent', 'Debit': 'u'}
+  row 19  top=1594.6  starts_txn=True   {'Date': '356 25-12-2024', 'Debit': 'UPI/436053987028/DR/PRETIP/YESB/paytmqr5 180.00', 'Balance': '₹ 209,061.55'}
+  row 20  top=1617.0  starts_txn=False  {'Date': 'm/Sent u'}
+  row 21  top=1671.7  starts_txn=True   {'Date': '357 26-12-2024 UPI/494250626782/CR/ARUN', 'Credit': '4000.00', 'Balance': '₹ 213,061.55'}
+  row 22  top=1694.1  starts_txn=False  {'Date': 'S/BKID/971191070/Paymen'}
+  row 23  top=1748.8  starts_txn=True   {'Date': '358 26-12-2024 UPI/436170236254/CR/DURGA', 'Credit': '500.00', 'Balance': '₹ 213,561.55'}
+  row 24  top=1771.2  starts_txn=False  {'Date': '/BKID/858680228/NA'}
 
 ============================================================
 PAGE 17  (width=1550.0  height=1900.0)
@@ -2418,10 +2418,10 @@ PAGE 17  (width=1550.0  height=1900.0)
   [~] No layout detected — using propagated layout from page 1
 
 --- DETECTED HEADERS ---
-  'Date'                          x0=   0.0  x1= 278.7  numeric=False  narration=False
-  'Debit'                         x0= 552.3  x1= 947.0  numeric=True  narration=False
-  'Credit'                        x0= 947.0  x1=1143.8  numeric=True  narration=False
-  'Balance'                       x0=1143.8  x1=1550.0  numeric=True  narration=False
+  'Date'                          x0=   0.0  x1= 552.3  numeric=False  narration=False
+  'Debit'                         x0= 552.3  x1=1042.9  numeric=True  narration=False
+  'Credit'                        x0=1042.9  x1=1251.5  numeric=True  narration=False
+  'Balance'                       x0=1251.5  x1=1550.0  numeric=True  narration=False
 
   header_y (table starts below): 786.3
 
@@ -2537,32 +2537,32 @@ PAGE 17  (width=1550.0  height=1900.0)
 
 --- PARSED ROWS (column-assigned) ---
   date_column = 'Date'
-  row 00  top= 823.6  starts_txn=True   {'Date': '369', 'Credit': '2413.00', 'Balance': '₹ 221,805.55'}
-  row 01  top= 846.0  starts_txn=False  {'Debit': 'Ma'}
-  row 02  top= 900.7  starts_txn=True   {'Date': '370', 'Balance': '2000.00 ₹ 223,805.55'}
-  row 03  top= 923.1  [FILTERED]
-  row 04  top= 977.8  starts_txn=True   {'Date': '371', 'Debit': '50000.00', 'Balance': '₹ 173,805.55'}
-  row 05  top=1000.2  starts_txn=False  {'Debit': 'u'}
-  row 06  top=1054.9  starts_txn=True   {'Date': '372', 'Debit': '50000.00', 'Balance': '₹ 123,805.55'}
-  row 07  top=1077.3  [FILTERED]
-  row 08  top=1132.0  starts_txn=True   {'Date': '373', 'Debit': 'INFRA', 'Credit': '10000.00', 'Balance': '₹ 133,805.55'}
-  row 09  top=1154.4  [FILTERED]
-  row 10  top=1209.1  starts_txn=True   {'Date': '374', 'Debit': '50000.00', 'Balance': '₹ 83,805.55'}
-  row 11  top=1231.5  [FILTERED]
-  row 12  top=1286.2  starts_txn=True   {'Date': '375', 'Debit': '50000.00', 'Balance': '₹ 33,805.55'}
-  row 13  top=1308.6  starts_txn=False  {'Debit': 'u'}
-  row 14  top=1363.3  starts_txn=True   {'Date': '376', 'Debit': 'UPI/578214137959/CR/AKSHAY/INDB/9321370', 'Balance': '1000.00 ₹ 34,805.55'}
-  row 15  top=1385.7  [FILTERED]
-  row 16  top=1440.4  starts_txn=True   {'Date': '377', 'Debit': '10000.00', 'Balance': '₹ 24,805.55'}
-  row 17  top=1462.8  starts_txn=False  {'Debit': 'u'}
-  row 18  top=1517.5  starts_txn=True   {'Date': '378', 'Debit': '10000.00', 'Balance': '₹ 14,805.55'}
-  row 19  top=1539.9  starts_txn=False  {'Debit': 'u'}
-  row 20  top=1594.6  starts_txn=True   {'Date': '379', 'Debit': '10000.00', 'Balance': '₹ 4,805.55'}
-  row 21  top=1617.0  starts_txn=False  {'Debit': 'u'}
-  row 22  top=1671.7  starts_txn=True   {'Date': '380', 'Credit': '20000.00', 'Balance': '₹ 24,805.55'}
-  row 23  top=1694.1  [FILTERED]
-  row 24  top=1748.8  starts_txn=True   {'Date': '381', 'Credit': '30000.00', 'Balance': '₹ 54,805.55'}
-  row 25  top=1771.2  [FILTERED]
+  row 00  top= 823.6  starts_txn=True   {'Date': '369 02-01-2025 UPI/500267206025/DR/BAJAJ', 'Debit': '2413.00', 'Balance': '₹ 221,805.55'}
+  row 01  top= 846.0  starts_txn=False  {'Date': '/HDFC/bflautopa/UPI', 'Debit': 'Ma'}
+  row 02  top= 900.7  starts_txn=True   {'Date': '370 03-01-2025 UPI/500355772267/CR/SUNIL', 'Credit': '2000.00', 'Balance': '₹ 223,805.55'}
+  row 03  top= 923.1  starts_txn=False  {'Date': '/BKID/959946244/NA'}
+  row 04  top= 977.8  starts_txn=True   {'Date': '371 03-01-2025 UPI/500359576336/DR/SUMIT', 'Debit': '50000.00', 'Balance': '₹ 173,805.55'}
+  row 05  top=1000.2  starts_txn=False  {'Date': '/UBIN/981863712/Sent', 'Debit': 'u'}
+  row 06  top=1054.9  starts_txn=True   {'Date': '372 03-01-2025 UPI/995845859056/DR/SUMIT', 'Debit': '50000.00', 'Balance': '₹ 123,805.55'}
+  row 07  top=1077.3  starts_txn=False  {'Date': '/UBIN/981863712/Paymen'}
+  row 08  top=1132.0  starts_txn=True   {'Date': '373 04-01-2025 NEFT/ICIN200411122158/ICIC/RYSN', 'Debit': 'INFRA', 'Credit': '10000.00', 'Balance': '₹ 133,805.55'}
+  row 09  top=1154.4  starts_txn=False  {'Date': 'LLP'}
+  row 10  top=1209.1  starts_txn=True   {'Date': '374 04-01-2025 UPI/892373619519/DR/SUMIT', 'Debit': '50000.00', 'Balance': '₹ 83,805.55'}
+  row 11  top=1231.5  starts_txn=False  {'Date': '/UBIN/981863712/Paymen'}
+  row 12  top=1286.2  starts_txn=True   {'Date': '375 04-01-2025 UPI/500441308433/DR/SUMIT', 'Debit': '50000.00', 'Balance': '₹ 33,805.55'}
+  row 13  top=1308.6  starts_txn=False  {'Date': '/UBIN/981863712/Sent', 'Debit': 'u'}
+  row 14  top=1363.3  starts_txn=True   {'Date': '376 05-01-2025', 'Debit': 'UPI/578214137959/CR/AKSHAY/INDB/9321370', 'Credit': '1000.00', 'Balance': '₹ 34,805.55'}
+  row 15  top=1385.7  starts_txn=False  {'Date': '57/Paymen'}
+  row 16  top=1440.4  starts_txn=True   {'Date': '377 05-01-2025 UPI/500592393281/DR/ARUN', 'Debit': '10000.00', 'Balance': '₹ 24,805.55'}
+  row 17  top=1462.8  starts_txn=False  {'Date': 'K/HDFC/931111414/Sent', 'Debit': 'u'}
+  row 18  top=1517.5  starts_txn=True   {'Date': '378 05-01-2025 UPI/500572178176/DR/ARUN', 'Debit': '10000.00', 'Balance': '₹ 14,805.55'}
+  row 19  top=1539.9  starts_txn=False  {'Date': 'K/HDFC/931111414/Sent', 'Debit': 'u'}
+  row 20  top=1594.6  starts_txn=True   {'Date': '379 05-01-2025 UPI/500592671937/DR/ARUN', 'Debit': '10000.00', 'Balance': '₹ 4,805.55'}
+  row 21  top=1617.0  starts_txn=False  {'Date': 'K/HDFC/931111414/Sent', 'Debit': 'u'}
+  row 22  top=1671.7  starts_txn=True   {'Date': '380 05-01-2025 UPI/275010625125/CR/ARUN', 'Credit': '20000.00', 'Balance': '₹ 24,805.55'}
+  row 23  top=1694.1  starts_txn=False  {'Date': 'K/HDFC/931111414/Paymen'}
+  row 24  top=1748.8  starts_txn=True   {'Date': '381 06-01-2025 UPI/171800024251/CR/ARUN', 'Credit': '30000.00', 'Balance': '₹ 54,805.55'}
+  row 25  top=1771.2  starts_txn=False  {'Date': 'K/HDFC/931111414/Paymen'}
 
 ============================================================
 PAGE 18  (width=1550.0  height=1900.0)
@@ -2570,10 +2570,10 @@ PAGE 18  (width=1550.0  height=1900.0)
   [~] No layout detected — using propagated layout from page 1
 
 --- DETECTED HEADERS ---
-  'Date'                          x0=   0.0  x1= 278.7  numeric=False  narration=False
-  'Debit'                         x0= 552.3  x1= 947.0  numeric=True  narration=False
-  'Credit'                        x0= 947.0  x1=1143.8  numeric=True  narration=False
-  'Balance'                       x0=1143.8  x1=1550.0  numeric=True  narration=False
+  'Date'                          x0=   0.0  x1= 552.3  numeric=False  narration=False
+  'Debit'                         x0= 552.3  x1=1042.9  numeric=True  narration=False
+  'Credit'                        x0=1042.9  x1=1251.5  numeric=True  narration=False
+  'Balance'                       x0=1251.5  x1=1550.0  numeric=True  narration=False
 
   header_y (table starts below): 786.3
 
@@ -2689,32 +2689,32 @@ PAGE 18  (width=1550.0  height=1900.0)
 
 --- PARSED ROWS (column-assigned) ---
   date_column = 'Date'
-  row 00  top= 801.4  starts_txn=True   {'Date': '391', 'Debit': '50000.00', 'Balance': '₹ 18,875.55'}
-  row 01  top= 823.8  [FILTERED]
-  row 02  top= 878.5  starts_txn=True   {'Date': '392', 'Debit': 'UPI/226406995513/CR/AKSHAY/INDB/9321370', 'Balance': '2000.00 ₹ 20,875.55'}
-  row 03  top= 900.9  [FILTERED]
-  row 04  top= 955.6  starts_txn=True   {'Date': '393', 'Debit': '15000.00', 'Balance': '₹ 5,875.55'}
-  row 05  top= 978.0  [FILTERED]
-  row 06  top=1032.7  starts_txn=True   {'Date': '394', 'Debit': 'UPI/501539255957/CR/SANJIV/SBIN/93118545', 'Balance': '500.00 ₹ 6,375.55'}
-  row 07  top=1055.1  [FILTERED]
-  row 08  top=1109.8  starts_txn=True   {'Date': '395', 'Balance': '5000.00 ₹ 11,375.55'}
-  row 09  top=1132.2  [FILTERED]
-  row 10  top=1186.9  starts_txn=True   {'Date': '396', 'Debit': 'UPI/501778733223/DR/Santos/YESB/paytm.s16 10231.00', 'Balance': '₹ 1,144.55'}
-  row 11  top=1209.3  [FILTERED]
-  row 12  top=1264.0  starts_txn=True   {'Date': '397', 'Debit': 'INFRA', 'Credit': '387019.00', 'Balance': '₹ 388,163.55'}
-  row 13  top=1286.4  [FILTERED]
-  row 14  top=1341.1  starts_txn=True   {'Date': '398', 'Debit': '100000.00', 'Balance': '₹ 288,163.55'}
-  row 15  top=1363.5  [FILTERED]
-  row 16  top=1418.2  starts_txn=True   {'Date': '399', 'Debit': '75000.00', 'Balance': '₹ 213,163.55'}
-  row 17  top=1440.6  [FILTERED]
-  row 18  top=1495.3  starts_txn=True   {'Date': '400', 'Debit': '25000.00', 'Balance': '₹ 188,163.55'}
-  row 19  top=1517.7  [FILTERED]
-  row 20  top=1572.4  starts_txn=True   {'Date': '401', 'Debit': '125000.00', 'Balance': '₹ 63,163.55'}
-  row 21  top=1631.2  starts_txn=True   {'Date': '402', 'Debit': '60000.00', 'Balance': '₹ 3,163.55'}
-  row 22  top=1653.6  [FILTERED]
-  row 23  top=1708.3  starts_txn=True   {'Date': '403', 'Debit': 'INFRA', 'Credit': '11000.00', 'Balance': '₹ 14,163.55'}
-  row 24  top=1730.7  [FILTERED]
-  row 25  top=1785.4  starts_txn=True   {'Date': '404', 'Credit': '1.00', 'Balance': '₹ 14,162.55'}
+  row 00  top= 801.4  starts_txn=True   {'Date': '391 13-01-2025 UPI/856922478600/DR/Mr', 'Debit': '50000.00', 'Balance': '₹ 18,875.55'}
+  row 01  top= 823.8  starts_txn=False  {'Date': 'RAJ/IDIB/montu.198/Paymen'}
+  row 02  top= 878.5  starts_txn=True   {'Date': '392 14-01-2025', 'Debit': 'UPI/226406995513/CR/AKSHAY/INDB/9321370', 'Credit': '2000.00', 'Balance': '₹ 20,875.55'}
+  row 03  top= 900.9  starts_txn=False  {'Date': '57/Paymen'}
+  row 04  top= 955.6  starts_txn=True   {'Date': '393 15-01-2025 UPI/327913167832/DR/SUMIT', 'Debit': '15000.00', 'Balance': '₹ 5,875.55'}
+  row 05  top= 978.0  starts_txn=False  {'Date': '/UBIN/981863712/Paymen'}
+  row 06  top=1032.7  starts_txn=True   {'Date': '394 15-01-2025', 'Debit': 'UPI/501539255957/CR/SANJIV/SBIN/93118545', 'Credit': '500.00', 'Balance': '₹ 6,375.55'}
+  row 07  top=1055.1  starts_txn=False  {'Date': '4/NA'}
+  row 08  top=1109.8  starts_txn=True   {'Date': '395 17-01-2025 UPI/122871003073/CR/RAHUL', 'Credit': '5000.00', 'Balance': '₹ 11,375.55'}
+  row 09  top=1132.2  starts_txn=False  {'Date': '/PUNB/880098319/Paymen'}
+  row 10  top=1186.9  starts_txn=True   {'Date': '396 17-01-2025', 'Debit': 'UPI/501778733223/DR/Santos/YESB/paytm.s16 10231.00', 'Balance': '₹ 1,144.55'}
+  row 11  top=1209.3  starts_txn=False  {'Date': '/Sent u'}
+  row 12  top=1264.0  starts_txn=True   {'Date': '397 18-01-2025 NEFT/ICIN201825300685/ICIC/RYSN', 'Debit': 'INFRA', 'Credit': '387019.00', 'Balance': '₹ 388,163.55'}
+  row 13  top=1286.4  starts_txn=False  {'Date': 'LLP'}
+  row 14  top=1341.1  starts_txn=True   {'Date': '398 18-01-2025 UPI/188548961051/DR/SUMIT', 'Debit': '100000.00', 'Balance': '₹ 288,163.55'}
+  row 15  top=1363.5  starts_txn=False  {'Date': '/UBIN/981863712/Paymen'}
+  row 16  top=1418.2  starts_txn=True   {'Date': '399 20-01-2025 UPI/025352214733/DR/SUMIT', 'Debit': '75000.00', 'Balance': '₹ 213,163.55'}
+  row 17  top=1440.6  starts_txn=False  {'Date': '/UBIN/981863712/Paymen'}
+  row 18  top=1495.3  starts_txn=True   {'Date': '400 20-01-2025 UPI/976742519804/DR/SUMIT', 'Debit': '25000.00', 'Balance': '₹ 188,163.55'}
+  row 19  top=1517.7  starts_txn=False  {'Date': '/UBIN/981863712/Paymen'}
+  row 20  top=1572.4  starts_txn=True   {'Date': '401 20-01-2025 TO CASH', 'Debit': '125000.00', 'Balance': '₹ 63,163.55'}
+  row 21  top=1631.2  starts_txn=True   {'Date': '402 21-01-2025 UPI/476941341823/DR/SUMIT', 'Debit': '60000.00', 'Balance': '₹ 3,163.55'}
+  row 22  top=1653.6  starts_txn=False  {'Date': '/UBIN/981863712/Paymen'}
+  row 23  top=1708.3  starts_txn=True   {'Date': '403 27-01-2025 NEFT/ICIN202732091652/ICIC/RYSN', 'Debit': 'INFRA', 'Credit': '11000.00', 'Balance': '₹ 14,163.55'}
+  row 24  top=1730.7  starts_txn=False  {'Date': 'LLP'}
+  row 25  top=1785.4  starts_txn=True   {'Date': '404 29-01-2025 UPI/502901625956/DR/BAJAJ', 'Debit': '1.00', 'Balance': '₹ 14,162.55'}
 
 ============================================================
 PAGE 19  (width=1550.0  height=1900.0)
@@ -2722,10 +2722,10 @@ PAGE 19  (width=1550.0  height=1900.0)
   [~] No layout detected — using propagated layout from page 1
 
 --- DETECTED HEADERS ---
-  'Date'                          x0=   0.0  x1= 278.7  numeric=False  narration=False
-  'Debit'                         x0= 552.3  x1= 947.0  numeric=True  narration=False
-  'Credit'                        x0= 947.0  x1=1143.8  numeric=True  narration=False
-  'Balance'                       x0=1143.8  x1=1550.0  numeric=True  narration=False
+  'Date'                          x0=   0.0  x1= 552.3  numeric=False  narration=False
+  'Debit'                         x0= 552.3  x1=1042.9  numeric=True  narration=False
+  'Credit'                        x0=1042.9  x1=1251.5  numeric=True  narration=False
+  'Balance'                       x0=1251.5  x1=1550.0  numeric=True  narration=False
 
   header_y (table starts below): 786.3
 
@@ -2841,32 +2841,32 @@ PAGE 19  (width=1550.0  height=1900.0)
 
 --- PARSED ROWS (column-assigned) ---
   date_column = 'Date'
-  row 00  top= 801.4  [FILTERED]
-  row 01  top= 856.1  starts_txn=True   {'Date': '414', 'Debit': 'UPI/503827668051/CR/SONU/PUNB/93100256', 'Balance': '5000.00 ₹ 9,257.55'}
-  row 02  top= 878.5  [FILTERED]
-  row 03  top= 933.2  starts_txn=True   {'Date': '415', 'Debit': 'UPI/049874035867/DR/NEHA/YESB/paytmqrbj/', 'Credit': '3000.00', 'Balance': '₹ 6,257.55'}
-  row 04  top= 955.6  [FILTERED]
-  row 05  top=1010.3  starts_txn=True   {'Date': '416', 'Balance': '2000.00 ₹ 8,257.55'}
-  row 06  top=1032.7  [FILTERED]
-  row 07  top=1087.4  starts_txn=True   {'Date': '417', 'Debit': 'UPI/503986241269/DR/SONU/BKID/kumarsonu/', 'Credit': '2845.00', 'Balance': '₹ 5,412.55'}
-  row 08  top=1109.8  [FILTERED]
-  row 09  top=1164.5  starts_txn=True   {'Date': '418', 'Debit': 'UPI/421867690033/DR/Foreig/YESB/paytmqr63/', 'Credit': '480.00', 'Balance': '₹ 4,932.55'}
-  row 10  top=1186.9  [FILTERED]
-  row 11  top=1241.6  starts_txn=True   {'Date': '419', 'Debit': 'UPI/735173040524/DR/Beer/YESB/paytm-', 'Credit': '480.00', 'Balance': '₹ 4,452.55'}
-  row 12  top=1264.0  [FILTERED]
-  row 13  top=1318.7  starts_txn=True   {'Date': '420', 'Debit': 'INFRA', 'Credit': '11000.00', 'Balance': '₹ 15,452.55'}
-  row 14  top=1341.1  [FILTERED]
-  row 15  top=1395.8  starts_txn=True   {'Date': '421', 'Debit': '11000.00', 'Balance': '₹ 4,452.55'}
-  row 16  top=1418.2  [FILTERED]
-  row 17  top=1472.9  starts_txn=True   {'Date': '422', 'Debit': 'UPI/504294327538/CR/SANJIV/SBIN/93118545', 'Balance': '1000.00 ₹ 5,452.55'}
-  row 18  top=1495.3  [FILTERED]
-  row 19  top=1550.0  starts_txn=True   {'Date': '423', 'Debit': 'INFRA', 'Credit': '11000.00', 'Balance': '₹ 16,452.55'}
-  row 20  top=1572.4  [FILTERED]
-  row 21  top=1627.1  starts_txn=True   {'Date': '424', 'Balance': '9000.00 ₹ 25,452.55'}
-  row 22  top=1649.5  [FILTERED]
-  row 23  top=1704.2  starts_txn=True   {'Date': '425', 'Credit': '1.00', 'Balance': '₹ 25,451.55'}
-  row 24  top=1726.6  starts_txn=False  {'Debit': 'u'}
-  row 25  top=1781.3  starts_txn=True   {'Date': '426', 'Credit': '9999.00', 'Balance': '₹ 15,452.55'}
+  row 00  top= 801.4  starts_txn=False  {'Date': 'r8/Paymen'}
+  row 01  top= 856.1  starts_txn=True   {'Date': '414 07-02-2025', 'Debit': 'UPI/503827668051/CR/SONU/PUNB/93100256', 'Credit': '5000.00', 'Balance': '₹ 9,257.55'}
+  row 02  top= 878.5  starts_txn=False  {'Date': '3/NA'}
+  row 03  top= 933.2  starts_txn=True   {'Date': '415 08-02-2025', 'Debit': 'UPI/049874035867/DR/NEHA/YESB/paytmqrbj/ 3000.00', 'Balance': '₹ 6,257.55'}
+  row 04  top= 955.6  starts_txn=False  {'Date': 'Paymen'}
+  row 05  top=1010.3  starts_txn=True   {'Date': '416 08-02-2025 UPI/503935946438/CR/SUNIL', 'Credit': '2000.00', 'Balance': '₹ 8,257.55'}
+  row 06  top=1032.7  starts_txn=False  {'Date': '/BKID/959946244/NA'}
+  row 07  top=1087.4  starts_txn=True   {'Date': '417 08-02-2025', 'Debit': 'UPI/503986241269/DR/SONU/BKID/kumarsonu/ 2845.00', 'Balance': '₹ 5,412.55'}
+  row 08  top=1109.8  starts_txn=False  {'Date': 'Sent u'}
+  row 09  top=1164.5  starts_txn=True   {'Date': '418 09-02-2025', 'Debit': 'UPI/421867690033/DR/Foreig/YESB/paytmqr63/ 480.00', 'Balance': '₹ 4,932.55'}
+  row 10  top=1186.9  starts_txn=False  {'Date': 'Paymen'}
+  row 11  top=1241.6  starts_txn=True   {'Date': '419 09-02-2025', 'Debit': 'UPI/735173040524/DR/Beer/YESB/paytm- 480.00', 'Balance': '₹ 4,452.55'}
+  row 12  top=1264.0  starts_txn=False  {'Date': '684/Paymen'}
+  row 13  top=1318.7  starts_txn=True   {'Date': '420 10-02-2025 NEFT/ICIN204147523203/ICIC/RYSN', 'Debit': 'INFRA', 'Credit': '11000.00', 'Balance': '₹ 15,452.55'}
+  row 14  top=1341.1  starts_txn=False  {'Date': 'LLP'}
+  row 15  top=1395.8  starts_txn=True   {'Date': '421 10-02-2025 UPI/229124291205/DR/SUMIT', 'Debit': '11000.00', 'Balance': '₹ 4,452.55'}
+  row 16  top=1418.2  starts_txn=False  {'Date': '/UBIN/981863712/Paymen'}
+  row 17  top=1472.9  starts_txn=True   {'Date': '422 11-02-2025', 'Debit': 'UPI/504294327538/CR/SANJIV/SBIN/93118545', 'Credit': '1000.00', 'Balance': '₹ 5,452.55'}
+  row 18  top=1495.3  starts_txn=False  {'Date': '4/NA'}
+  row 19  top=1550.0  starts_txn=True   {'Date': '423 17-02-2025 NEFT/ICIN204803453663/ICIC/RYSN', 'Debit': 'INFRA', 'Credit': '11000.00', 'Balance': '₹ 16,452.55'}
+  row 20  top=1572.4  starts_txn=False  {'Date': 'LLP'}
+  row 21  top=1627.1  starts_txn=True   {'Date': '424 20-02-2025 UPI/666835096114/CR/KARAN', 'Credit': '9000.00', 'Balance': '₹ 25,452.55'}
+  row 22  top=1649.5  starts_txn=False  {'Date': '/PUNB/987154599/Paymen'}
+  row 23  top=1704.2  starts_txn=True   {'Date': '425 21-02-2025 UPI/505242140514/DR/Mr', 'Debit': '1.00', 'Balance': '₹ 25,451.55'}
+  row 24  top=1726.6  starts_txn=False  {'Date': 'PRA/CBIN/750318474/Sent', 'Debit': 'u'}
+  row 25  top=1781.3  starts_txn=True   {'Date': '426 21-02-2025 UPI/505242158253/DR/Mr', 'Debit': '9999.00', 'Balance': '₹ 15,452.55'}
 
 ============================================================
 PAGE 20  (width=1550.0  height=1900.0)
@@ -2874,10 +2874,10 @@ PAGE 20  (width=1550.0  height=1900.0)
   [~] No layout detected — using propagated layout from page 1
 
 --- DETECTED HEADERS ---
-  'Date'                          x0=   0.0  x1= 278.7  numeric=False  narration=False
-  'Debit'                         x0= 552.3  x1= 947.0  numeric=True  narration=False
-  'Credit'                        x0= 947.0  x1=1143.8  numeric=True  narration=False
-  'Balance'                       x0=1143.8  x1=1550.0  numeric=True  narration=False
+  'Date'                          x0=   0.0  x1= 552.3  numeric=False  narration=False
+  'Debit'                         x0= 552.3  x1=1042.9  numeric=True  narration=False
+  'Credit'                        x0=1042.9  x1=1251.5  numeric=True  narration=False
+  'Balance'                       x0=1251.5  x1=1550.0  numeric=True  narration=False
 
   header_y (table starts below): 786.3
 
@@ -2993,32 +2993,32 @@ PAGE 20  (width=1550.0  height=1900.0)
 
 --- PARSED ROWS (column-assigned) ---
   date_column = 'Date'
-  row 00  top= 801.4  [FILTERED]
-  row 01  top= 856.1  starts_txn=True   {'Date': '436', 'Debit': 'UPI/506095658314/CR/SANJIV/SBIN/93118545', 'Balance': '1000.00 ₹ 9,784.85'}
-  row 02  top= 878.5  [FILTERED]
-  row 03  top= 933.2  starts_txn=True   {'Date': '437', 'Credit': '3236.00', 'Balance': '₹ 6,548.85'}
-  row 04  top= 955.6  starts_txn=False  {'Debit': 'Ma'}
-  row 05  top=1010.3  starts_txn=True   {'Date': '438', 'Credit': '4125.00', 'Balance': '₹ 2,423.85'}
-  row 06  top=1032.7  starts_txn=False  {'Debit': 'Ma'}
-  row 07  top=1087.4  starts_txn=True   {'Date': '439', 'Debit': 'UPI/037941158689/DR/SONU/BKID/kumarsonu/', 'Credit': '1000.00', 'Balance': '₹ 1,423.85'}
-  row 08  top=1109.8  [FILTERED]
-  row 09  top=1164.5  starts_txn=True   {'Date': '440', 'Debit': 'UPI/506271142106/DR/VIJEND/YESB/q908406', 'Credit': '290.00', 'Balance': '₹ 1,133.85'}
-  row 10  top=1186.9  [FILTERED]
-  row 11  top=1241.6  starts_txn=True   {'Date': '441', 'Balance': '3000.00 ₹ 4,133.85'}
-  row 12  top=1264.0  [FILTERED]
-  row 13  top=1318.7  starts_txn=True   {'Date': '442', 'Debit': 'UPI/506312873745/CR/BHOPAL/PPIW/701799', 'Balance': '1500.00 ₹ 5,633.85'}
-  row 14  top=1341.1  [FILTERED]
-  row 15  top=1395.8  starts_txn=True   {'Date': '443', 'Balance': '3000.00 ₹ 8,633.85'}
-  row 16  top=1418.2  [FILTERED]
-  row 17  top=1472.9  starts_txn=True   {'Date': '444', 'Credit': '800.00', 'Balance': '₹ 7,833.85'}
-  row 18  top=1495.3  [FILTERED]
-  row 19  top=1550.0  starts_txn=True   {'Date': '445', 'Credit': '60.00', 'Balance': '₹ 7,773.85'}
-  row 20  top=1572.4  [FILTERED]
-  row 21  top=1627.1  starts_txn=True   {'Date': '446', 'Credit': '100.00', 'Balance': '₹ 7,673.85'}
-  row 22  top=1649.5  [FILTERED]
-  row 23  top=1704.2  starts_txn=True   {'Date': '447', 'Debit': 'UPI/837011848851/DR/KRISHA/YESB/paytmqr', 'Credit': '40.00', 'Balance': '₹ 7,633.85'}
-  row 24  top=1726.6  [FILTERED]
-  row 25  top=1781.3  starts_txn=True   {'Date': '448', 'Debit': 'INFRA', 'Balance': '8000.00 ₹ 15,633.85'}
+  row 00  top= 801.4  starts_txn=False  {'Date': '209/Paymen'}
+  row 01  top= 856.1  starts_txn=True   {'Date': '436 01-03-2025', 'Debit': 'UPI/506095658314/CR/SANJIV/SBIN/93118545', 'Credit': '1000.00', 'Balance': '₹ 9,784.85'}
+  row 02  top= 878.5  starts_txn=False  {'Date': '4/NA'}
+  row 03  top= 933.2  starts_txn=True   {'Date': '437 02-03-2025 UPI/100086683257/DR/BAJAJ', 'Debit': '3236.00', 'Balance': '₹ 6,548.85'}
+  row 04  top= 955.6  starts_txn=False  {'Date': '/HDFC/bflautopa/UPI', 'Debit': 'Ma'}
+  row 05  top=1010.3  starts_txn=True   {'Date': '438 02-03-2025 UPI/100086803222/DR/BAJAJ', 'Debit': '4125.00', 'Balance': '₹ 2,423.85'}
+  row 06  top=1032.7  starts_txn=False  {'Date': '/HDFC/bflautopa/UPI', 'Debit': 'Ma'}
+  row 07  top=1087.4  starts_txn=True   {'Date': '439 02-03-2025', 'Debit': 'UPI/037941158689/DR/SONU/BKID/kumarsonu/ 1000.00', 'Balance': '₹ 1,423.85'}
+  row 08  top=1109.8  starts_txn=False  {'Date': 'Paymen'}
+  row 09  top=1164.5  starts_txn=True   {'Date': '440 03-03-2025', 'Debit': 'UPI/506271142106/DR/VIJEND/YESB/q908406 290.00', 'Balance': '₹ 1,133.85'}
+  row 10  top=1186.9  starts_txn=False  {'Date': '00/Sent u'}
+  row 11  top=1241.6  starts_txn=True   {'Date': '441 04-03-2025 UPI/506375136482/CR/AMIT', 'Credit': '3000.00', 'Balance': '₹ 4,133.85'}
+  row 12  top=1264.0  starts_txn=False  {'Date': '/KKBK/959958402/NA'}
+  row 13  top=1318.7  starts_txn=True   {'Date': '442 04-03-2025', 'Debit': 'UPI/506312873745/CR/BHOPAL/PPIW/701799', 'Credit': '1500.00', 'Balance': '₹ 5,633.85'}
+  row 14  top=1341.1  starts_txn=False  {'Date': '319/NA'}
+  row 15  top=1395.8  starts_txn=True   {'Date': '443 05-03-2025 UPI/156049412884/CR/KARAN', 'Credit': '3000.00', 'Balance': '₹ 8,633.85'}
+  row 16  top=1418.2  starts_txn=False  {'Date': '/PUNB/987154599/Inrest'}
+  row 17  top=1472.9  starts_txn=True   {'Date': '444 07-03-2025 UPI/209372898223/DR/VINOD', 'Debit': '800.00', 'Balance': '₹ 7,833.85'}
+  row 18  top=1495.3  starts_txn=False  {'Date': '/BKID/704284318/Paymen'}
+  row 19  top=1550.0  starts_txn=True   {'Date': '445 07-03-2025 UPI/473370402268/DR/PRIYA', 'Debit': '60.00', 'Balance': '₹ 7,773.85'}
+  row 20  top=1572.4  starts_txn=False  {'Date': '/YESB/paytmqr69/Paymen'}
+  row 21  top=1627.1  starts_txn=True   {'Date': '446 07-03-2025 UPI/527032776186/DR/SURYA', 'Debit': '100.00', 'Balance': '₹ 7,673.85'}
+  row 22  top=1649.5  starts_txn=False  {'Date': '/YESB/paytmqr63/Paymen'}
+  row 23  top=1704.2  starts_txn=True   {'Date': '447 07-03-2025', 'Debit': 'UPI/837011848851/DR/KRISHA/YESB/paytmqr 40.00', 'Balance': '₹ 7,633.85'}
+  row 24  top=1726.6  starts_txn=False  {'Date': '61/Paymen'}
+  row 25  top=1781.3  starts_txn=True   {'Date': '448 10-03-2025 NEFT/ICIN206924317065/ICIC/RYSN', 'Debit': 'INFRA', 'Credit': '8000.00', 'Balance': '₹ 15,633.85'}
 
 ============================================================
 PAGE 21  (width=1550.0  height=1900.0)
@@ -3026,10 +3026,10 @@ PAGE 21  (width=1550.0  height=1900.0)
   [~] No layout detected — using propagated layout from page 1
 
 --- DETECTED HEADERS ---
-  'Date'                          x0=   0.0  x1= 278.7  numeric=False  narration=False
-  'Debit'                         x0= 552.3  x1= 947.0  numeric=True  narration=False
-  'Credit'                        x0= 947.0  x1=1143.8  numeric=True  narration=False
-  'Balance'                       x0=1143.8  x1=1550.0  numeric=True  narration=False
+  'Date'                          x0=   0.0  x1= 552.3  numeric=False  narration=False
+  'Debit'                         x0= 552.3  x1=1042.9  numeric=True  narration=False
+  'Credit'                        x0=1042.9  x1=1251.5  numeric=True  narration=False
+  'Balance'                       x0=1251.5  x1=1550.0  numeric=True  narration=False
 
   header_y (table starts below): 786.3
 
@@ -3145,32 +3145,32 @@ PAGE 21  (width=1550.0  height=1900.0)
 
 --- PARSED ROWS (column-assigned) ---
   date_column = 'Date'
-  row 00  top= 801.4  [FILTERED]
-  row 01  top= 856.1  starts_txn=True   {'Date': '458', 'Credit': '4000.00', 'Balance': '₹ 476,477.85'}
-  row 02  top= 878.5  [FILTERED]
-  row 03  top= 933.2  starts_txn=True   {'Date': '459', 'Credit': '4000.00', 'Balance': '₹ 472,477.85'}
-  row 04  top= 955.6  [FILTERED]
-  row 05  top=1010.3  starts_txn=True   {'Date': '460', 'Debit': 'UPI/507300817152/DR/ABHISH/UTIB/96504125', 'Credit': '4000.00', 'Balance': '₹ 468,477.85'}
-  row 06  top=1032.7  [FILTERED]
-  row 07  top=1087.4  starts_txn=True   {'Date': '461', 'Debit': '10000.00', 'Balance': '₹ 458,477.85'}
-  row 08  top=1109.8  [FILTERED]
-  row 09  top=1164.5  starts_txn=True   {'Date': '462', 'Credit': '5000.00', 'Balance': '₹ 453,477.85'}
-  row 10  top=1186.9  [FILTERED]
-  row 11  top=1241.6  starts_txn=True   {'Date': '463', 'Debit': 'UPI/507309373770/DR/ABHISH/UTIB/96504125', 'Credit': '5000.00', 'Balance': '₹ 448,477.85'}
-  row 12  top=1264.0  [FILTERED]
-  row 13  top=1318.7  starts_txn=True   {'Date': '464', 'Credit': '1170.00', 'Balance': '₹ 447,307.85'}
-  row 14  top=1341.1  [FILTERED]
-  row 15  top=1395.8  starts_txn=True   {'Date': '465', 'Debit': 'UPI/507412839260/DR/SANJIV/SBIN/93118545', 'Credit': '900.00', 'Balance': '₹ 446,407.85'}
-  row 16  top=1418.2  [FILTERED]
-  row 17  top=1472.9  starts_txn=True   {'Date': '466', 'Debit': 'UPI/507755033255/DR/ABHISH/UTIB/96504125 48000.00', 'Balance': '₹ 398,407.85'}
-  row 18  top=1495.3  [FILTERED]
-  row 19  top=1550.0  starts_txn=True   {'Date': '467', 'Debit': '100000.00', 'Balance': '₹ 298,407.85'}
-  row 20  top=1572.4  [FILTERED]
-  row 21  top=1627.1  starts_txn=True   {'Date': '468', 'Debit': '100000.00', 'Balance': '₹ 198,407.85'}
-  row 22  top=1649.5  [FILTERED]
-  row 23  top=1704.2  starts_txn=True   {'Date': '469', 'Credit': '10000.00', 'Balance': '₹ 208,407.85'}
-  row 24  top=1726.6  [FILTERED]
-  row 25  top=1781.3  starts_txn=True   {'Date': '470', 'Debit': 'INFRA', 'Balance': '9000.00 ₹ 217,407.85'}
+  row 00  top= 801.4  starts_txn=False  {'Date': '/SBIN/880023251/Paymen'}
+  row 01  top= 856.1  starts_txn=True   {'Date': '458 13-03-2025 UPI/312652964546/DR/KAPIL', 'Debit': '4000.00', 'Balance': '₹ 476,477.85'}
+  row 02  top= 878.5  starts_txn=False  {'Date': '/SBIN/880023251/Paymen'}
+  row 03  top= 933.2  starts_txn=True   {'Date': '459 13-03-2025 UPI/851149484825/DR/KAPIL', 'Debit': '4000.00', 'Balance': '₹ 472,477.85'}
+  row 04  top= 955.6  starts_txn=False  {'Date': '/SBIN/880023251/Paymen'}
+  row 05  top=1010.3  starts_txn=True   {'Date': '460 14-03-2025', 'Debit': 'UPI/507300817152/DR/ABHISH/UTIB/96504125 4000.00', 'Balance': '₹ 468,477.85'}
+  row 06  top=1032.7  starts_txn=False  {'Date': '1/NA'}
+  row 07  top=1087.4  starts_txn=True   {'Date': '461 14-03-2025 UPI/253096904958/DR/ARUN', 'Debit': '10000.00', 'Balance': '₹ 458,477.85'}
+  row 08  top=1109.8  starts_txn=False  {'Date': '/KKBK/arunkumar/Paymen'}
+  row 09  top=1164.5  starts_txn=True   {'Date': '462 14-03-2025 UPI/738640556418/DR/ARUN', 'Debit': '5000.00', 'Balance': '₹ 453,477.85'}
+  row 10  top=1186.9  starts_txn=False  {'Date': '/KKBK/arunkumar/Paymen'}
+  row 11  top=1241.6  starts_txn=True   {'Date': '463 14-03-2025', 'Debit': 'UPI/507309373770/DR/ABHISH/UTIB/96504125 5000.00', 'Balance': '₹ 448,477.85'}
+  row 12  top=1264.0  starts_txn=False  {'Date': '1/NA'}
+  row 13  top=1318.7  starts_txn=True   {'Date': '464 15-03-2025 UPI/775853002446/DR/AMIT', 'Debit': '1170.00', 'Balance': '₹ 447,307.85'}
+  row 14  top=1341.1  starts_txn=False  {'Date': 'K/BKID/971853376/Paymen'}
+  row 15  top=1395.8  starts_txn=True   {'Date': '465 15-03-2025', 'Debit': 'UPI/507412839260/DR/SANJIV/SBIN/93118545 900.00', 'Balance': '₹ 446,407.85'}
+  row 16  top=1418.2  starts_txn=False  {'Date': '4/NA'}
+  row 17  top=1472.9  starts_txn=True   {'Date': '466 18-03-2025', 'Debit': 'UPI/507755033255/DR/ABHISH/UTIB/96504125 48000.00', 'Balance': '₹ 398,407.85'}
+  row 18  top=1495.3  starts_txn=False  {'Date': '1/NA'}
+  row 19  top=1550.0  starts_txn=True   {'Date': '467 23-03-2025 UPI/556386167467/DR/Mr', 'Debit': '100000.00', 'Balance': '₹ 298,407.85'}
+  row 20  top=1572.4  starts_txn=False  {'Date': 'BIR/MAHB/981039270/Paymen'}
+  row 21  top=1627.1  starts_txn=True   {'Date': '468 24-03-2025 UPI/815273776661/DR/Mr', 'Debit': '100000.00', 'Balance': '₹ 198,407.85'}
+  row 22  top=1649.5  starts_txn=False  {'Date': 'BIR/MAHB/981039270/Paymen'}
+  row 23  top=1704.2  starts_txn=True   {'Date': '469 26-03-2025 UPI/724631902227/CR/SUMIT', 'Credit': '10000.00', 'Balance': '₹ 208,407.85'}
+  row 24  top=1726.6  starts_txn=False  {'Date': '/UBIN/981863712/Paymen'}
+  row 25  top=1781.3  starts_txn=True   {'Date': '470 27-03-2025 NEFT/ICIN208641484542/ICIC/RYSN', 'Debit': 'INFRA', 'Credit': '9000.00', 'Balance': '₹ 217,407.85'}
 
 ============================================================
 PAGE 22  (width=1550.0  height=1900.0)
@@ -3178,10 +3178,10 @@ PAGE 22  (width=1550.0  height=1900.0)
   [~] No layout detected — using propagated layout from page 1
 
 --- DETECTED HEADERS ---
-  'Date'                          x0=   0.0  x1= 278.7  numeric=False  narration=False
-  'Debit'                         x0= 552.3  x1= 947.0  numeric=True  narration=False
-  'Credit'                        x0= 947.0  x1=1143.8  numeric=True  narration=False
-  'Balance'                       x0=1143.8  x1=1550.0  numeric=True  narration=False
+  'Date'                          x0=   0.0  x1= 552.3  numeric=False  narration=False
+  'Debit'                         x0= 552.3  x1=1042.9  numeric=True  narration=False
+  'Credit'                        x0=1042.9  x1=1251.5  numeric=True  narration=False
+  'Balance'                       x0=1251.5  x1=1550.0  numeric=True  narration=False
 
   header_y (table starts below): 786.3
 
