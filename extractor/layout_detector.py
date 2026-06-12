@@ -363,30 +363,15 @@ def build_boundaries(
         else:
             next_cell = header_cells[idx + 1]
             midpoint = (cell["x1"] + next_cell["x0"]) / 2
-            next_normalized = normalize_text(next_cell["text"])
-            cur_normalized = normalize_text(cell["text"])
 
-            if next_normalized in NARRATION_COLUMN_KEYWORDS:
-                # Existing rule: clamp to next column's x0 so narration words
-                # that start inside the narration column are never mis-assigned
-                # to the preceding column (e.g. Date -> Narration boundary).
-                right = next_cell["x0"]
-            elif (
-                next_normalized in NUMERIC_COLUMN_KEYWORDS
-                and cur_normalized not in NUMERIC_COLUMN_KEYWORDS
-                and cur_normalized not in NARRATION_COLUMN_KEYWORDS
-            ):
-                # New rule: when a non-numeric, non-narration column (e.g. Date,
-                # Chq/Ref) is immediately followed by a numeric column (e.g.
-                # Debit/Credit) with no explicit narration column in between,
-                # the midpoint would swallow all narration text printed in that
-                # gap into the Date cell. Clamp to the header word's own x1
-                # instead, leaving gap words unassigned rather than corrupting
-                # the date field.
-                # (Bank of India layout: Date | Debit | Credit | Balance)
-                right = cell["x1"]
-            else:
-                right = midpoint
+            # Use the midpoint between this column's header x1 and the next
+            # column's header x0 as the boundary between them.  This is the
+            # most reliable split point regardless of column types; previous
+            # special-case rules for narration and numeric columns caused
+            # boundaries to be set too wide (HDFC: Date swallowed narration
+            # text) or too narrow (Bank of India: date text fell outside the
+            # Date column).
+            right = midpoint
 
         normalized = normalize_text(cell["text"])
 

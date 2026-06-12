@@ -370,12 +370,36 @@ def build_transaction_from_block(
     )
 
     # Normalise the date column: strip any leading serial number and extract
-    # just the date token, so "1 02-04-2024 UPI/..." becomes "02-04-2024".
+    # just the date token.  Any text that follows the date in the same cell
+    # (e.g. "29/05/24 UPI-SAKSHAM" or "1 02-04-2024 UPI/445944675964/CR/ARUN")
+    # is overflow narration caused by the Date column boundary being too wide.
+    # Salvage it by prepending it to the narration column so it is not lost.
     raw_date = txn.data.get(date_column, "").strip()
     if raw_date and not DATE_PATTERN.match(raw_date):
-        m = _DATE_SEARCH.search(_SERIAL_PREFIX.sub("", raw_date))
+        stripped = _SERIAL_PREFIX.sub("", raw_date)
+        m = _DATE_SEARCH.search(stripped)
         if m:
             txn.data[date_column] = m.group(1)
+            # Everything after the date match is overflow narration text.
+            overflow = stripped[m.end():].strip()
+            if overflow:
+                narration_col = _find_narration_column(txn.data)
+                if narration_col:
+                    existing_narration = txn.data.get(narration_col, "").strip()
+                    txn.data[narration_col] = (
+                        (overflow + " " + existing_narration).strip()
+                        if existing_narration
+                        else overflow
+                    )
+                else:
+                    # No explicit narration column (e.g. Bank of India has
+                    # Date | Debit | Credit | Balance with no Particulars
+                    # header). Store the overflow text under a synthetic
+                    # "Particulars" key so it is not silently dropped.
+                    existing = txn.data.get("Particulars", "").strip()
+                    txn.data["Particulars"] = (
+                        (overflow + " " + existing).strip() if existing else overflow
+                    )
 
     # Strip rupee symbol from all numeric column values in the anchor row.
     for key in list(txn.data.keys()):
