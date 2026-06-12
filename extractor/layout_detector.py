@@ -199,7 +199,16 @@ def detect_header_row(page: PDFPage):
     best_row = None
     best_score = 0
 
+    # A real column-header row is never in the bottom 15% of the page.
+    # Rejecting rows in that zone prevents the HDFC footer block
+    # (printed near the page bottom and containing embedded keywords
+    # like BALANCE and DATE inside camelCase tokens) from being
+    # mistaken for the table header on continuation pages.
+    footer_threshold = page.height * 0.85
+
     for row in rows:
+        if row["top"] >= footer_threshold:
+            continue
         text = build_row_text(row["words"])
         score = score_header_row(text)
         if score > best_score:
@@ -355,14 +364,27 @@ def build_boundaries(
             next_cell = header_cells[idx + 1]
             midpoint = (cell["x1"] + next_cell["x0"]) / 2
             next_normalized = normalize_text(next_cell["text"])
+            cur_normalized = normalize_text(cell["text"])
 
-            # If the next column is a narration/description column, using the
-            # midpoint as our right edge will swallow narration words whose
-            # x-center falls between our header's x1 and the midpoint.
-            # Clamp to the next column's x0 instead so data words that start
-            # inside the narration column are never mis-assigned to us.
             if next_normalized in NARRATION_COLUMN_KEYWORDS:
+                # Existing rule: clamp to next column's x0 so narration words
+                # that start inside the narration column are never mis-assigned
+                # to the preceding column (e.g. Date -> Narration boundary).
                 right = next_cell["x0"]
+            elif (
+                next_normalized in NUMERIC_COLUMN_KEYWORDS
+                and cur_normalized not in NUMERIC_COLUMN_KEYWORDS
+                and cur_normalized not in NARRATION_COLUMN_KEYWORDS
+            ):
+                # New rule: when a non-numeric, non-narration column (e.g. Date,
+                # Chq/Ref) is immediately followed by a numeric column (e.g.
+                # Debit/Credit) with no explicit narration column in between,
+                # the midpoint would swallow all narration text printed in that
+                # gap into the Date cell. Clamp to the header word's own x1
+                # instead, leaving gap words unassigned rather than corrupting
+                # the date field.
+                # (Bank of India layout: Date | Debit | Credit | Balance)
+                right = cell["x1"]
             else:
                 right = midpoint
 

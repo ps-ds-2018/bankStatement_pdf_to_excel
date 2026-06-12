@@ -1,5 +1,6 @@
 import sys
 import os
+from dataclasses import replace as dc_replace
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from extractor.pdf_reader import PDFReader
@@ -26,6 +27,8 @@ def log(s=""):
 
 pages = PDFReader.read_pdf(pdf_path, password)
 
+last_good_layout = None
+
 for page_idx, page in enumerate(pages):
 
     log(f"\n{'='*60}")
@@ -33,10 +36,16 @@ for page_idx, page in enumerate(pages):
     log(f"{'='*60}")
 
     layout = LayoutDetector.detect(page=page, page_width=page.width)
+    layout_has_headers = layout and layout.headers
 
-    if not layout:
-        log("  [!] No layout detected for this page — skipping")
-        continue
+    if not layout_has_headers:
+        if last_good_layout is None:
+            log("  [!] No layout detected for this page — skipping")
+            continue
+        layout = dc_replace(last_good_layout, page_number=page.page_number)
+        log(f"  [~] No layout detected — using propagated layout from page {last_good_layout.page_number}")
+    else:
+        last_good_layout = layout
 
     log("\n--- DETECTED HEADERS ---")
     for name, boundary in layout.headers.items():
