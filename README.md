@@ -52,6 +52,8 @@ pip install -r requirements.txt
 
 ## Usage
 
+#Add an output folder and then proceed with this
+
 Without password:
 
 ```bash
