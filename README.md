@@ -1,6 +1,6 @@
 # Savings Bank Statement PDF → Excel POC
 
-PDF to Excel conversion engine for Indian bank savings account statement PDFs (ICICI, HDFC, and Bank of India).
+PDF to Excel conversion engine for Indian bank savings account statement PDFs (ICICI, HDFC, and Bank of India) with scope to modify for other banks or updated formats in future.
 
 ## Features
 
