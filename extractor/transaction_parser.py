@@ -369,6 +369,11 @@ def build_transaction_from_block(
         source_page=page_number,
     )
 
+    # Capture whether a real narration column exists BEFORE date normalisation
+    # adds a synthetic 'Particulars' key (which would otherwise fool the check
+    # below into thinking a narration column is already present).
+    _has_real_narration_col = _find_narration_column(txn.data) is not None
+
     # Normalise the date column: strip any leading serial number and extract
     # just the date token.  Any text that follows the date in the same cell
     # (e.g. "29/05/24 UPI-SAKSHAM" or "1 02-04-2024 UPI/445944675964/CR/ARUN")
@@ -406,6 +411,42 @@ def build_transaction_from_block(
         if _is_numeric_column(key, layout):
             txn.data[key] = txn.data[key].strip().lstrip("₹").strip()
 
+    # Fix (Case A/C): when there is no explicit narration column, a numeric
+    # column may contain narration text with an amount appended, e.g.
+    # 'UPI/446374223453/DR/PRAMOD/CNRB/82878 8000.00' or
+    # '/YESB/paytm- 30000.00'.
+    # Split on the last amount token: text → Particulars, number → column.
+    # Only fires when no real narration column exists (safe for ICICI/HDFC).
+    if not _has_real_narration_col:
+        _TRAILING_AMOUNT = re.compile(r'^(.+?)\s+([0-9][0-9,]*\.[0-9]{1,2})$')
+        for key in list(txn.data.keys()):
+            if not _is_numeric_column(key, layout):
+                continue
+            val = txn.data[key].strip()
+            if not val or _looks_like_amount(val):
+                continue
+            m = _TRAILING_AMOUNT.match(val)
+            if m:
+                # Case A/C: narration text + trailing amount — split them.
+                narration_fragment = m.group(1).strip()
+                amount = m.group(2)
+                txn.data[key] = amount
+                existing = txn.data.get("Particulars", "").strip()
+                txn.data["Particulars"] = (
+                    (existing + " " + narration_fragment).strip()
+                    if existing else narration_fragment
+                )
+            else:
+                # Case D: pure narration text in a numeric column (no amount at
+                # all), e.g. 'UPI/446020781772/CR/SACHIN/PUNB/9311826' landing
+                # in the Debit column because the column boundary is too wide.
+                # Move it entirely to Particulars and clear the numeric column.
+                existing = txn.data.get("Particulars", "").strip()
+                txn.data["Particulars"] = (
+                    (existing + " " + val).strip() if existing else val
+                )
+                txn.data[key] = ""
+
     for row in block[1:]:
         for key, value in row.values.items():
             value = value.strip().lstrip("₹").strip()
@@ -417,8 +458,17 @@ def build_transaction_from_block(
                     txn.data[key] = value
 
             else:
-                existing = txn.data.get(key, "").strip()
-                txn.data[key] = (existing + " " + value).strip() if existing else value
+                # Fix (Case B): when there is no explicit narration column,
+                # continuation-row text that landed in the date column
+                # (because the date boundary is wide) belongs in Particulars.
+                if not _has_real_narration_col and key == date_column:
+                    existing = txn.data.get("Particulars", "").strip()
+                    txn.data["Particulars"] = (
+                        (existing + " " + value).strip() if existing else value
+                    )
+                else:
+                    existing = txn.data.get(key, "").strip()
+                    txn.data[key] = (existing + " " + value).strip() if existing else value
 
     return txn
 
