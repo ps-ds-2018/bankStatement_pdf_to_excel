@@ -400,9 +400,9 @@ def build_transaction_from_block(
                     # No explicit narration column (e.g. Bank of India has
                     # Date | Debit | Credit | Balance with no Particulars
                     # header). Store the overflow text under a synthetic
-                    # "Particulars" key so it is not silently dropped.
-                    existing = txn.data.get("Particulars", "").strip()
-                    txn.data["Particulars"] = (
+                    # "Remarks" key so it is not silently dropped.
+                    existing = txn.data.get("Remarks", "").strip()
+                    txn.data["Remarks"] = (
                         (overflow + " " + existing).strip() if existing else overflow
                     )
 
@@ -431,8 +431,8 @@ def build_transaction_from_block(
                 narration_fragment = m.group(1).strip()
                 amount = m.group(2)
                 txn.data[key] = amount
-                existing = txn.data.get("Particulars", "").strip()
-                txn.data["Particulars"] = (
+                existing = txn.data.get("Remarks", "").strip()
+                txn.data["Remarks"] = (
                     (existing + " " + narration_fragment).strip()
                     if existing else narration_fragment
                 )
@@ -441,8 +441,8 @@ def build_transaction_from_block(
                 # all), e.g. 'UPI/446020781772/CR/SACHIN/PUNB/9311826' landing
                 # in the Debit column because the column boundary is too wide.
                 # Move it entirely to Particulars and clear the numeric column.
-                existing = txn.data.get("Particulars", "").strip()
-                txn.data["Particulars"] = (
+                existing = txn.data.get("Remarks", "").strip()
+                txn.data["Remarks"] = (
                     (existing + " " + val).strip() if existing else val
                 )
                 txn.data[key] = ""
@@ -462,8 +462,8 @@ def build_transaction_from_block(
                 # continuation-row text that landed in the date column
                 # (because the date boundary is wide) belongs in Particulars.
                 if not _has_real_narration_col and key == date_column:
-                    existing = txn.data.get("Particulars", "").strip()
-                    txn.data["Particulars"] = (
+                    existing = txn.data.get("Remarks", "").strip()
+                    txn.data["Remarks"] = (
                         (existing + " " + value).strip() if existing else value
                     )
                 else:

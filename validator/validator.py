@@ -20,10 +20,13 @@ NUMERIC_PATTERN = re.compile(
     r"""
     ^
     [+-]?
-    \d{1,3}          # leading digits (1–3)
     (
-        ,\d{2,3}     # Indian lakh groups (2 or 3 digits) or standard 3-digit groups
-    )*
+        # Formatted with commas: Indian lakh or international grouping
+        \d{1,3}(,\d{2,3})+
+        |
+        # Unformatted: any digit run without commas (e.g. 4000.00, 95000)
+        \d+
+    )
     (
         \.\d{1,2}    # optional decimal — at most 2 places for currency
     )?

@@ -17,11 +17,12 @@ HEADER_KEYWORDS = {
     "TRANSACTION DATE",
     "VALUE DT",
     "VALUE DATE",
-    "VALUEDT",           # HDFC compact: "ValueDt"
+    "VALUEDT",           
     "NARRATION",
     "DESCRIPTION",
     "PARTICULARS",
     "DETAILS",
+    "REMARKS",
     "MODE",
     "CHQ",
     "CHQ.",
@@ -36,7 +37,7 @@ HEADER_KEYWORDS = {
     "WITHDRAWALS",
     "WITHDRAWAL AMT",
     "WITHDRAWAL AMT.",
-    "WITHDRAWALAMT",     # HDFC compact: "WithdrawalAmt."
+    "WITHDRAWALAMT",     
     "WITHDRAWALAMT.",
     "DEBIT",
     "DEBITS",
@@ -44,13 +45,13 @@ HEADER_KEYWORDS = {
     "DEPOSITS",
     "DEPOSIT AMT",
     "DEPOSIT AMT.",
-    "DEPOSITAMT",        # HDFC compact: "DepositAmt."
+    "DEPOSITAMT",        
     "DEPOSITAMT.",
     "CREDIT",
     "CREDITS",
     "BALANCE",
     "CLOSING BALANCE",
-    "CLOSINGBALANCE",    # HDFC compact: "ClosingBalance"
+    "CLOSINGBALANCE",    
     "AMOUNT",
 }
 
@@ -66,7 +67,7 @@ NUMERIC_COLUMN_KEYWORDS = {
 }
 
 NARRATION_COLUMN_KEYWORDS = {
-    "NARRATION", "DESCRIPTION", "PARTICULARS", "DETAILS",
+    "NARRATION", "DESCRIPTION", "PARTICULARS", "DETAILS", "REMARKS",
 }
 
 # These pairs of keywords are always separate columns even when their
@@ -96,6 +97,7 @@ ALWAYS_SEPARATE_KEYWORDS = [
     "PARTICULARS",
     "NARRATION",
     "DESCRIPTION",
+    "REMARKS",
 ]
 
 

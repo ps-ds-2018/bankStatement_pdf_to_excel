@@ -1,7 +1,7 @@
 [project]
-name = "bankstatementpoc"
+name = "bankStatement_pdf_to_excel"
 version = "0.1.0"
-description = "Add your description here"
+description = "PDF to EXcel conversion engine for Indian bank statement PDFs (ICICI, HDFC, and Bank of India)"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = ["PyMuPDF==1.26.0", "pypdf==5.5.0", "pandas==2.2.3", "openpyxl==3.1.5", "pydantic==2.11.5"]

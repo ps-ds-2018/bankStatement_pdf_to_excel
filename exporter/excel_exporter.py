@@ -57,12 +57,39 @@ class ExcelExporter:
         # Transactions sheet
         # -----------------------
 
-        # Preserve column order as encountered across all transactions
+        # Collect all headers encountered across all transactions, then
+        # reorder them to match the canonical PDF column order:
+        #   Date  →  narration/remarks col  →  Debit  →  Credit  →  Balance
+        # Any extra columns not in the canonical list are appended at the end.
         all_headers: List[str] = []
         for txn in transactions:
             for header in txn.data.keys():
                 if header not in all_headers:
                     all_headers.append(header)
+
+        CANONICAL_ORDER = [
+            # Date column (any variant)
+            "DATE", "TXN DATE", "TRANSACTION DATE", "VALUE DATE", "VALUE DT",
+            # Narration column (any variant)
+            "REMARKS", "PARTICULARS", "NARRATION", "DESCRIPTION", "DETAILS",
+            # Debit / withdrawal
+            "DEBIT", "DEBITS", "WITHDRAWAL", "WITHDRAWALS",
+            "WITHDRAWAL AMT", "WITHDRAWAL AMT.", "WITHDRAWALAMT", "WITHDRAWALAMT.",
+            # Credit / deposit
+            "CREDIT", "CREDITS", "DEPOSIT", "DEPOSITS",
+            "DEPOSIT AMT", "DEPOSIT AMT.", "DEPOSITAMT", "DEPOSITAMT.",
+            # Balance
+            "BALANCE", "CLOSING BALANCE", "CLOSINGBALANCE",
+        ]
+
+        def _canonical_rank(header: str) -> int:
+            upper = header.upper().strip()
+            for rank, key in enumerate(CANONICAL_ORDER):
+                if upper == key or key in upper:
+                    return rank
+            return len(CANONICAL_ORDER)  # unknown columns go last
+
+        all_headers.sort(key=_canonical_rank)
 
         transaction_rows = [
             {h: txn.data.get(h, "") for h in all_headers}
@@ -154,7 +181,7 @@ class ExcelExporter:
             "WITHDRAWAL", "DEPOSIT", "AMOUNT",
         }
         NARRATION_KEYWORDS = {
-            "NARRATION", "PARTICULARS", "DESCRIPTION", "DETAILS",
+            "NARRATION", "PARTICULARS", "DESCRIPTION", "DETAILS", "REMARKS",
         }
 
         header_cells = list(sheet[1])
